@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Civ4GameText xmlns="http://www.firaxis.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.firaxis.com ../../../Xml/Schema/Civ4Gametext.xsd">
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ALIEN_PLANT</Tag>
+		<English>Alien Plant</English>
+		<French>
+			<Text>Plante Alien</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<Italian>Piante aliene</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ALIEN_PLANT_PEDIA</Tag>
+		<English>Alien Plant (e.g. Red Weed) from "War of the Worlds" by H.G. Wells or Planet Fungus from Alpha Centauri. Graphics from the Alpha Centauri mod.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SEA_FUNGUS</Tag>
+		<English>Sea Fungus</English>
+		<French>
+			<Text>Champignon des mer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<Italian>Funghi di mare</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_XENOFUNGUS</Tag>
+		<English>Alien Fungus</English>
+		<French>
+			<Text>Champignon Alien</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<Italian>Funghi alieni</Italian>
+	</TEXT>
+</Civ4GameText>

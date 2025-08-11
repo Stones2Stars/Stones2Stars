@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Civ4IdeaClassInfos xmlns="x-schema:../Schema/C2C_CIV4GameInfoSchema.xml">
+	<IdeaClassInfos>
+		<IdeaClassInfo>
+			<Type>IDEACLASS_HERITAGE</Type>
+			<Description>TXT_KEY_IDEACLASS_HERITAGE</Description>
+		</IdeaClassInfo>
+		<IdeaClassInfo>
+			<Type>IDEACLASS_CULTURE</Type>
+			<Description>TXT_KEY_IDEACLASS_CULTURE</Description>
+		</IdeaClassInfo>
+	</IdeaClassInfos>
+</Civ4IdeaClassInfos>
