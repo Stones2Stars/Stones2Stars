@@ -1927,6 +1927,7 @@
 				<TerrainType>TERRAIN_BADLAND</TerrainType>
 				<TerrainType>TERRAIN_JAGGED</TerrainType>
 				<TerrainType>TERRAIN_SALT_FLATS</TerrainType>
+                <TerrainType>TERRAIN_PEAK</TerrainType>
 				<TerrainType>TERRAIN_SEA</TerrainType>
 				<TerrainType>TERRAIN_SEA_DEEP</TerrainType>
 				<TerrainType>TERRAIN_SEA_DEEP_POLAR</TerrainType>
