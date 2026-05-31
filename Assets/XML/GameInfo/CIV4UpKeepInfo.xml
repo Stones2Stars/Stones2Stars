@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Civ4UpkeepInfo xmlns="x-schema:../Schema/C2C_CIV4GameInfoSchema.xml">
+	<UpkeepInfos>
+		<UpkeepInfo>
+			<Type>UPKEEP_LOW</Type>
+			<Description>TXT_KEY_UPKEEP_LOW</Description>
+			<Strategy/>
+			<iPopulationPercent>6</iPopulationPercent>
+			<iCityPercent>20</iCityPercent>
+		</UpkeepInfo>
+		<UpkeepInfo>
+			<Type>UPKEEP_MEDIUM</Type>
+			<Description>TXT_KEY_UPKEEP_MEDIUM</Description>
+			<Strategy/>
+			<iPopulationPercent>12</iPopulationPercent>
+			<iCityPercent>40</iCityPercent>
+		</UpkeepInfo>
+		<UpkeepInfo>
+			<Type>UPKEEP_HIGH</Type>
+			<Description>TXT_KEY_UPKEEP_HIGH</Description>
+			<Strategy/>
+			<iPopulationPercent>24</iPopulationPercent>
+			<iCityPercent>60</iCityPercent>
+		</UpkeepInfo>
+		<UpkeepInfo>
+			<Type>UPKEEP_EXTREME</Type>
+			<Description>TXT_KEY_UPKEEP_EXTREME</Description>
+			<Strategy/>
+			<iPopulationPercent>48</iPopulationPercent>
+			<iCityPercent>80</iCityPercent>
+		</UpkeepInfo>
+	</UpkeepInfos>
+</Civ4UpkeepInfo>

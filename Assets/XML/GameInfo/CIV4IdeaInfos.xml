@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Civ4IdeaInfos xmlns="x-schema:../Schema/C2C_CIV4GameInfoSchema.xml">
+	<IdeaInfos>
+		<IdeaInfo>
+			<Type>IDEA_HERITAGE_EUROPEAN</Type>
+			<Description>TXT_KEY_IDEA_HERITAGE_EUROPEAN</Description>
+			<IdeaClassType>IDEACLASS_HERITAGE</IdeaClassType>
+		</IdeaInfo>
+		<IdeaInfo>
+			<Type>IDEA_CULTURE_CELTIC</Type>
+			<Description>TXT_KEY_IDEA_CULTURE_CELTIC</Description>
+			<IdeaClassType>IDEACLASS_CULTURE</IdeaClassType>
+		</IdeaInfo>
+	</IdeaInfos>
+</Civ4IdeaInfos>

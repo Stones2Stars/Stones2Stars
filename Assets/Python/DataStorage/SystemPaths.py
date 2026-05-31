@@ -1,0 +1,73 @@
+# Data storage python, values are set in CvEventManager.onInit.
+from os import path, mkdir
+
+def init():
+	import sys
+	global userDir, modDir, userSettingsDir
+
+	#############################################
+	def __getRegValue(subkey, name):
+		import _winreg
+		try:
+			return _winreg.QueryValueEx(_winreg.OpenKey(_winreg.HKEY_CURRENT_USER, subkey), name)[0]
+		except:
+			return None
+	#############################################
+
+	myDocuments = None
+	try:
+		myDocuments = __getRegValue(r"Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders", "Personal")
+	except:
+		try: # Vista
+			myDocuments = __getRegValue(r"Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders", "Personal")
+		except:
+			print "Cannot find 'My Documents' folder registry key"
+
+	if myDocuments:
+		try:
+			userDir = myDocuments.encode('utf-8')
+		except:
+			print "Encoding error for 'My Documents' path"
+			userDir = None
+	else:
+		userDir = None
+
+	dirBtS = path.dirname(sys.executable).encode('utf-8')
+	# TODO: read this folder name from the folder structure instead. (path of this file relative to root maybe?)
+	modDir = dirBtS + "\\Mods\\Stones2Stars"
+
+	# Create UserSettings folders if missing.
+	userSettingsDir = modDir + "\\UserSettings"
+	initUserSettingsDir()
+
+	if userDir:
+		userDir += "\\My Games\\" + path.basename(dirBtS)
+	else:
+		print "SystemPaths - userDir could not be determined"
+		userDir = ""
+
+	sprint = "------------------------ SystemPaths.init ---------------------------\n"
+	sprint += " The following paths are now stored here with these variable names\n"
+	sprint += "---------------------------------------------------------------------\nStones2Stars\n"
+	sprint += "        userDir: %s\n" %userDir
+	sprint += "         modDir: %s\n" %modDir
+	sprint += "userSettingsDir: %s\n" %userSettingsDir
+	sprint += "\nAccess:\n\timport SystemPaths as SP\n\tSP.userDir\n"
+	sprint += "------------------------------END------------------------------------"
+	print sprint
+
+	return userDir
+
+def initUserSettingsDir():
+	if not path.isdir(userSettingsDir):
+		print "SystemPaths - initUserSettingsDir()\n\tUserSettings directory " + userSettingsDir + " not found, creating it."
+		mkdir(userSettingsDir)
+
+	if not path.isdir(userSettingsDir + "\\DomesticAdv"):
+		mkdir(userSettingsDir + "\\DomesticAdv")
+
+def isFile(aPath):
+	return path.isfile(aPath)
+
+def joinModDir(*paths):
+	return path.join(modDir, *paths)
