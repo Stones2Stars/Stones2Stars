@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.BETA.45 - 2026-05-31
+
+### All Changes
+- One-time svn delete of C2C.bat (renamed to S2S.bat) (flabbert)
+
 ## v1.BETA.43 - 2026-05-31
 
 ### All Changes
