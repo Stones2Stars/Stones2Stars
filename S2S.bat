@@ -1,0 +1,23 @@
+@echo off
+echo Launching Stones2Stars ...
+
+PUSHD "%~dp0"
+
+if not exist ..\..\Civ4BeyondSword.exe (
+    call :wrong_mods_dir
+)
+
+PUSHD "%~dp0..\.."
+start "" "Civ4BeyondSword.exe" "mod= Mods\Stones2Stars"
+POPD
+POPD
+exit /B 0
+
+:wrong_mods_dir
+echo Can't launch Stones2Stars, it is not installed to the correct location!
+echo Please install it to Mods\Stones2Stars under your Beyond the Sword install directory.
+echo i.e. Not under your My Documents folder or anywhere else.
+pause
+
+POPD
+exit /B 0
