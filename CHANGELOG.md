@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.BETA.61 - 2026-06-01
+
+### All Changes
+- increase strength of hunters in earlygame (flabbert)
+
 ## v1.BETA.59 - 2026-06-01
 
 ### All Changes
