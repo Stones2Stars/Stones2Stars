@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v1.BETA.50 - 2026-06-01
+
+### All Changes
+- make without warning default on (flabbert)
+- reorder the gameoption xml so that it matches with gameoption enum (flabbert)
+- Add UNITAI selection & unit-production documentation (flabbert)
+- Fix stale LaunchC2C.bat references to LaunchS2S.bat (flabbert)
+
 ## v1.BETA.45 - 2026-05-31
 
 ### All Changes
