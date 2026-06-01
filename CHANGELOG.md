@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.BETA.59 - 2026-06-01
+
+### All Changes
+- Merge pull request [#21](https://github.com/stones2stars/S2S/issues/21) from Stones2Stars/feature/size-matters-group-merge (flabbert)
+- Size Matters: enable bulk merge across a selection group (flabbert)
+- Merge pull request [#20](https://github.com/stones2stars/S2S/issues/20) from Stones2Stars/feature/configurable-production-overflow-cap (flabbert)
+- Add add-bug-option project skill (flabbert)
+- Make production overflow cap a configurable BUG option (flabbert)
+- Updated text for increasing difficulty, cibola peasant 240-160 work rate to better be compared to normal work rate for his age, tiny nerf to set captive free option food reward, nerf to negligent additional -1 happiness, and reduced free city and distance upkeep by 10% should make it worse for free gold city spam printing, amber mine now needs mining camp, fixed scroll maker now with printing press removes its commerce instead of costing gold, subdued wolverine no longer builds enclosure rodent, removed fresh water as prereq for seed camp since it allowed it to be built on ice terain next to a river Ordered all options in xml to be same as in backend so options wont have wrong description aka turning on wrong options Fixed via appia wonder route bug Add 5 gold to capital as temp fix for economy changes Restored tribal guard as auto start unit but still is buildable if dies and can be upgraded as a temp fix until ai can survive fixed some typos neanderthall tribe guardian now promotes corectly unlocking chasing now will give a free chaser like gathering gives gatherer persistence hunting will now give 1 free chaser to all who research it and 1 more to the first one to research it (to speed up and make early game a bit less boring, also i think is good paralele to hunter/gatherer dynamics) (SimoCvijic0)
+
 ## v1.BETA.50 - 2026-06-01
 
 ### All Changes

@@ -50911,6 +50911,9 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_CORE_MINE</ObsoletesToBuilding>
 			<VicinityBonus>BONUS_AMBER</VicinityBonus>
+			<PrereqInCityBuildings>
+				<BuildingType>BUILDING_MINING_CAMP</BuildingType>
+			</PrereqInCityBuildings>
 			<iCost>132</iCost>
 			<iCostSizeModifier>3</iCostSizeModifier>
 			<iCostCountModifier>0</iCostCountModifier>
@@ -108774,12 +108777,22 @@
 				<TechCommerceChange>
 					<TechType>TECH_PRINTING_PRESS</TechType>
 					<CommercePercents>
-						<iCommercePercent>-100</iCommercePercent>
+						<iCommercePercent>0</iCommercePercent>
 						<iCommercePercent>0</iCommercePercent>
 						<iCommercePercent>500</iCommercePercent>
 					</CommercePercents>
 				</TechCommerceChange>
 			</TechCommerceChanges>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+					<TechYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-100</iYield>
+					</TechYield>
+				</TechYieldChange>
+			</TechYieldChanges>
 			<PropertyManipulators>
 				<PropertySource>
 					<PropertySourceType>PROPERTYSOURCE_CONSTANT</PropertySourceType>
