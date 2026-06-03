@@ -15147,7 +15147,6 @@
 				<BuildingType>BUILDING_APIARY</BuildingType>
 				<BuildingType>BUILDING_FOOD_MANUFACTURING_DISTRICT</BuildingType>
 			</PrereqOrBuildings>
-			<!--<PrereqGameOption>GAMEOPTION_COMBAT_HEART_OF_WAR</PrereqGameOption> -->
 			<ObsoleteTech>TECH_EXPLOSIVES</ObsoleteTech>
 			<iCost>132</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>

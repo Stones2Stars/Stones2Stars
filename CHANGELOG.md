@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v1.BETA.75 - 2026-06-03
+
+### All Changes
+- Merge pull request [#22](https://github.com/stones2stars/S2S/issues/22) from Stones2Stars/combat-simplification (flabbert)
+- Combat scope doc: record removal phase complete + Phase 3a done (flabbert)
+- Show the combat-odds bar in the minimal and assassinate previews too (flabbert)
+- Restore the graphical combat-odds bar in the combat tooltip (flabbert)
+- Make asserts fire properly: remove the bIgnoreAlways=true suppression hack (flabbert)
+- Log asserts in the Assert build instead of popping dialogs (flabbert)
+- Restore live element definitions wrongly stripped from the unit schema (flabbert)
+- Add Phase 3b plan: route AI win-% through the binomial engine (flabbert)
+- Phase 3a: unify resolution + odds onto a shared RoundModel (Layer 1) (flabbert)
+- Remove last affliction/equipment vestiges: NoSpread, Afflict params, equipment category (flabbert)
+- Clean orphans from removed combat options (afflictions/equipment) (flabbert)
+- Combat scope: confirm KEEP for REALISTIC_SIEGE/AMNESTY/HIDE_SEEK/WITHOUT_WARNING (flabbert)
+- R4 Phases 2-7: remove inert affliction/critical/fortitude scaffolding (flabbert)
+- R4 Phase 1 checkpoint: remove OUTBREAKS_AND_AFFLICTIONS game option (flabbert)
+- R5a+R5b: remove dodge/precision + armor/puncture combat stats (flabbert)
+- Combat simplification checkpoint: CvCombatModel + CvHunterAI + R1-R4 removals (flabbert)
+
 ## v1.BETA.61 - 2026-06-01
 
 ### All Changes
