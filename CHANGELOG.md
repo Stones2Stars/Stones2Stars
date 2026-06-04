@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.BETA.85 - 2026-06-04
+
+### All Changes
+- Merge pull request [#28](https://github.com/stones2stars/S2S/issues/28) from Stones2Stars/fix-worker-escort-stall-and-network-automation (flabbert)
+- Stop workers stalling on WAIT_FOR_ESCORT in foreign territory (flabbert)
+- Merge pull request [#27](https://github.com/stones2stars/S2S/issues/27) from Stones2Stars/fix-event-city-ring-targeting (flabbert)
+- Fix city events ringing a random tile instead of the city (flabbert)
+- Merge pull request [#26](https://github.com/stones2stars/S2S/issues/26) from Stones2Stars/worker-city-commitment (flabbert)
+- Stop workers abandoning their city when they stray into another's radius (flabbert)
+
 ## v1.BETA.75 - 2026-06-03
 
 ### All Changes
