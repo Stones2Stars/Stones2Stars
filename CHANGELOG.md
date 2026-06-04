@@ -1,5 +1,41 @@
 # CHANGELOG
 
+## v1.BETA.114 - 2026-06-04
+
+### All Changes
+- Merge pull request [#47](https://github.com/stones2stars/S2S/issues/47) from Stones2Stars/ai-property-control-and-diagnostics (flabbert)
+- Add AI tagged-logging developer reference (flabbert)
+- Fix two mature-game asserts that flooded Asserts.log (flabbert)
+- Rework AI property-control assignment and fix the production gate (flabbert)
+- Fix never-ending-turn hang from AI unit re-evaluation spin (flabbert)
+- Add AI unit/combat/production diagnostic logging (flabbert)
+- Fix BetterBTSAI.cpp after union-merge of the ai-logging branches (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/contractbroker' (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/combat' (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/gameinfo' (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/founding' (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/espionage' (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/group' (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/city' (flabbert)
+- Merge remote-tracking branch 'origin/ai-logging/unit' (flabbert)
+- Make ContractBroker logging heavy and structurally consistent (flabbert)
+- Add [CTB] ContractBroker decision logging (flabbert)
+- Add [COM] combat decision logging (flabbert)
+- Add [GAME] session header log (GameInfo.log) (flabbert)
+- Add [FND] city-founding decision logging (flabbert)
+- Add [ESP] espionage decision logging (flabbert)
+- Add [GRP] group/army coordination logging (flabbert)
+- Enrich [UNT] logging with committed mission intent ([UNT/mission]) (flabbert)
+- Add [CIT] city production decision logging (verbose at choices) (flabbert)
+- Add [UNT] unit AI behaviour logging (flabbert)
+- Add [WAR] team war/strategy decision logging (flabbert)
+- Merge pull request [#29](https://github.com/stones2stars/S2S/issues/29) from Stones2Stars/ai-decision-logging (flabbert)
+- Fix four AI decision-making bugs surfaced by the new logging (flabbert)
+- Set per-player AI helper owners on load (CvPlayer::read) (flabbert)
+- Log realized trade items in CvDeal::startTrade ([DIP/trade]) (flabbert)
+- Add AI logging rollout plan to docs (flabbert)
+- Add CvDecisionAI flavour/decision logging; retire legacy BBAI logging (flabbert)
+
 ## v1.BETA.85 - 2026-06-04
 
 ### All Changes
