@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v1.BETA.123 - 2026-06-04
+### Docs
+- finish case rename (banana -> docs) and fix references(flabbert)
+- add player-facing game-mechanics documentation(flabbert)
+- restructure developer docs into reference/ and plans/(flabbert)
+### Temp
+- rename Docs -> banana (case-rename step 1/2)(flabbert)
+
+### All Changes
+- Merge pull request [#71](https://github.com/stones2stars/S2S/issues/71) from Stones2Stars/fix/unit-city-review-bugs (flabbert)
+- Merge pull request [#72](https://github.com/stones2stars/S2S/issues/72) from Stones2Stars/docs/restructure (flabbert)
+- docs: finish case rename (banana -> docs) and fix references (flabbert)
+- temp: rename Docs -> banana (case-rename step 1/2) (flabbert)
+- docs: add player-facing game-mechanics documentation (flabbert)
+- docs: restructure developer docs into reference/ and plans/ (flabbert)
+- Fix three verified CvUnit/CvCity correctness bugs (flabbert)
+    **Fixes [#48](https://github.com/stones2stars/S2S/issues/48)**
+    **Fixes [#57](https://github.com/stones2stars/S2S/issues/57)**
+    **Fixes [#61](https://github.com/stones2stars/S2S/issues/61)**
+
 ## v1.BETA.114 - 2026-06-04
 
 ### All Changes
