@@ -1,5 +1,100 @@
 # CHANGELOG
 
+## v1.BETA.163 - 2026-06-05
+### Ci
+- only run AppVeyor commit builds on main and release(flabbert)
+### Docs
+- clarify old-vs-new unit pathfinder and USE_OLD_PATH_GENERATOR(flabbert)
+- add engine FAStar pathfinding reference(flabbert)
+- import C2C community modding + player docs for review(flabbert)
+
+### All Changes
+- Merge pull request [#157](https://github.com/stones2stars/S2S/issues/157) from Stones2Stars/fix/agent-156-trait-req-fallback (flabbert)
+- Persist modder game options so trait threshold ignores low fallback ([#156](https://github.com/stones2stars/S2S/issues/156)) (flabbert)
+    **Fixes [#156](https://github.com/stones2stars/S2S/issues/156)**
+- Merge pull request [#155](https://github.com/stones2stars/S2S/issues/155) from Stones2Stars/add-issue-template (flabbert)
+- Add a simple bug-report issue form for users (flabbert)
+- Fix cannotMaintain skipping higher process tiers (agent-found [#140](https://github.com/stones2stars/S2S/issues/140)) (flabbert)
+    **Fixes [#140](https://github.com/stones2stars/S2S/issues/140)**
+- Merge pull request [#152](https://github.com/stones2stars/S2S/issues/152) from Stones2Stars/fix/agent-found-cvplayerai-scoring (flabbert)
+- Merge pull request [#151](https://github.com/stones2stars/S2S/issues/151) from Stones2Stars/fix/agent-found-83-rbombard-range (flabbert)
+- Fix 3 CvPlayerAI scoring/crash bugs (agent-found [#125](https://github.com/stones2stars/S2S/issues/125), [#130](https://github.com/stones2stars/S2S/issues/130), [#134](https://github.com/stones2stars/S2S/issues/134)) (flabbert)
+    **Fixes [#125](https://github.com/stones2stars/S2S/issues/125)**
+    **Fixes [#130](https://github.com/stones2stars/S2S/issues/130)**
+    **Fixes [#134](https://github.com/stones2stars/S2S/issues/134)**
+- Merge pull request [#148](https://github.com/stones2stars/S2S/issues/148) from Stones2Stars/fix/agent-found-crash-batch2 (flabbert)
+- Merge pull request [#149](https://github.com/stones2stars/S2S/issues/149) from Stones2Stars/fix/agent-found-62-corp-maintenance (flabbert)
+- Fix getMinimumRBombardRange() mixing damage-limit and range (agent-found [#83](https://github.com/stones2stars/S2S/issues/83)) (flabbert)
+    **Fixes [#83](https://github.com/stones2stars/S2S/issues/83)**
+- Merge pull request [#147](https://github.com/stones2stars/S2S/issues/147) from Stones2Stars/fix/agent-found-84-continuemission (flabbert)
+- Merge pull request [#150](https://github.com/stones2stars/S2S/issues/150) from Stones2Stars/ci/appveyor-build-filter (flabbert)
+- ci: only run AppVeyor commit builds on main and release (flabbert)
+- Fix calcCorporateMaintenance compounding over-charge (agent-found [#62](https://github.com/stones2stars/S2S/issues/62)) (flabbert)
+    **Fixes [#62](https://github.com/stones2stars/S2S/issues/62)**
+- Fix 4 more null-deref / OOB crashes (agent-found, crash batch 2) (flabbert)
+    **Fixes [#91](https://github.com/stones2stars/S2S/issues/91)**
+    **Fixes [#85](https://github.com/stones2stars/S2S/issues/85)**
+    **Fixes [#119](https://github.com/stones2stars/S2S/issues/119)**
+    **Fixes [#123](https://github.com/stones2stars/S2S/issues/123)**
+- Fix continueMission() dangling missionNode (agent-found [#84](https://github.com/stones2stars/S2S/issues/84)) (flabbert)
+    **Fixes [#84](https://github.com/stones2stars/S2S/issues/84)**
+- Merge pull request [#145](https://github.com/stones2stars/S2S/issues/145) from Stones2Stars/fix/agent-found-python (flabbert)
+- Merge pull request [#144](https://github.com/stones2stars/S2S/issues/144) from Stones2Stars/fix/agent-found-city-ai (flabbert)
+- Merge pull request [#143](https://github.com/stones2stars/S2S/issues/143) from Stones2Stars/fix/agent-found-unit-ai (flabbert)
+- Merge pull request [#146](https://github.com/stones2stars/S2S/issues/146) from Stones2Stars/docs/pathfinding-reference (flabbert)
+- Merge pull request [#142](https://github.com/stones2stars/S2S/issues/142) from Stones2Stars/fix/agent-found-crash-batch (flabbert)
+- docs: clarify old-vs-new unit pathfinder and USE_OLD_PATH_GENERATOR (flabbert)
+- docs: add engine FAStar pathfinding reference (flabbert)
+- Fix 3 Python logic bugs (agent-found, batch 2c) (flabbert)
+    **Fixes [#136](https://github.com/stones2stars/S2S/issues/136)**
+    **Fixes [#137](https://github.com/stones2stars/S2S/issues/137)**
+    **Fixes [#138](https://github.com/stones2stars/S2S/issues/138)**
+- Fix 5 City-AI logic bugs (agent-found, batch 2b) (flabbert)
+    **Fixes [#58](https://github.com/stones2stars/S2S/issues/58)**
+    **Fixes [#65](https://github.com/stones2stars/S2S/issues/65)**
+    **Fixes [#67](https://github.com/stones2stars/S2S/issues/67)**
+    **Fixes [#69](https://github.com/stones2stars/S2S/issues/69)**
+    **Fixes [#70](https://github.com/stones2stars/S2S/issues/70)**
+- Fix 7 Unit-AI logic bugs (agent-found, batch 2a) (flabbert)
+    **Fixes [#49](https://github.com/stones2stars/S2S/issues/49)**
+    **Fixes [#51](https://github.com/stones2stars/S2S/issues/51)**
+    **Fixes [#52](https://github.com/stones2stars/S2S/issues/52)**
+    **Fixes [#53](https://github.com/stones2stars/S2S/issues/53)**
+    **Fixes [#54](https://github.com/stones2stars/S2S/issues/54)**
+    **Fixes [#55](https://github.com/stones2stars/S2S/issues/55)**
+    **Fixes [#56](https://github.com/stones2stars/S2S/issues/56)**
+- Fix 10 crash / null-deref / data-corruption bugs (agent-found, multi-line) (flabbert)
+    **Fixes [#75](https://github.com/stones2stars/S2S/issues/75)**
+    **Fixes [#73](https://github.com/stones2stars/S2S/issues/73)**
+    **Fixes [#80](https://github.com/stones2stars/S2S/issues/80)**
+    **Fixes [#63](https://github.com/stones2stars/S2S/issues/63)**
+    **Fixes [#93](https://github.com/stones2stars/S2S/issues/93)**
+    **Fixes [#94](https://github.com/stones2stars/S2S/issues/94)**
+    **Fixes [#104](https://github.com/stones2stars/S2S/issues/104)**
+    **Fixes [#110](https://github.com/stones2stars/S2S/issues/110)**
+    **Fixes [#111](https://github.com/stones2stars/S2S/issues/111)**
+    **Fixes [#112](https://github.com/stones2stars/S2S/issues/112)**
+- Merge pull request [#141](https://github.com/stones2stars/S2S/issues/141) from Stones2Stars/fix/agent-found-oneliners (flabbert)
+- Drop the getExtraFreedomFighters change ([#118](https://github.com/stones2stars/S2S/issues/118)) — ambiguous intent, no callers (flabbert)
+- Merge pull request [#96](https://github.com/stones2stars/S2S/issues/96) from Stones2Stars/docs/import-c2c-community-docs (flabbert)
+- Fix 15 one-liner correctness bugs from the agent-found review (flabbert)
+    **Fixes [#50](https://github.com/stones2stars/S2S/issues/50)**
+    **Fixes [#74](https://github.com/stones2stars/S2S/issues/74)**
+    **Fixes [#76](https://github.com/stones2stars/S2S/issues/76)**
+    **Fixes [#82](https://github.com/stones2stars/S2S/issues/82)**
+    **Fixes [#90](https://github.com/stones2stars/S2S/issues/90)**
+    **Fixes [#98](https://github.com/stones2stars/S2S/issues/98)**
+    **Fixes [#101](https://github.com/stones2stars/S2S/issues/101)**
+    **Fixes [#100](https://github.com/stones2stars/S2S/issues/100)**
+    **Fixes [#106](https://github.com/stones2stars/S2S/issues/106)**
+    **Fixes [#115](https://github.com/stones2stars/S2S/issues/115)**
+    **Fixes [#118](https://github.com/stones2stars/S2S/issues/118)**
+    **Fixes [#135](https://github.com/stones2stars/S2S/issues/135)**
+    **Fixes [#131](https://github.com/stones2stars/S2S/issues/131)**
+    **Fixes [#127](https://github.com/stones2stars/S2S/issues/127)**
+    **Fixes [#126](https://github.com/stones2stars/S2S/issues/126)**
+- docs: import C2C community modding + player docs for review (flabbert)
+
 ## v1.BETA.123 - 2026-06-04
 ### Docs
 - finish case rename (banana -> docs) and fix references(flabbert)
