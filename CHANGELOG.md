@@ -1,5 +1,62 @@
 # CHANGELOG
 
+## v1.BETA.192 - 2026-06-05
+
+### All Changes
+- Merge pull request [#176](https://github.com/stones2stars/S2S/issues/176) from Stones2Stars/fix/153-conquest-occupation-anarchy (flabbert)
+- Merge pull request [#174](https://github.com/stones2stars/S2S/issues/174) from Stones2Stars/fix/agent-89-chooseelection (flabbert)
+- Merge pull request [#173](https://github.com/stones2stars/S2S/issues/173) from Stones2Stars/fix/agent-tier3-cvplayerai (flabbert)
+- Merge pull request [#172](https://github.com/stones2stars/S2S/issues/172) from Stones2Stars/fix/agent-tier3-cvplayer (flabbert)
+- Merge pull request [#171](https://github.com/stones2stars/S2S/issues/171) from Stones2Stars/fix/agent-tier3-selgroup (flabbert)
+- Merge pull request [#170](https://github.com/stones2stars/S2S/issues/170) from Stones2Stars/fix/agent-tier3-cvplot (flabbert)
+- Cut conquest occupation anarchy to ~1/5 ([#153](https://github.com/stones2stars/S2S/issues/153)) (flabbert)
+- Merge pull request [#169](https://github.com/stones2stars/S2S/issues/169) from Stones2Stars/fix/agent-97-research-cost (flabbert)
+- Merge pull request [#175](https://github.com/stones2stars/S2S/issues/175) from Stones2Stars/docs/dead-code-xml-pass-plan (flabbert)
+- Add plan for the dead-code / dead-XML removal pass (flabbert)
+- Merge pull request [#167](https://github.com/stones2stars/S2S/issues/167) from Stones2Stars/fix/agent-tier2-cvplayer (flabbert)
+- Merge pull request [#168](https://github.com/stones2stars/S2S/issues/168) from Stones2Stars/fix/agent-99-corp-hq (flabbert)
+- Fix shadowed vote and wrong vote-outcome index in AI_chooseElection ([#89](https://github.com/stones2stars/S2S/issues/89)) (flabbert)
+    **Fixes [#89](https://github.com/stones2stars/S2S/issues/89)**
+- Tier-3 AI decision fixes in CvPlayerAI ([#121](https://github.com/stones2stars/S2S/issues/121), [#124](https://github.com/stones2stars/S2S/issues/124), [#128](https://github.com/stones2stars/S2S/issues/128), [#129](https://github.com/stones2stars/S2S/issues/129), [#132](https://github.com/stones2stars/S2S/issues/132)) (flabbert)
+    **Fixes [#121](https://github.com/stones2stars/S2S/issues/121)**
+    **Fixes [#124](https://github.com/stones2stars/S2S/issues/124)**
+    **Fixes [#128](https://github.com/stones2stars/S2S/issues/128)**
+    **Fixes [#129](https://github.com/stones2stars/S2S/issues/129)**
+    **Fixes [#132](https://github.com/stones2stars/S2S/issues/132)**
+- Tier-3 fixes in CvPlayer: corp trigger validity and resolution master skip ([#113](https://github.com/stones2stars/S2S/issues/113), [#120](https://github.com/stones2stars/S2S/issues/120)) (flabbert)
+    **Fixes [#113](https://github.com/stones2stars/S2S/issues/113)**
+    **Fixes [#120](https://github.com/stones2stars/S2S/issues/120)**
+- Tier-3 fixes in CvSelectionGroup: shadow-unit pairing and pillage tiering ([#86](https://github.com/stones2stars/S2S/issues/86), [#87](https://github.com/stones2stars/S2S/issues/87)) (flabbert)
+    **Fixes [#86](https://github.com/stones2stars/S2S/issues/86)**
+    **Fixes [#87](https://github.com/stones2stars/S2S/issues/87)**
+- Tier-3 correctness fixes in CvPlot ([#77](https://github.com/stones2stars/S2S/issues/77), [#79](https://github.com/stones2stars/S2S/issues/79), [#81](https://github.com/stones2stars/S2S/issues/81)) (flabbert)
+    **Fixes [#77](https://github.com/stones2stars/S2S/issues/77)**
+    **Fixes [#79](https://github.com/stones2stars/S2S/issues/79)**
+    **Fixes [#81](https://github.com/stones2stars/S2S/issues/81)**
+- Add cutting-edge discount instead of overwriting it for AI in getResearchCost ([#97](https://github.com/stones2stars/S2S/issues/97)) (flabbert)
+    **Fixes [#97](https://github.com/stones2stars/S2S/issues/97)**
+- Fix wrong player index in doHeadquarters team-scoring loop ([#99](https://github.com/stones2stars/S2S/issues/99)) (flabbert)
+    **Fixes [#99](https://github.com/stones2stars/S2S/issues/99)**
+- Tier-2 correctness fixes in CvPlayer ([#107](https://github.com/stones2stars/S2S/issues/107), [#109](https://github.com/stones2stars/S2S/issues/109), [#114](https://github.com/stones2stars/S2S/issues/114), [#116](https://github.com/stones2stars/S2S/issues/116), [#117](https://github.com/stones2stars/S2S/issues/117)) (flabbert)
+    **Fixes [#107](https://github.com/stones2stars/S2S/issues/107)**
+    **Fixes [#109](https://github.com/stones2stars/S2S/issues/109)**
+    **Fixes [#114](https://github.com/stones2stars/S2S/issues/114)**
+    **Fixes [#116](https://github.com/stones2stars/S2S/issues/116)**
+    **Fixes [#117](https://github.com/stones2stars/S2S/issues/117)**
+- Merge pull request [#164](https://github.com/stones2stars/S2S/issues/164) from Stones2Stars/fix/agent-158-diplo-equal (flabbert)
+- Merge pull request [#163](https://github.com/stones2stars/S2S/issues/163) from Stones2Stars/fix/agent-mapgen-159-160 (flabbert)
+- Merge pull request [#165](https://github.com/stones2stars/S2S/issues/165) from Stones2Stars/fix/agent-161-conscript (flabbert)
+- Merge pull request [#166](https://github.com/stones2stars/S2S/issues/166) from Stones2Stars/fix/agent-162-assimilate-capital (flabbert)
+- Guard rebel capital in assimilateHandler before war-odds ([#162](https://github.com/stones2stars/S2S/issues/162)) (flabbert)
+    **Fixes [#162](https://github.com/stones2stars/S2S/issues/162)**
+- Guard getConscriptUnit() in calculatePotentialConscriptUnit ([#161](https://github.com/stones2stars/S2S/issues/161)) (flabbert)
+    **Fixes [#161](https://github.com/stones2stars/S2S/issues/161)**
+- Fix inverted equal-power filter in CvDiplomacy.filterUserResponse ([#158](https://github.com/stones2stars/S2S/issues/158)) (flabbert)
+    **Fixes [#158](https://github.com/stones2stars/S2S/issues/158)**
+- Fix Y-axis split guards and dead strip clamp in fractal map gen ([#159](https://github.com/stones2stars/S2S/issues/159), [#160](https://github.com/stones2stars/S2S/issues/160)) (flabbert)
+    **Fixes [#159](https://github.com/stones2stars/S2S/issues/159)**
+    **Fixes [#160](https://github.com/stones2stars/S2S/issues/160)**
+
 ## v1.BETA.163 - 2026-06-05
 ### Ci
 - only run AppVeyor commit builds on main and release(flabbert)
