@@ -1,5 +1,34 @@
 # CHANGELOG
 
+## v1.BETA.235 - 2026-06-08
+### Docs
+- reference note for constructibility/prereq system + [PERF/reqmodel] tag + FASSERT/FinalRelease fact ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **plans:** record help-text clusters 3 + documented exceptions ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **plans:** record status-aware renderer + cluster 2 ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **plans:** record help-text migration cluster 1 ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+### Refactor
+- **prereq:** model-driven InCity-buildings + civic requirement help ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **prereq:** status-aware model requirement renderer + building/bonus clusters ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **prereq:** FinalRelease-visible model-fidelity logging, not asserts ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **prereq:** model-driven vicinity requirement help text ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **prereq:** complete building requirement-model GOM coverage ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **prereq:** unit train-requirement model + index migration ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+- **prereq:** unified construction-requirement model ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
+
+### All Changes
+- Merge pull request [#315](https://github.com/stones2stars/S2S/issues/315) from Stones2Stars/refactor/195-phase2-unified-prereq-model (flabbert)
+- docs: reference note for constructibility/prereq system + [PERF/reqmodel] tag + FASSERT/FinalRelease fact ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **plans:** record help-text clusters 3 + documented exceptions ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **prereq:** model-driven InCity-buildings + civic requirement help ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **plans:** record status-aware renderer + cluster 2 ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **prereq:** status-aware model requirement renderer + building/bonus clusters ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **prereq:** FinalRelease-visible model-fidelity logging, not asserts ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **plans:** record help-text migration cluster 1 ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **prereq:** model-driven vicinity requirement help text ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **prereq:** complete building requirement-model GOM coverage ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **prereq:** unit train-requirement model + index migration ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+- **prereq:** unified construction-requirement model ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2) (flabbert)
+
 ## v1.BETA.222 - 2026-06-08
 ### Docs
 - mirror sea-AI + bug-hunt knowledge into the repo; mandate in-repo docs(flabbert)
