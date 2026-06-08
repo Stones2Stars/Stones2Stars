@@ -1,5 +1,65 @@
 # CHANGELOG
 
+## v1.BETA.222 - 2026-06-08
+### Docs
+- mirror sea-AI + bug-hunt knowledge into the repo; mandate in-repo docs(flabbert)
+- **agents:** hard rule — never read .vcxproj for build facts (they're dead)(flabbert)
+- **plans:** AI architecture north-star — unifying frame for the AI/data rework(flabbert)
+- **sea-ai:** link the AI_refreshExploreRange spin root cause to issue [#189](https://github.com/stones2stars/S2S/issues/189)(flabbert)
+### Features
+- building->improvement yield bonuses + AI worker stranded-city fixes(flabbert)
+### Performance Improvements
+- **cabv:** static enabler reverse-index for constructibility ([#195](https://github.com/stones2stars/S2S/issues/195))(flabbert)
+- **cityAI:** memoize building constructible-set + derived-data repository foundation(flabbert)
+- **instrumentation:** CvGame::doTurn phase scopes + cabvset diag + creep tool(flabbert)
+### Refactor
+- **xml-loading:** declarative loading foundation, bool-list flattening, dead-code removal(flabbert)
+    **Fixes [#194](https://github.com/stones2stars/S2S/issues/194)**
+
+### All Changes
+- Merge pull request [#314](https://github.com/stones2stars/S2S/issues/314) from Stones2Stars/perf/195-constructibility-enabler-index (flabbert)
+- **cabv:** static enabler reverse-index for constructibility ([#195](https://github.com/stones2stars/S2S/issues/195)) (flabbert)
+- Merge pull request [#313](https://github.com/stones2stars/S2S/issues/313) from Stones2Stars/refactor/declarative-xml-loading (flabbert)
+- **xml-loading:** declarative loading foundation, bool-list flattening, dead-code removal (flabbert)
+    **Fixes [#194](https://github.com/stones2stars/S2S/issues/194)**
+- **plans:** AI architecture north-star — unifying frame for the AI/data rework (flabbert)
+- Merge pull request [#193](https://github.com/stones2stars/S2S/issues/193) from Stones2Stars/perf/turn-instrumentation-and-creep-tool (flabbert)
+- **agents:** hard rule — never read .vcxproj for build facts (they're dead) (flabbert)
+- **instrumentation:** CvGame::doTurn phase scopes + cabvset diag + creep tool (flabbert)
+- Merge pull request [#192](https://github.com/stones2stars/S2S/issues/192) from Stones2Stars/perf/cabv-memoization-and-repo-foundation (flabbert)
+- **cityAI:** memoize building constructible-set + derived-data repository foundation (flabbert)
+- Merge pull request [#190](https://github.com/stones2stars/S2S/issues/190) from Stones2Stars/feat/building-improvement-yields-and-worker-stranded-fixes (flabbert)
+- feat: building->improvement yield bonuses + AI worker stranded-city fixes (flabbert)
+- Merge pull request [#188](https://github.com/stones2stars/S2S/issues/188) from Stones2Stars/fix/auto-hunt-sea-leaves-borders (flabbert)
+- **sea-ai:** link the AI_refreshExploreRange spin root cause to issue [#189](https://github.com/stones2stars/S2S/issues/189) (flabbert)
+- seaExplore hysteresis + docs; detectSpin; [HAI] taxonomy; git-workflow rule ([#187](https://github.com/stones2stars/S2S/issues/187)) (flabbert)
+    **Fixes [#187](https://github.com/stones2stars/S2S/issues/187)**
+- edits to auto sea hunt (flabbert)
+- Auto-hunt sea units leave borders to engage and explore (autoHuntMove) (flabbert)
+- Merge pull request [#183](https://github.com/stones2stars/S2S/issues/183) from Stones2Stars/docs/mirror-knowledge-and-sea-ai (flabbert)
+- docs: mirror sea-AI + bug-hunt knowledge into the repo; mandate in-repo docs (flabbert)
+- Merge pull request [#182](https://github.com/stones2stars/S2S/issues/182) from Stones2Stars/feature/sea-attack-relax-and-logging (flabbert)
+- Merge pull request [#181](https://github.com/stones2stars/S2S/issues/181) from Stones2Stars/fix/lowprio-engine-guards (flabbert)
+- Merge pull request [#180](https://github.com/stones2stars/S2S/issues/180) from Stones2Stars/fix/lowprio-88-attackodds-bwin (flabbert)
+- Merge pull request [#179](https://github.com/stones2stars/S2S/issues/179) from Stones2Stars/fix/lowprio-cvgame (flabbert)
+- Merge pull request [#178](https://github.com/stones2stars/S2S/issues/178) from Stones2Stars/fix/lowprio-cvcity (flabbert)
+- Sea AI: let attack-sea pursue enemies beyond own waters + log the sea cascade (flabbert)
+- Low-priority engine guards: UAF, independent wrap, vassal arg, project cost, null capital ([#78](https://github.com/stones2stars/S2S/issues/78), [#95](https://github.com/stones2stars/S2S/issues/95), [#92](https://github.com/stones2stars/S2S/issues/92), [#108](https://github.com/stones2stars/S2S/issues/108), [#133](https://github.com/stones2stars/S2S/issues/133)) (flabbert)
+    **Fixes [#78](https://github.com/stones2stars/S2S/issues/78)**
+    **Fixes [#92](https://github.com/stones2stars/S2S/issues/92)**
+    **Fixes [#95](https://github.com/stones2stars/S2S/issues/95)**
+    **Fixes [#108](https://github.com/stones2stars/S2S/issues/108)**
+    **Fixes [#133](https://github.com/stones2stars/S2S/issues/133)**
+- Write *bWin in the no-attacker branch of AI_attackOdds; init caller ([#88](https://github.com/stones2stars/S2S/issues/88)) (flabbert)
+    **Fixes [#88](https://github.com/stones2stars/S2S/issues/88)**
+- Guard divide-by-zero / NaN in flexible difficulty and win-for-losing ([#102](https://github.com/stones2stars/S2S/issues/102), [#103](https://github.com/stones2stars/S2S/issues/103)) (flabbert)
+    **Fixes [#102](https://github.com/stones2stars/S2S/issues/102)**
+    **Fixes [#103](https://github.com/stones2stars/S2S/issues/103)**
+- Low-priority CvCity fixes: health diff out-params, culture-timer assert, dead loop ([#59](https://github.com/stones2stars/S2S/issues/59), [#60](https://github.com/stones2stars/S2S/issues/60), [#64](https://github.com/stones2stars/S2S/issues/64)) (flabbert)
+    **Fixes [#59](https://github.com/stones2stars/S2S/issues/59)**
+    **Fixes [#60](https://github.com/stones2stars/S2S/issues/60)**
+    **Fixes [#64](https://github.com/stones2stars/S2S/issues/64)**
+
 ## v1.BETA.192 - 2026-06-05
 
 ### All Changes

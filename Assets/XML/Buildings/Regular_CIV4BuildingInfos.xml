@@ -1799,10 +1799,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<PrereqTech>TECH_CAVE_DWELLING</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CAVES</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CAVES</PrereqFeature>
 			</PrereqOrFeature>
 			<ReplacementBuildings>
 			    <BuildingType>BUILDING_PC_BLUEFISH_CAVES</BuildingType>
@@ -3080,10 +3077,7 @@
 				<VicinityBonus>BONUS_SUGAR</VicinityBonus>
 			</PrereqRawVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>146</iCost>
 			<iCostSizeModifier>3</iCostSizeModifier>
@@ -3123,10 +3117,7 @@
 				<Bonus>BONUS_MARBLE</Bonus>
 			</PrereqBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_REPUBLIC</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_REPUBLIC</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>234</iCost>
@@ -3222,6 +3213,17 @@
 			<Type>BUILDING_AGROFOREST</Type>
 			<Description>TXT_KEY_BUILDING_AGROFOREST</Description>
 			<Civilopedia>TXT_KEY_BUILDING_AGROFOREST_PEDIA</Civilopedia>
+			<!-- Yield-parity (wood line): replaces Lumber Mill + Lumber Camp; carries their Lumbermill bonus forward and gives more. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>3</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AGROFOREST</ArtDefineTag>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -3807,10 +3809,7 @@
 				<BuildingType>BUILDING_INTELLIGENCE_AGENCY</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TECHNOCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_TECHNOCRACY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>3975</iCost>
@@ -4174,10 +4173,7 @@
 				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
 			</MapCategoryTypes>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STRONGMAN</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_STRONGMAN</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>10</iCost>
@@ -4221,10 +4217,7 @@
 				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
 			</MapCategoryTypes>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STRONGMAN</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_STRONGMAN</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>10</iCost>
@@ -6875,10 +6868,7 @@
 			<iCostMaterialsModifier>1</iCostMaterialsModifier>
 			<iCostComplexityModifier>1</iCostComplexityModifier>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_ICE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_ICE</PrereqFeature>
 			</PrereqOrFeature>
 			<CommerceChanges>
 				<iCommerce>5</iCommerce>
@@ -6954,42 +6944,15 @@
 			<FreeBuilding>BUILDING_ANT_CATCHER</FreeBuilding>
 			<PrereqTech>TECH_SCAVENGING</PrereqTech>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ROCKY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_BADLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PLAINS</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ROCKY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BADLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<ObsoleteTech>TECH_CITY_PLANNING</ObsoleteTech>
 			<iCost>30</iCost>
@@ -7813,46 +7776,16 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_FOOD_MANUFACTURING_DISTRICT</ObsoletesToBuilding>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ROCKY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_BADLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PLAINS</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ROCKY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BADLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>132</iCost>
 			<iCostSizeModifier>3</iCostSizeModifier>
@@ -8229,10 +8162,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_GUILDS</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_APPRENTICESHIP</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>332</iCost>
@@ -9074,10 +9004,7 @@
 			<iCostMaterialsModifier>1</iCostMaterialsModifier>
 			<iCostComplexityModifier>2</iCostComplexityModifier>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_ICE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_ICE</PrereqFeature>
 			</PrereqOrFeature>
 			<CommerceChanges>
 				<iCommerce>2</iCommerce>
@@ -9931,10 +9858,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_FREE_ARTISTRY</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_BOURGEOIS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_BOURGEOIS</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>425</iCost>
@@ -11477,22 +11401,10 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PROPHETS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STATE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_RELIGIOUS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PROPHETS</PrereqCivic>
+				<PrereqCivic>CIVIC_STATE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_RELIGIOUS</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>168</iCost>
@@ -11695,10 +11607,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_MILITARY_ROBOTICS</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ROBOTIC</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_ROBOTIC</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>2865</iCost>
@@ -12569,18 +12478,9 @@
 				<BuildingType>BUILDING_BACTERIUM_BIOFORGE</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_LANDFILLS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_IMPORTATION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_TO_ENERGY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_LANDFILLS</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_IMPORTATION</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_TO_ENERGY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>2865</iCost>
@@ -12845,6 +12745,17 @@
 			<Type>BUILDING_BAKERY</Type>
 			<Description>TXT_KEY_BUILDING_BAKERY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_BAKERY_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Bakery makes Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BAKERY</ArtDefineTag>
 			<ConstructSound>AS2D_BUILD_GRANARY</ConstructSound>
@@ -13150,10 +13061,7 @@
 			</TechTypes>
 			<Bonus>BONUS_BAMBOO</Bonus>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_BAMBOO</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_BAMBOO</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_TANNERY</BuildingType>
@@ -13262,10 +13170,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AGROFOREST</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_BAMBOO</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_BAMBOO</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>20</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -13932,10 +13837,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_ATHLETIC_MEGACOMPLEX</ObsoletesToBuilding>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>1605</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -15250,22 +15152,10 @@
 			<PrereqTech>TECH_POISON_CRAFTING</PrereqTech>
 			<RawVicinityBonus>BONUS_GRAPES</RawVicinityBonus>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
 			</PrereqOrFeature>
 			<ObsoleteTech>TECH_NOVUS_CHEMISTRY</ObsoleteTech>
 			<ReplacementBuildings>
@@ -17282,14 +17172,8 @@
 				<BuildingType>BUILDING_BLOOD_DANCE</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ANARCHISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CHIEFDOM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_ANARCHISM</PrereqCivic>
+				<PrereqCivic>CIVIC_CHIEFDOM</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>62</iCost>
@@ -18302,10 +18186,7 @@
 				<BuildingType>BUILDING_LIBRARY</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CASTE_SYSTEM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CASTE_SYSTEM</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>200</iCost>
@@ -18365,10 +18246,7 @@
 				<BuildingType>BUILDING_CHARCOAL_BURNER</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_OBEDIENCE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_OBEDIENCE</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>68</iCost>
@@ -18800,10 +18678,7 @@
 			</PrereqVicinityBonuses>
 			<iMinLatitude>40</iMinLatitude>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_AQUARIUM</BuildingType>
@@ -18955,18 +18830,9 @@
 			<VicinityBonus>BONUS_DEER</VicinityBonus>
 			<iMinLatitude>40</iMinLatitude>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TUNDRA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_ZOO</BuildingType>
@@ -19021,10 +18887,7 @@
 				<VicinityBonus>BONUS_RABBIT</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_ZOO</BuildingType>
@@ -19687,18 +19550,9 @@
 			</PrereqVicinityBonuses>
 			<iMinLatitude>40</iMinLatitude>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TUNDRA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_ZOO</BuildingType>
@@ -19756,10 +19610,7 @@
 			</PrereqVicinityBonuses>
 			<iMinLatitude>40</iMinLatitude>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_AQUARIUM</BuildingType>
@@ -21032,10 +20883,7 @@
 			<PrereqTech>TECH_HUNTING</PrereqTech>
 			<Bonus>BONUS_BISON</Bonus>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_HILL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_HILL</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HERD_BISON</BuildingType>
@@ -21072,22 +20920,10 @@
 			<PrereqTech>TECH_SCAVENGING</PrereqTech>
 			<ObsoleteTech>TECH_CITY_PLANNING</ObsoleteTech>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -21530,10 +21366,7 @@
 				<iCommerce>1</iCommerce>
 			</CommerceChanges>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CAVES</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CAVES</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqNotInCityBuildings>
 				<BuildingType>BUILDING_BURIAL_TRADITION_EARTH</BuildingType>
@@ -22228,10 +22061,7 @@
 			<bPrereqPower>1</bPrereqPower>
 			<Bonus>BONUS_STEEL_WARES</Bonus>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<ObsoleteTech>TECH_WORMHOLE_HIVEMIND</ObsoleteTech>
 			<ReplacementBuildings>
@@ -24129,14 +23959,8 @@
 				<VicinityBonus>BONUS_BEAVERS</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HUNTERS_CAMP</BuildingType>
@@ -24217,6 +24041,17 @@
 			</EnabledCivilizationTypes>
 			<Description>TXT_KEY_BUILDING_CARPENTER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CARPENTER_PEDIA</Civilopedia>
+			<!-- Yield-parity: Carpenter makes Lumbermills worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CARPENTER</ArtDefineTag>
 			<MapCategoryTypes>
@@ -25118,10 +24953,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_PETROGLYPHS</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CAVES</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CAVES</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_CLAY_PIT</BuildingType>
@@ -26085,28 +25917,13 @@
 				<BuildingType>BUILDING_OFFICIUM</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CORPORATISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_MARKET</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_GREEN</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_REGULATED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CORPORATISM</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_MARKET</PrereqCivic>
+				<PrereqCivic>CIVIC_GREEN</PrereqCivic>
+				<PrereqCivic>CIVIC_REGULATED</PrereqCivic>
 			</PrereqOrCivics>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PRIVATIZED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PRIVATIZED</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>710</iCost>
@@ -26148,14 +25965,8 @@
 				<BuildingType>BUILDING_KINGS_COUNCIL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>368</iCost>
@@ -26217,14 +26028,8 @@
 				<BuildingType>BUILDING_KINGS_COUNCIL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>368</iCost>
@@ -26243,6 +26048,17 @@
 			<Type>BUILDING_CHARCOAL_BURNER</Type>
 			<Description>TXT_KEY_BUILDING_CHARCOAL_BURNER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CHARCOAL_BURNER_PEDIA</Civilopedia>
+			<!-- Yield-parity (wood line): Charcoal Burner makes Lumbermills worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CHARCOAL_BURNER</ArtDefineTag>
 			<MapCategoryTypes>
@@ -26382,10 +26198,7 @@
 				<BuildingType>BUILDING_MILITARY_BASE</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TOTALITARIANISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_TOTALITARIANISM</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>990</iCost>
@@ -27219,10 +27032,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_CHIEFDOM</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CHIEFDOM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CHIEFDOM</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>86</iCost>
@@ -27441,10 +27251,7 @@
 			<ObsoletesToBuilding>BUILDING_FARMSCRAPER_I</ObsoletesToBuilding>
 			<bRiver>1</bRiver>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>252</iCost>
 			<iCostSizeModifier>1</iCostSizeModifier>
@@ -27473,10 +27280,7 @@
 				<VicinityBonus>BONUS_RABBIT</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_ANIMAL_SNARE_TRAPS</BuildingType>
@@ -28005,10 +27809,7 @@
 				<Bonus>BONUS_CEMENT</Bonus>
 			</PrereqBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ANTIRELIGION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_ANTIRELIGION</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>870</iCost>
@@ -28081,14 +27882,8 @@
 				<BuildingType>BUILDING_SHOPPING_DISTRICT</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_RELIGIOUS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_RELIGIOUS</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>300</iCost>
@@ -29037,10 +28832,7 @@
 				<Bonus>BONUS_BOOKS</Bonus>
 			</PrereqBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_BUREAUCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_BUREAUCRACY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>300</iCost>
@@ -30514,10 +30306,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_COMMUNISM</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STATE_OWNED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_STATE_OWNED</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>990</iCost>
@@ -31209,10 +30998,7 @@
 			<FreeBuilding>BUILDING_COMMUNITY_DISCUSSIONS</FreeBuilding>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_NATIVE_LANGUAGE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_NATIVE_LANGUAGE</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>20</iCost>
@@ -31337,10 +31123,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_ECOLOGY</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ORGANIC_FARMING</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_ORGANIC_FARMING</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>1345</iCost>
@@ -32485,6 +32268,17 @@
 			<Type>BUILDING_COOPER</Type>
 			<Description>TXT_KEY_BUILDING_COOPER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COOPER_PEDIA</Civilopedia>
+			<!-- Yield-parity (wood line): Cooper works timber, making Lumbermills worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COOPER</ArtDefineTag>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -35126,10 +34920,7 @@
 				<BuildingType>BUILDING_LIBRARY</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ORAL_TRADITION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_ORAL_TRADITION</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>20</iCost>
@@ -35860,10 +35651,7 @@
 			<PrereqTech>TECH_POISON_CRAFTING</PrereqTech>
 			<RawVicinityBonus>BONUS_PRIME_TIMBER</RawVicinityBonus>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<ObsoleteTech>TECH_NOVUS_CHEMISTRY</ObsoleteTech>
 			<ReplacementBuildings>
@@ -36374,10 +36162,7 @@
 				<BuildingType>BUILDING_PARK_ARCOLOGY</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ECO_FRIENDLY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_ECO_FRIENDLY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>5905</iCost>
@@ -36419,22 +36204,10 @@
 				<BuildingType>BUILDING_STATUE_OF_LIBERTY</BuildingType>
 			</PrereqNotInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DESPOTISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TOTALITARIANISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SUPERHUMAN</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DESPOTISM</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_TOTALITARIANISM</PrereqCivic>
+				<PrereqCivic>CIVIC_SUPERHUMAN</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>5455</iCost>
@@ -36908,22 +36681,10 @@
 				<VicinityBonus>BONUS_INDIGO</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>132</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -37787,10 +37548,7 @@
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<Bonus>BONUS_SCULPTURES</Bonus>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DESPOTISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DESPOTISM</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>184</iCost>
@@ -38182,10 +37940,7 @@
 				</PropertySource>
 			</PropertyManipulators>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DEMOCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DEMOCRACY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<bPrereqPower>1</bPrereqPower>
@@ -38746,10 +38501,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_MYSTICISM</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DIVINE_CULT</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DIVINE_CULT</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>98</iCost>
@@ -39177,6 +38929,17 @@
 			<Type>BUILDING_DONKEY_MILL</Type>
 			<Description>TXT_KEY_BUILDING_DONKEY_MILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_DONKEY_MILL_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Donkey Mill grinds grain, making Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DONKEY_MILL</ArtDefineTag>
 			<MapCategoryTypes>
@@ -39258,22 +39021,10 @@
 				<Bonus>BONUS_STEEL_WARES</Bonus>
 			</PrereqBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SALT_FLATS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DUNES</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SALT_FLATS</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DUNES</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_FACTORY</BuildingType>
@@ -39309,10 +39060,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_MILITARY_TRAINING</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CONSCRIPTION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CONSCRIPTION</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>216</iCost>
@@ -42598,14 +42346,8 @@
 			<iCostMaterialsModifier>1</iCostMaterialsModifier>
 			<iCostComplexityModifier>1</iCostComplexityModifier>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_HILL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_HILL</PrereqTerrain>
 			</PrereqOrTerrain>
 			<CommerceChanges>
 				<iCommerce>5</iCommerce>
@@ -45811,14 +45553,8 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_DECEPTION</PrereqTech>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PRIMITIVE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TRIBAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PRIMITIVE</PrereqCivic>
+				<PrereqCivic>CIVIC_TRIBAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>15</iCost>
@@ -46235,6 +45971,17 @@
 			<Type>BUILDING_FACTORY</Type>
 			<Description>TXT_KEY_BUILDING_FACTORY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FACTORY_PEDIA</Civilopedia>
+			<!-- Yield-parity: Factory makes Workshops worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
 			<ConstructSound>AS2D_BUILD_FACTORY</ConstructSound>
@@ -46524,10 +46271,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_ECONOMICS</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PRIVATE_OWNED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PRIVATE_OWNED</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>535</iCost>
@@ -46571,10 +46315,7 @@
 			<PrereqTech>TECH_FASCISM</PrereqTech>
 			<bNeedStateReligionInCity>1</bNeedStateReligionInCity>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_INQUISITORIAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_INQUISITORIAL</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>990</iCost>
@@ -46626,22 +46367,10 @@
 				<BuildingType>BUILDING_SHOPPING_DISTRICT</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_AGRICULTURAL_GUILDS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PRIVATE_OWNED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_INCENTIVIZED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ORGANIC_FARMING</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_AGRICULTURAL_GUILDS</PrereqCivic>
+				<PrereqCivic>CIVIC_PRIVATE_OWNED</PrereqCivic>
+				<PrereqCivic>CIVIC_INCENTIVIZED</PrereqCivic>
+				<PrereqCivic>CIVIC_ORGANIC_FARMING</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>332</iCost>
@@ -48043,10 +47772,7 @@
 				<BuildingType>BUILDING_SHOPPING_DISTRICT</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PROLETARIAT</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PROLETARIAT</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>234</iCost>
@@ -50173,6 +49899,18 @@
 			<Type>BUILDING_FOOD_MANUFACTURING_DISTRICT</Type>
 			<Description>TXT_KEY_BUILDING_FOOD_MANUFACTURING_DISTRICT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FOOD_MANUFACTURING_DISTRICT_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): terminal of the grain-mill chain; replaces Modern Mill,
+			     so it carries that bonus forward and gives more (higher tier = more). -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>6</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FOOD_MANUFACTURING_DISTRICT</ArtDefineTag>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -50713,6 +50451,17 @@
 				</Has>
 			</NewCityFree>
 			<iHealth>-1</iHealth>
+			<!-- Sample: Forge grants +1 production to Mines worked by this city (building->improvement yield). Adjust/remove as desired. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<YieldModifiers>
 				<iYield>0</iYield>
 				<iYield>15</iYield>
@@ -51436,10 +51185,7 @@
 				<Bonus>BONUS_PAPER</Bonus>
 			</PrereqBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PHILANTHROPIC</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PHILANTHROPIC</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>332</iCost>
@@ -51474,6 +51220,17 @@
 			<Type>BUILDING_FOUNDRY</Type>
 			<Description>TXT_KEY_BUILDING_FOUNDRY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FOUNDRY_PEDIA</Civilopedia>
+			<!-- Yield-parity (mine line): replaces Forge; carries its Mine bonus forward and gives more. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FOUNDRY</ArtDefineTag>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
@@ -51771,10 +51528,7 @@
 				<BuildingType>BUILDING_OCEAN_ADMINISTRATION</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_MARKET</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_MARKET</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>535</iCost>
@@ -52269,6 +52023,17 @@
 			<Type>BUILDING_FURNITURE_MAKER</Type>
 			<Description>TXT_KEY_BUILDING_FURNITURE_MAKER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FURNITURE_MAKER_PEDIA</Civilopedia>
+			<!-- Yield-parity (wood line): Furniture Maker makes Lumbermills worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FURNITURE_MAKER</ArtDefineTag>
 			<MapCategoryTypes>
@@ -52878,10 +52643,7 @@
 				<BuildingType>BUILDING_OCEAN_ADMINISTRATION</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_TO_SEA</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_TO_SEA</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>192</iCost>
@@ -52925,18 +52687,9 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_SANITATION</PrereqTech>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_LANDFILLS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_IMPORTATION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_TO_ENERGY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_LANDFILLS</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_IMPORTATION</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_TO_ENERGY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>270</iCost>
@@ -53009,10 +52762,7 @@
 			</PrereqInCityBuildings>
 			<iPrereqPopulation>7</iPrereqPopulation>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_OFF_PLANET_DUMPING</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_OFF_PLANET_DUMPING</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>4485</iCost>
@@ -53646,22 +53396,10 @@
 			<PrereqTech>TECH_SCAVENGING</PrereqTech>
 			<ObsoleteTech>TECH_CITY_PLANNING</ObsoleteTech>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -53716,6 +53454,17 @@
 			</EnabledCivilizationTypes>
 			<Description>TXT_KEY_BUILDING_GRAIN_GATHERER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_GRAIN_GATHERER_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Grain Gatherer makes Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GRAIN_GATHERER</ArtDefineTag>
 			<ConstructSound>AS2D_BUILD_COMMUNITY_GARDEN</ConstructSound>
@@ -53769,10 +53518,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AGROFOREST</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_VERY_TALL_GRASS</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_VERY_TALL_GRASS</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -53899,30 +53645,12 @@
 			<PrereqTech>TECH_GATHERING</PrereqTech>
 			<ObsoleteTech>TECH_RAPID_PROTOTYPING</ObsoleteTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_VOLCANO_ACTIVE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_VOLCANO_DORMANT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_FUJI</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_SOPKA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_KRAKATOA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_KILIMANJARO</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_VOLCANO_ACTIVE</PrereqFeature>
+				<PrereqFeature>FEATURE_VOLCANO_DORMANT</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_FUJI</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_SOPKA</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_KRAKATOA</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_KILIMANJARO</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -54052,26 +53780,11 @@
 				<BuildingType>BUILDING_AGROFOREST</BuildingType>
 			</ReplacementBuildings>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -54171,10 +53884,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AGROFOREST</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_SWAMP</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -54270,22 +53980,10 @@
 			<PrereqTech>TECH_SCAVENGING</PrereqTech>
 			<ObsoleteTech>TECH_CITY_PLANNING</ObsoleteTech>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -54337,26 +54035,11 @@
 			<FreeBuilding>BUILDING_STICK_GATHERER</FreeBuilding>
 			<PrereqTech>TECH_GATHERING</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<ObsoleteTech>TECH_CITY_PLANNING</ObsoleteTech>
 			<iCost>30</iCost>
@@ -54394,26 +54077,11 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AGROFOREST</ObsoletesToBuilding>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PLAINS</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>118</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -54482,10 +54150,7 @@
 			<FreeBuilding>BUILDING_VINE_GATHERER</FreeBuilding>
 			<PrereqTech>TECH_BINDING</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<ObsoleteTech>TECH_SENTIENT_EARTH</ObsoleteTech>
 			<ReplacementBuildings>
@@ -56216,10 +55881,7 @@
 				<VicinityBonus>BONUS_SHEEP</VicinityBonus>
 			</PrereqRawVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>98</iCost>
 			<iCostSizeModifier>2</iCostSizeModifier>
@@ -56790,6 +56452,17 @@
 			<Type>BUILDING_GRANARY</Type>
 			<Description>TXT_KEY_BUILDING_GRANARY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_GRANARY_PEDIA</Civilopedia>
+			<!-- Yield-parity: Granary makes Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
 			<ConstructSound>AS2D_BUILD_GRANARY</ConstructSound>
@@ -56867,10 +56540,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_FEUDALISM</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>310</iCost>
@@ -57366,10 +57036,7 @@
 			<ObsoletesToBuilding>BUILDING_FARMSCRAPER_I</ObsoletesToBuilding>
 			<bRiver>1</bRiver>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_CHINAMPA</BuildingType>
@@ -57890,18 +57557,9 @@
 			<iCostMaterialsModifier>1</iCostMaterialsModifier>
 			<iCostComplexityModifier>1</iCostComplexityModifier>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DUNES</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ROCKY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DUNES</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ROCKY</PrereqTerrain>
 			</PrereqOrTerrain>
 			<CommerceChanges>
 				<iCommerce>-10</iCommerce>
@@ -58465,10 +58123,7 @@
 				<BuildingType>BUILDING_METALS_MEGACOMPLEX</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_GUILDS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_GUILDS</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>332</iCost>
@@ -61341,26 +60996,11 @@
 				<Bonus>BONUS_SULPHUR</Bonus>
 			</PrereqBonuses>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DESPOTISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_NATIONALIST</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MERCANTILISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DESPOTISM</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
+				<PrereqCivic>CIVIC_NATIONALIST</PrereqCivic>
+				<PrereqCivic>CIVIC_MERCANTILISM</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>425</iCost>
@@ -61912,10 +61552,7 @@
 				<VicinityBonus>BONUS_BISON</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HUNTERS_CAMP</BuildingType>
@@ -64833,18 +64470,9 @@
 				<Bonus>BONUS_MARBLE</Bonus>
 			</PrereqBonuses>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FOLKLORE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DIVINE_CULT</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PROPHETS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_FOLKLORE</PrereqCivic>
+				<PrereqCivic>CIVIC_DIVINE_CULT</PrereqCivic>
+				<PrereqCivic>CIVIC_PROPHETS</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>132</iCost>
@@ -65210,10 +64838,7 @@
 				<Bonus>BONUS_BRICKS</Bonus>
 			</PrereqBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_HILL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_HILL</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>332</iCost>
 			<iCostSizeModifier>2</iCostSizeModifier>
@@ -65280,18 +64905,9 @@
 				<BuildingType>BUILDING_RECYCLING_CENTER</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_TO_ENERGY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_IMPORTATION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_LANDFILLS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_TO_ENERGY</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_IMPORTATION</PrereqCivic>
+				<PrereqCivic>CIVIC_LANDFILLS</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>1475</iCost>
@@ -66041,10 +65657,7 @@
 				</PropertySource>
 			</PropertyManipulators>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_INSTANT</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_INSTANT</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 		    <iHurryCostModifier>100</iHurryCostModifier>
@@ -66629,14 +66242,8 @@
 				<Bonus>BONUS_CEMENT</Bonus>
 			</PrereqBonuses>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_JUNTA</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MARTIAL_LAW</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_JUNTA</PrereqCivic>
+				<PrereqCivic>CIVIC_MARTIAL_LAW</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>990</iCost>
@@ -69433,10 +69040,7 @@
 			</ReplacementBuildings>
 			<Bonus>BONUS_BAMBOO</Bonus>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_HOTEL</BuildingType>
@@ -69945,14 +69549,8 @@
 				<BuildingType>BUILDING_PALACE</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>368</iCost>
@@ -70044,14 +69642,8 @@
 				<Bonus>BONUS_BRICKS</Bonus>
 			</PrereqBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HOUSING_PUEBLOS</BuildingType>
@@ -70066,10 +69658,7 @@
 				<BuildingType>BUILDING_LAUNCH_ARCOLOGY</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FOLKLORE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_FOLKLORE</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>153</iCost>
@@ -71764,10 +71353,7 @@
 				<BuildingType>BUILDING_UNIVERSITY</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CORPORATE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CORPORATE</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>455</iCost>
@@ -71922,10 +71508,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_NATUROPATHY</PrereqTech>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HEALERS_HUT</BuildingType>
@@ -72286,18 +71869,9 @@
 			<PrereqTech>TECH_COOKING</PrereqTech>
 			<Bonus>BONUS_LARD</Bonus>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TUNDRA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_LICHEN_GATHERER</BuildingType>
@@ -73504,6 +73078,17 @@
 			<Type>BUILDING_LUMBER_MILL</Type>
 			<Description>TXT_KEY_BUILDING_LUMBER_MILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_LUMBER_MILL_PEDIA</Civilopedia>
+			<!-- Yield-parity (wood line): Lumber Mill makes Lumbermills worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LUMBER_MILL</ArtDefineTag>
 			<MapCategoryTypes>
@@ -73562,6 +73147,17 @@
 			</EnabledCivilizationTypes>
 			<Description>TXT_KEY_BUILDING_LUMBER_CAMP</Description>
 			<Civilopedia>TXT_KEY_BUILDING_LUMBER_CAMP_PEDIA</Civilopedia>
+			<!-- Yield-parity (wood line): Lumber Camp makes Lumbermills worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LUMBER_CAMP</ArtDefineTag>
 			<MapCategoryTypes>
@@ -73574,26 +73170,11 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AGROFOREST</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>62</iCost>
 			<iCostSizeModifier>1</iCostSizeModifier>
@@ -74742,18 +74323,9 @@
 				<BuildingType>BUILDING_ANCIENT_CUSTOMS</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_COMMUNALISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_BARTER</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SUBSISTENCE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_COMMUNALISM</PrereqCivic>
+				<PrereqCivic>CIVIC_BARTER</PrereqCivic>
+				<PrereqCivic>CIVIC_SUBSISTENCE</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>25</iCost>
@@ -74792,14 +74364,8 @@
 				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
 			</MapCategoryTypes>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqTech>TECH_TRACKING</PrereqTech>
 			<ObsoleteTech>TECH_SEDENTARY_LIFESTYLE</ObsoleteTech>
@@ -74914,10 +74480,7 @@
 				<BuildingType>BUILDING_METALS_MEGACOMPLEX</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_VASSALAGE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_VASSALAGE</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>310</iCost>
@@ -75448,10 +75011,7 @@
 			</PrereqOrBuildings>
 			<PrereqTech>TECH_MILITARY_TRAINING</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MARTIAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MARTIAL</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>216</iCost>
@@ -75907,14 +75467,8 @@
 				<BuildingType>BUILDING_KINGS_COUNCIL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>368</iCost>
@@ -77481,10 +77035,7 @@
 				<BuildingType>BUILDING_MEGATOWER_OFFICE_LEVEL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CORPOR_NATION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CORPOR_NATION</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<bPrereqPower>1</bPrereqPower>
@@ -77503,40 +77054,16 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_AGRICULTURAL_ENGINEERING</PrereqTech>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PLAINS</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CORPORATE_OWNED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CORPORATE_OWNED</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>740</iCost>
@@ -79042,6 +78569,17 @@
 			<Type>BUILDING_METALS_MEGACOMPLEX</Type>
 			<Description>TXT_KEY_BUILDING_METALS_MEGACOMPLEX</Description>
 			<Civilopedia>TXT_KEY_BUILDING_METALS_MEGACOMPLEX_PEDIA</Civilopedia>
+			<!-- Yield-parity (mine line): terminal; replaces Forge/Foundry, carries Mine bonus forward and gives more. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>3</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_METALS_MEGACOMPLEX</ArtDefineTag>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -79384,18 +78922,9 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_ASTROGEOLOGY</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CRATER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_BARRINGER_CRATER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_NGORONGORO_CRATER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CRATER</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_BARRINGER_CRATER</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_NGORONGORO_CRATER</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_GEOLOGY_LAB</BuildingType>
@@ -80492,10 +80021,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_MILITARY_TRAINING</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MARTIAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MARTIAL</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<PrereqOrBuildings>
@@ -80634,10 +80160,7 @@
 				<BuildingType>BUILDING_MODERN_OFFICES</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MIND_CONTROL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MIND_CONTROL</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>5255</iCost>
@@ -82385,6 +81908,17 @@
 			<Type>BUILDING_MODERN_GRANARY</Type>
 			<Description>TXT_KEY_BUILDING_MODERN_GRANARY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_GRANARY_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): replaces Granary; carries its Farm bonus forward and gives more. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MODERN_GRANARY</ArtDefineTag>
 			<ConstructSound>AS2D_BUILD_GRANARY</ConstructSound>
@@ -82458,6 +81992,19 @@
 			<Type>BUILDING_MODERN_MILL</Type>
 			<Description>TXT_KEY_BUILDING_MODERN_MILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MODERN_MILL_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Modern Mill REPLACES the coexisting mid-tier mills
+			     (Watermill, Windmill, Donkey Mill, Oxen Mill = +4 food stacked), so it carries
+			     that cumulative forward and gives a bit more (higher tier = more). -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MODERN_MILL</ArtDefineTag>
 			<MapCategoryTypes>
@@ -82883,10 +82430,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PAPER_MONEY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PAPER_MONEY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>410</iCost>
@@ -83070,10 +82614,7 @@
 				<iCommerce>25</iCommerce>
 			</CommerceChanges>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_COSMIC_ENLIGHTENING</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_COSMIC_ENLIGHTENING</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 		    <iHurryCostModifier>100</iHurryCostModifier>
@@ -83803,10 +83344,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_ATHLETIC_MEGACOMPLEX</ObsoletesToBuilding>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>368</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -84607,14 +84145,8 @@
 				<VicinityBonus>BONUS_SHEEP</VicinityBonus>
 			</PrereqRawVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HUNTERS_CAMP</BuildingType>
@@ -84732,10 +84264,7 @@
 				<BuildingType>BUILDING_SHOPPING_DISTRICT</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PROPHETS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PROPHETS</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>168</iCost>
@@ -85656,10 +85185,7 @@
 				<VicinityBonus>BONUS_WALRUS</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HUNTERS_CAMP</BuildingType>
@@ -85772,10 +85298,7 @@
 				<BuildingType>BUILDING_ANCIENT_CUSTOMS</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TRIBAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_TRIBAL</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>80</iCost>
@@ -85969,10 +85492,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_AUYANTEPUI</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_AUYANTEPUI</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_SCIENTIST</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86089,10 +85609,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_BAIKAL</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_BAIKAL</PrereqFeature>
 			</PrereqOrFeature>
 			<bProvidesFreshWater>1</bProvidesFreshWater>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
@@ -86191,10 +85708,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_BARRINGER_CRATER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_BARRINGER_CRATER</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_SCIENTIST</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86273,10 +85787,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_BASALT_ORGAN</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_BASALT_ORGAN</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86363,10 +85874,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_DEAD_SEA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_DEAD_SEA</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86482,10 +85990,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_DEVILS_TABLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_DEVILS_TABLE</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86560,18 +86065,9 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_GREAT_BARRIER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_GREAT_BARRIER_REEF_BEACON</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_GREAT_BARRIER_REEF_LIGHTHOUSE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_GREAT_BARRIER</PrereqFeature>
+				<PrereqFeature>FEATURE_GREAT_BARRIER_REEF_BEACON</PrereqFeature>
+				<PrereqFeature>FEATURE_GREAT_BARRIER_REEF_LIGHTHOUSE</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_SCIENTIST</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86682,10 +86178,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_KILIMANJARO</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_KILIMANJARO</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86780,10 +86273,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_KRAKATOA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_KRAKATOA</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86878,10 +86368,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_EVEREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_EVEREST</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -86992,10 +86479,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_FUJI</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_FUJI</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_ARTIST</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87087,10 +86571,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_SINAI</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_SINAI</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87179,10 +86660,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_NGORONGORO_CRATER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_NGORONGORO_CRATER</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>10</iCost>
 			<iCostSizeModifier>1</iCostSizeModifier>
@@ -87293,10 +86771,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_NUKUORO</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_NUKUORO</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87372,10 +86847,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_PAMUKKALE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_PAMUKKALE</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87475,10 +86947,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_PRAVCICKA_BRANA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_PRAVCICKA_BRANA</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87579,10 +87048,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_SHARK_BAY</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_SHARK_BAY</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87694,10 +87160,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_SOPKA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_SOPKA</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87783,10 +87246,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_SUGARLOAF</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_SUGARLOAF</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -87850,10 +87310,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_ULURU</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_ULURU</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_PROPHET</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>4</iGreatPeopleRateChange>
@@ -87952,10 +87409,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<PrereqTech>TECH_LANGUAGE</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_VICTORIA_FALLS</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_VICTORIA_FALLS</PrereqFeature>
 			</PrereqOrFeature>
 			<GreatPeopleUnitType>UNIT_ARTIST</GreatPeopleUnitType>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -88257,10 +87711,7 @@
 				<BuildingType>BUILDING_C_L_NEANDERTHAL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CAVES</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CAVES</PrereqFeature>
 			</PrereqOrFeature>
 			<ObsoleteTech>TECH_SEDENTARY_LIFESTYLE</ObsoleteTech>
 			<iCost>10</iCost>
@@ -90040,14 +89491,8 @@
 				<Bonus>BONUS_STEEL_WARES</Bonus>
 			</PrereqBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_HILL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_HILL</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<ReplacementBuildings>
 				<BuildingType>BUILDING_POLLUTION_BLACKENED_SKIES</BuildingType>
@@ -90483,10 +89928,7 @@
 			<bWater>1</bWater>
 			<Bonus>BONUS_NANOTUBES</Bonus>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_OCEAN_TROPICAL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_OCEAN_TROPICAL</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_FACTORY</BuildingType>
@@ -91340,10 +90782,7 @@
 				<PrereqTech>TECH_SHELTER_BUILDING</PrereqTech>
 			</TechTypes>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_COMMUNAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_COMMUNAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<PrereqBonuses>
@@ -92846,14 +92285,8 @@
 			</ReplacementBuildings>
 			<Bonus>BONUS_KANGAROO</Bonus>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_HOTEL</BuildingType>
@@ -92965,6 +92398,17 @@
 			<Type>BUILDING_OXEN_MILL</Type>
 			<Description>TXT_KEY_BUILDING_OXEN_MILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_OXEN_MILL_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Oxen Mill grinds grain, making Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_OXEN_MILL</ArtDefineTag>
 			<MapCategoryTypes>
@@ -94152,10 +93596,7 @@
 				<BuildingType>BUILDING_LAUNCH_ARCOLOGY</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ECO_FRIENDLY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_ECO_FRIENDLY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>5905</iCost>
@@ -94994,10 +94435,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_MODERN_EARTHWORKS</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PEAT_BOG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_PEAT_BOG</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>216</iCost>
 			<iCostSizeModifier>1</iCostSizeModifier>
@@ -97183,26 +96621,11 @@
 			</TechTypes>
 			<bWater>1</bWater>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DESPOTISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_NATIONALIST</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MERCANTILISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DESPOTISM</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
+				<PrereqCivic>CIVIC_NATIONALIST</PrereqCivic>
+				<PrereqCivic>CIVIC_MERCANTILISM</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>440</iCost>
@@ -97519,10 +96942,7 @@
 				</And>
 			</ConstructCondition>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CHARITY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CHARITY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>243</iCost>
@@ -97661,10 +97081,7 @@
 				<BuildingType>BUILDING_MODERN_OFFICES</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PLANNED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PLANNED</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>990</iCost>
@@ -98483,18 +97900,9 @@
 				<BuildingType>BUILDING_TOURISM_MEGACOMPLEX</BuildingType>
 			</ReplacementBuildings>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TUNDRA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_HOTEL</BuildingType>
@@ -98856,10 +98264,7 @@
 				<BuildingType>BUILDING_METROPOLITAN_ADMINISTRATION</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_LEGISLATURE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_LEGISLATURE</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>234</iCost>
@@ -98915,10 +98320,7 @@
 				<BuildingType>BUILDING_TELEPHONE_NETWORK</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DEMOCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DEMOCRACY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iRevIdxLocal>-1</iRevIdxLocal>
@@ -98937,10 +98339,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_REPRESENTATIVE_DEMOCRACY</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DEMOCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DEMOCRACY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>580</iCost>
@@ -100159,10 +99558,7 @@
 			<PrereqTech>TECH_REPRESENTATIVE_DEMOCRACY</PrereqTech>
 			<Bonus>BONUS_BRICKS</Bonus>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DEMOCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DEMOCRACY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>580</iCost>
@@ -100489,10 +99885,7 @@
 				<BuildingType>BUILDING_PRESS_AGENCY</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PROPAGANDA</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PROPAGANDA</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>950</iCost>
@@ -100538,18 +99931,9 @@
 				<BuildingType>BUILDING_MILITARY_SPACEPORT</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STATE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TOTALITARIANISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TECHNOCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_STATE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_TOTALITARIANISM</PrereqCivic>
+				<PrereqCivic>CIVIC_TECHNOCRACY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>2005</iCost>
@@ -101842,6 +101226,17 @@
 			<Type>BUILDING_QUERN</Type>
 			<Description>TXT_KEY_BUILDING_QUERN</Description>
 			<Civilopedia>TXT_KEY_BUILDING_QUERN_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Quern grinds grain, making Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_QUERN</ArtDefineTag>
 			<MapCategoryTypes>
@@ -102608,22 +102003,10 @@
 			<iCostMaterialsModifier>1</iCostMaterialsModifier>
 			<iCostComplexityModifier>2</iCostComplexityModifier>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ROCKY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_BADLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_JAGGED</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ROCKY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BADLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_JAGGED</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
 			</PrereqOrTerrain>
 			<YieldChanges>
 				<iYield>0</iYield>
@@ -102796,10 +102179,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AGROFOREST</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>25</iCost>
 			<iCostSizeModifier>1</iCostSizeModifier>
@@ -103259,10 +102639,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_MILITARY_TRADITION</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_VOLUNTARY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_VOLUNTARY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>580</iCost>
@@ -103347,10 +102724,7 @@
 				<BuildingType>BUILDING_RECYCLING_CENTER</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_GREEN</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_GREEN</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>1475</iCost>
@@ -103728,14 +103102,8 @@
 			</PrereqVicinityBonuses>
 			<iMinLatitude>40</iMinLatitude>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>45</iCost>
 			<iCostSizeModifier>1</iCostSizeModifier>
@@ -104422,18 +103790,9 @@
 				<BuildingType>BUILDING_CHRISTIAN_TEMPLE</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STATE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SECULARISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_STATE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_SECULARISM</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>455</iCost>
@@ -104844,10 +104203,7 @@
 				<VicinityBonus>BONUS_RICE</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_HILL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_HILL</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_RICE_PADDY</BuildingType>
@@ -106159,10 +105515,7 @@
 				<BuildingType>BUILDING_AGORA</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_REPUBLIC</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_REPUBLIC</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>234</iCost>
@@ -106433,10 +105786,7 @@
 				<Bonus>BONUS_MARBLE</Bonus>
 			</PrereqBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>200</iCost>
@@ -106946,10 +106296,7 @@
 			</ReplacementBuildings>
 			<Bonus>BONUS_AUTOMOBILES</Bonus>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_SAVANNA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_SAVANNA</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_HOTEL</BuildingType>
@@ -107129,22 +106476,10 @@
 			<bRiver>1</bRiver>
 			<RawVicinityBonus>BONUS_FISH</RawVicinityBonus>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_FISH_TRAPS</BuildingType>
@@ -107335,10 +106670,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_MATERIALS_CONGLOMERATE</ObsoletesToBuilding>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SALT_FLATS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SALT_FLATS</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_MINING_CAMP</BuildingType>
@@ -107408,10 +106740,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_INDUSTRIALISM</PrereqTech>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_IMPORTATION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_IMPORTATION</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>950</iCost>
@@ -107508,14 +106837,8 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_MODERN_EARTHWORKS</ObsoletesToBuilding>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DUNES</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DUNES</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>70</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -108686,18 +108009,9 @@
 			</PrereqBonuses>
 			<bNeedStateReligionInCity>1</bNeedStateReligionInCity>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STATE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_RELIGIOUS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_STATE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_RELIGIOUS</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>192</iCost>
@@ -109263,18 +108577,9 @@
 				</PropertySource>
 			</PropertyManipulators>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_CITY_STATES</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_OPEN_BORDERS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_POLYSTATE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_CITY_STATES</PrereqCivic>
+				<PrereqCivic>CIVIC_OPEN_BORDERS</PrereqCivic>
+				<PrereqCivic>CIVIC_POLYSTATE</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 		    <iHurryCostModifier>100</iHurryCostModifier>
@@ -109367,10 +108672,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AQUAFARM</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_KELP</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_KELP</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>92</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -109758,18 +109060,9 @@
 			</PrereqBonuses>
 			<bNeedStateReligionInCity>1</bNeedStateReligionInCity>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STATE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_RELIGIOUS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_STATE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_RELIGIOUS</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>300</iCost>
@@ -111168,10 +110461,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_FEUDALISM</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_VASSAL_LEVIES</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_VASSAL_LEVIES</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>310</iCost>
@@ -111715,6 +111005,17 @@
 			</EnabledCivilizationTypes>
 			<Description>TXT_KEY_BUILDING_SHIPWRIGHT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SHIPWRIGHT_PEDIA</Civilopedia>
+			<!-- Yield-parity (wood line): Shipwright consumes timber, making Lumbermills worth +1 production in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SHIPWRIGHT</ArtDefineTag>
 			<MapCategoryTypes>
@@ -113107,10 +112408,7 @@
 			</PrereqBonuses>
 			<iMinLatitude>40</iMinLatitude>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_WINTER_CHALET</BuildingType>
@@ -113515,18 +112813,9 @@
 				<Bonus>BONUS_ALUMINUM_WARES</Bonus>
 			</PrereqBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TUNDRA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_DOG_BREEDER</BuildingType>
@@ -114331,6 +113620,17 @@
 			<Type>BUILDING_SMOKEHOUSE</Type>
 			<Description>TXT_KEY_BUILDING_SMOKEHOUSE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SMOKEHOUSE_PEDIA</Civilopedia>
+			<!-- Yield-parity: Smokehouse makes Pastures worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SMOKEHOUSE</ArtDefineTag>
 			<MapCategoryTypes>
@@ -114458,30 +113758,12 @@
 				<BuildingType>BUILDING_SHOPPING_DISTRICT</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DESPOTISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_NATIONALIST</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MERCANTILISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_BANDITRY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DESPOTISM</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
+				<PrereqCivic>CIVIC_NATIONALIST</PrereqCivic>
+				<PrereqCivic>CIVIC_MERCANTILISM</PrereqCivic>
+				<PrereqCivic>CIVIC_BANDITRY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>160</iCost>
@@ -114950,14 +114232,8 @@
 				<BuildingType>BUILDING_MODERN_OFFICES</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MARXIST</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SOCIALIZED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MARXIST</PrereqCivic>
+				<PrereqCivic>CIVIC_SOCIALIZED</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>1180</iCost>
@@ -115081,10 +114357,7 @@
 				<BuildingType>BUILDING_MODERN_OFFICES</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SUBSIDIZED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_SUBSIDIZED</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>740</iCost>
@@ -115345,10 +114618,7 @@
 				<Bonus>BONUS_SILVER_WARES</Bonus>
 			</PrereqBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_FACTORY</BuildingType>
@@ -116603,10 +115873,7 @@
 				<BuildingType>BUILDING_TOURISM_MEGACOMPLEX</BuildingType>
 			</ReplacementBuildings>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CAVES</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CAVES</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>1605</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -116806,30 +116073,12 @@
 			<PrereqTech>TECH_AQUACULTURE</PrereqTech>
 			<bWater>1</bWater>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CORAL_REEF</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CORAL_REEF_BEACON</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CORAL_REEF_LIGHTHOUSE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_GREAT_BARRIER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_GREAT_BARRIER_REEF_BEACON</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_GREAT_BARRIER_REEF_LIGHTHOUSE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CORAL_REEF</PrereqFeature>
+				<PrereqFeature>FEATURE_CORAL_REEF_BEACON</PrereqFeature>
+				<PrereqFeature>FEATURE_CORAL_REEF_LIGHTHOUSE</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_GREAT_BARRIER</PrereqFeature>
+				<PrereqFeature>FEATURE_GREAT_BARRIER_REEF_BEACON</PrereqFeature>
+				<PrereqFeature>FEATURE_GREAT_BARRIER_REEF_LIGHTHOUSE</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>1845</iCost>
 			<iCostSizeModifier>2</iCostSizeModifier>
@@ -116865,30 +116114,12 @@
 			<ObsoletesToBuilding>BUILDING_SPONGE_FARM</ObsoletesToBuilding>
 			<bWater>1</bWater>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CORAL_REEF</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CORAL_REEF_BEACON</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_CORAL_REEF_LIGHTHOUSE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_GREAT_BARRIER</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_GREAT_BARRIER_REEF_BEACON</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_GREAT_BARRIER_REEF_LIGHTHOUSE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_CORAL_REEF</PrereqFeature>
+				<PrereqFeature>FEATURE_CORAL_REEF_BEACON</PrereqFeature>
+				<PrereqFeature>FEATURE_CORAL_REEF_LIGHTHOUSE</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_GREAT_BARRIER</PrereqFeature>
+				<PrereqFeature>FEATURE_GREAT_BARRIER_REEF_BEACON</PrereqFeature>
+				<PrereqFeature>FEATURE_GREAT_BARRIER_REEF_LIGHTHOUSE</PrereqFeature>
 			</PrereqOrFeature>
 			<ReplacementBuildings>
 				<BuildingType>BUILDING_SPONGE_FARM</BuildingType>
@@ -117018,14 +116249,8 @@
 				<BuildingType>BUILDING_KINGS_COUNCIL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>368</iCost>
@@ -118274,14 +117499,8 @@
 				<BuildingType>BUILDING_KINGS_COUNCIL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MONARCHY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FEUDAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MONARCHY</PrereqCivic>
+				<PrereqCivic>CIVIC_FEUDAL</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>368</iCost>
@@ -122400,10 +121619,7 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_MODERN_EARTHWORKS</ObsoletesToBuilding>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_TAR_PIT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_TAR_PIT</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>45</iCost>
 			<iCostSizeModifier>2</iCostSizeModifier>
@@ -123474,26 +122690,11 @@
 				<BuildingType>BUILDING_TV_STUDIO</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_DIVINE_CULT</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_STATE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FREE_CHURCH</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_INQUISITORIAL</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SECULARISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_DIVINE_CULT</PrereqCivic>
+				<PrereqCivic>CIVIC_STATE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_FREE_CHURCH</PrereqCivic>
+				<PrereqCivic>CIVIC_INQUISITORIAL</PrereqCivic>
+				<PrereqCivic>CIVIC_SECULARISM</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>1130</iCost>
@@ -123705,42 +122906,15 @@
 			<PrereqTech>TECH_SCAVENGING</PrereqTech>
 			<ObsoleteTech>TECH_CITY_PLANNING</ObsoleteTech>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ROCKY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_BADLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PLAINS</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ROCKY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BADLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>30</iCost>
 			<iCostSizeModifier>0</iCostSizeModifier>
@@ -124488,10 +123662,7 @@
 				<BuildingType>BUILDING_PRESS_AGENCY</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TECHNOCRACY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_TECHNOCRACY</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>2405</iCost>
@@ -127062,26 +126233,11 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_CARVING</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<ObsoleteTech>TECH_CITY_PLANNING</ObsoleteTech>
 			<iCost>40</iCost>
@@ -127119,54 +126275,18 @@
 			</ReplacementBuildings>
 			<ObsoletesToBuilding>BUILDING_AGROFOREST</ObsoletesToBuilding>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_GRASSLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_LUSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ROCKY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_BADLAND</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_JAGGED</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_SCRUB</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MUDDY</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_GRASSLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_LUSH</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PLAINS</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ROCKY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BADLAND</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_JAGGED</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_SCRUB</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TUNDRA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MUDDY</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_MARSH</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>332</iCost>
 			<iCostSizeModifier>2</iCostSizeModifier>
@@ -127207,26 +126327,11 @@
 				<Bonus>BONUS_BAMBOO</Bonus>
 			</PrereqBonuses>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_YOUNG</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_YOUNG</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_ANCIENT</PrereqFeature>
+				<PrereqFeature>FEATURE_FOREST_BURNT</PrereqFeature>
+				<PrereqFeature>FEATURE_JUNGLE</PrereqFeature>
 			</PrereqOrFeature>
 			<iCost>68</iCost>
 			<iCostSizeModifier>2</iCostSizeModifier>
@@ -128432,10 +127537,7 @@
 				<Bonus>BONUS_CEMENT</Bonus>
 			</PrereqBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SECULARISM</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_SECULARISM</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>1180</iCost>
@@ -130198,14 +129300,8 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_MAGISTRATES</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_BOURGEOIS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_MAGISTRATES</PrereqCivic>
+				<PrereqCivic>CIVIC_BOURGEOIS</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>216</iCost>
@@ -130970,30 +130066,12 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_VOLCANOLOGY</PrereqTech>
 			<PrereqOrFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_VOLCANO_ACTIVE</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_VOLCANO_DORMANT</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_FUJI</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_SOPKA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_KRAKATOA</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
-				<PrereqFeature>
-					<FeatureType>FEATURE_PLATY_KILIMANJARO</FeatureType>
-					<bPrereqFeature>1</bPrereqFeature>
-				</PrereqFeature>
+				<PrereqFeature>FEATURE_VOLCANO_ACTIVE</PrereqFeature>
+				<PrereqFeature>FEATURE_VOLCANO_DORMANT</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_FUJI</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_SOPKA</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_KRAKATOA</PrereqFeature>
+				<PrereqFeature>FEATURE_PLATY_KILIMANJARO</PrereqFeature>
 			</PrereqOrFeature>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_GEOLOGY_LAB</BuildingType>
@@ -131602,10 +130680,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_WARFARE</PrereqTech>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_TRIBAL_WARFARE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_TRIBAL_WARFARE</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>92</iCost>
@@ -131791,18 +130866,9 @@
 				<BuildingType>BUILDING_LANDFILL</BuildingType>
 			</PrereqInCityBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_LANDFILLS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_IMPORTATION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_TO_ENERGY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_LANDFILLS</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_IMPORTATION</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_TO_ENERGY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>740</iCost>
@@ -131838,10 +130904,7 @@
 			</MapCategoryTypes>
 			<PrereqTech>TECH_ECONOMICS</PrereqTech>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_WASTE_EXPORTATION</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_WASTE_EXPORTATION</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>535</iCost>
@@ -132098,6 +131161,17 @@
 			<Type>BUILDING_WATERMILL</Type>
 			<Description>TXT_KEY_BUILDING_WATERMILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_WATERMILL_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Watermill grinds grain, making Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WATERMILL</ArtDefineTag>
 			<MapCategoryTypes>
@@ -132746,6 +131820,17 @@
 			</EnabledCivilizationTypes>
 			<Description>TXT_KEY_BUILDING_WEAVER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_WEAVER_PEDIA</Civilopedia>
+			<!-- Yield-parity: Weaver makes Plantations worth +1 commerce in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WEAVER</ArtDefineTag>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -133002,14 +132087,8 @@
 				<BuildingType>BUILDING_MODERN_OFFICES</BuildingType>
 			</PrereqOrBuildings>
 			<PrereqOrCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_SOCIALIZED</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
-				<PrereqCivic>
-					<CivicOption>CIVIC_ECO_FRIENDLY</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_SOCIALIZED</PrereqCivic>
+				<PrereqCivic>CIVIC_ECO_FRIENDLY</PrereqCivic>
 			</PrereqOrCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>770</iCost>
@@ -133128,10 +132207,7 @@
 				<VicinityBonus>BONUS_WHALE</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_FOLKLORE</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_FOLKLORE</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>104</iCost>
@@ -133367,14 +132443,8 @@
 				<BuildingType>BUILDING_TOURISM_MEGACOMPLEX</BuildingType>
 			</ReplacementBuildings>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PLAINS</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_HOTEL</BuildingType>
@@ -133460,6 +132530,17 @@
 			<Type>BUILDING_WINDMILL</Type>
 			<Description>TXT_KEY_BUILDING_WINDMILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_WINDMILL_PEDIA</Civilopedia>
+			<!-- Yield-parity (farm line): Windmill grinds grain, making Farms worth +1 food in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WINDMILL</ArtDefineTag>
 			<MapCategoryTypes>
@@ -133468,10 +132549,7 @@
 			<PrereqTech>TECH_WINDMILLS</PrereqTech>
 			<Bonus>BONUS_GRAINS</Bonus>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_HILL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_HILL</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_GRANARY</BuildingType>
@@ -133540,10 +132618,7 @@
 				<Bonus>BONUS_STEEL_WARES</Bonus>
 			</PrereqBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_HILL</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_HILL</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqInCityBuildings>
 				<BuildingType>BUILDING_FACTORY</BuildingType>
@@ -133656,6 +132731,17 @@
 			<Type>BUILDING_WINERY</Type>
 			<Description>TXT_KEY_BUILDING_WINERY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_WINERY_PEDIA</Civilopedia>
+			<!-- Yield-parity: Winery makes Winery tiles worth +1 commerce in this city. -->
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_WINERY</ImprovementType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WINERY</ArtDefineTag>
 			<MapCategoryTypes>
@@ -133719,10 +132805,7 @@
 			</PrereqBonuses>
 			<iMinLatitude>40</iMinLatitude>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>630</iCost>
 			<iCostSizeModifier>1</iCostSizeModifier>
@@ -134186,14 +133269,8 @@
 				<VicinityBonus>BONUS_PIG</VicinityBonus>
 			</PrereqRawVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_TAIGA</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_ICE</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_TAIGA</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_ICE</PrereqTerrain>
 			</PrereqOrTerrain>
 			<PrereqOrBuildings>
 				<BuildingType>BUILDING_HUNTERS_CAMP</BuildingType>
@@ -134275,10 +133352,7 @@
 				<Bonus>BONUS_WOOD</Bonus>
 			</PrereqBonuses>
 			<PrereqAndCivics>
-				<PrereqCivic>
-					<CivicOption>CIVIC_PUBLIC_WORKS</CivicOption>
-					<bPrereqCivic>1</bPrereqCivic>
-				</PrereqCivic>
+				<PrereqCivic>CIVIC_PUBLIC_WORKS</PrereqCivic>
 			</PrereqAndCivics>
 			<bRequiresActiveCivics>1</bRequiresActiveCivics>
 			<iCost>475</iCost>
@@ -134383,10 +133457,7 @@
 				<VicinityBonus>BONUS_COW</VicinityBonus>
 			</PrereqVicinityBonuses>
 			<PrereqOrTerrain>
-				<PrereqTerrain>
-					<TerrainType>TERRAIN_PEAK</TerrainType>
-					<bPrereqTerrain>1</bPrereqTerrain>
-				</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_PEAK</PrereqTerrain>
 			</PrereqOrTerrain>
 			<iCost>98</iCost>
 			<iCostSizeModifier>2</iCostSizeModifier>
