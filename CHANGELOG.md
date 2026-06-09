@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.BETA.249 - 2026-06-09
+
+### All Changes
+- Merge pull request [#323](https://github.com/stones2stars/S2S/issues/323) from Stones2Stars/map/40-space-map-latitude (flabbert)
+- Map [#40](https://github.com/stones2stars/S2S/issues/40): derive latitude from the Earth band on space maps (flabbert)
+
 ## v1.BETA.246 - 2026-06-09
 ### Docs
 - link Phase 3b followup issues ([#319](https://github.com/stones2stars/S2S/issues/319) stack, [#320](https://github.com/stones2stars/S2S/issues/320) tooltip); note calibration is ongoing(flabbert)
