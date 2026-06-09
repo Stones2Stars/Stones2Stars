@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v1.BETA.246 - 2026-06-09
+### Docs
+- link Phase 3b followup issues ([#319](https://github.com/stones2stars/S2S/issues/319) stack, [#320](https://github.com/stones2stars/S2S/issues/320) tooltip); note calibration is ongoing(flabbert)
+- Phase 3b foundation FinalRelease-playtested; balance is followup scope(flabbert)
+- **AGENTS:** nothing here is ever a one-liner — read core docs + trace consumers first(flabbert)
+
+### All Changes
+- Merge pull request [#322](https://github.com/stones2stars/S2S/issues/322) from Stones2Stars/combat/320-modifier-breakdown (flabbert)
+- **AGENTS:** nothing here is ever a one-liner — read core docs + trace consumers first (flabbert)
+- Combat [#320](https://github.com/stones2stars/S2S/issues/320): re-add itemised strength-modifier breakdown via CombatPreview.detailLines (flabbert)
+- Merge pull request [#321](https://github.com/stones2stars/S2S/issues/321) from Stones2Stars/combat/319-attackodds-winpct-gate (flabbert)
+- docs([#319](https://github.com/stones2stars/S2S/issues/319)): frame aggression tuning as ongoing calibration folded into per-leader work, not a tracked task (flabbert)
+- Combat [#319](https://github.com/stones2stars/S2S/issues/319): gate stack attack go/no-go on lead-attacker win%, not goodness (flabbert)
+- Merge pull request [#318](https://github.com/stones2stars/S2S/issues/318) from Stones2Stars/combat/phase3b-and-aco-cleanup (flabbert)
+- docs: link Phase 3b followup issues ([#319](https://github.com/stones2stars/S2S/issues/319) stack, [#320](https://github.com/stones2stars/S2S/issues/320) tooltip); note calibration is ongoing (flabbert)
+- docs: Phase 3b foundation FinalRelease-playtested; balance is followup scope (flabbert)
+- Remove dead Advanced Combat Odds (ACO) BUG-options surface (flabbert)
+- Phase 3b: route AI attack odds through the binomial engine (flabbert)
+
 ## v1.BETA.235 - 2026-06-08
 ### Docs
 - reference note for constructibility/prereq system + [PERF/reqmodel] tag + FASSERT/FinalRelease fact ([#195](https://github.com/stones2stars/S2S/issues/195) Phase 2)(flabbert)
