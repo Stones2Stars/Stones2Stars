@@ -1,5 +1,50 @@
 # CHANGELOG
 
+## v1.BETA.261 - 2026-06-10
+### Map
+- mark zone-rework plan paused after A-soft (resume point = A-hard)(flabbert)
+- soft-disable inherited multimap + add zone-rework plan(flabbert)
+- proactive graphics-paging eviction (PAGING_RESIDENT_SOFT_CAP)(flabbert)
+- guard null/dummy entity in CvDLLEntity remove/destroy (fixes map-switch CTD)(flabbert)
+
+### All Changes
+- Merge pull request [#331](https://github.com/stones2stars/S2S/issues/331) from Stones2Stars/feature/infoutil-char-array-and-enum-as-int (flabbert)
+- Merge pull request [#330](https://github.com/stones2stars/S2S/issues/330) from Stones2Stars/chore/196-declarative-info-loading-tier1 (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): add char-array and enum-as-int wrappers to CvInfoUtil (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate 10 more Tier-1 info classes to declarative getDataMembers (flabbert)
+    **Closes [#224](https://github.com/stones2stars/S2S/issues/224)**
+    **Closes [#234](https://github.com/stones2stars/S2S/issues/234)**
+    **Closes [#239](https://github.com/stones2stars/S2S/issues/239)**
+    **Closes [#256](https://github.com/stones2stars/S2S/issues/256)**
+    **Closes [#267](https://github.com/stones2stars/S2S/issues/267)**
+    **Closes [#274](https://github.com/stones2stars/S2S/issues/274)**
+    **Closes [#285](https://github.com/stones2stars/S2S/issues/285)**
+    **Closes [#286](https://github.com/stones2stars/S2S/issues/286)**
+    **Closes [#299](https://github.com/stones2stars/S2S/issues/299)**
+    **Closes [#305](https://github.com/stones2stars/S2S/issues/305)**
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate 8 simple info classes to declarative getDataMembers (flabbert)
+    **Closes [#216](https://github.com/stones2stars/S2S/issues/216)**
+    **Closes [#226](https://github.com/stones2stars/S2S/issues/226)**
+    **Closes [#229](https://github.com/stones2stars/S2S/issues/229)**
+    **Closes [#246](https://github.com/stones2stars/S2S/issues/246)**
+    **Closes [#250](https://github.com/stones2stars/S2S/issues/250)**
+    **Closes [#254](https://github.com/stones2stars/S2S/issues/254)**
+    **Closes [#262](https://github.com/stones2stars/S2S/issues/262)**
+    **Closes [#283](https://github.com/stones2stars/S2S/issues/283)**
+- Merge pull request [#329](https://github.com/stones2stars/S2S/issues/329) from Stones2Stars/fix/325-building-requires-build-vs-operate (flabbert)
+    **Fix [#325](https://github.com/stones2stars/S2S/issues/325)**
+- Fix [#325](https://github.com/stones2stars/S2S/issues/325): distinguish build vs operate requirements in building help (flabbert)
+    **Fix [#325](https://github.com/stones2stars/S2S/issues/325)**
+- Merge pull request [#327](https://github.com/stones2stars/S2S/issues/327) from Stones2Stars/map/multimap-soft-disable (flabbert)
+- Merge pull request [#328](https://github.com/stones2stars/S2S/issues/328) from Stones2Stars/core/324-minidump-month (flabbert)
+    **Fix [#324](https://github.com/stones2stars/S2S/issues/324)**
+- Fix [#324](https://github.com/stones2stars/S2S/issues/324): minidump filename month off-by-one (tm_mon + 1) (flabbert)
+    **Fix [#324](https://github.com/stones2stars/S2S/issues/324)**
+- Map: mark zone-rework plan paused after A-soft (resume point = A-hard) (flabbert)
+- Map: soft-disable inherited multimap + add zone-rework plan (flabbert)
+- Map: proactive graphics-paging eviction (PAGING_RESIDENT_SOFT_CAP) (flabbert)
+- Map: guard null/dummy entity in CvDLLEntity remove/destroy (fixes map-switch CTD) (flabbert)
+
 ## v1.BETA.249 - 2026-06-09
 
 ### All Changes
