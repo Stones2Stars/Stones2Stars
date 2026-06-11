@@ -1,5 +1,107 @@
 # CHANGELOG
 
+## v1.BETA.276 - 2026-06-11
+### Ai
+- wildlife sorties are harvests - odds floor instead of a ban ([#400](https://github.com/stones2stars/S2S/issues/400))(flabbert)
+- garrisons stop sortieing against wildlife; chokeDefend loses the inflated anyAttack (Fixes [#400](https://github.com/stones2stars/S2S/issues/400))(flabbert)
+    **Fixes [#400](https://github.com/stones2stars/S2S/issues/400)**
+- property-control units commit their journeys and pool at home (Fixes [#396](https://github.com/stones2stars/S2S/issues/396))(flabbert)
+    **Fixes [#396](https://github.com/stones2stars/S2S/issues/396)**
+- stop hunter fallbacks stranding units in rival territory (Fixes [#392](https://github.com/stones2stars/S2S/issues/392))(flabbert)
+    **Fixes [#392](https://github.com/stones2stars/S2S/issues/392)**
+- city "vicinity" guarding is radius 2, not 21 tiles; recall garrison members ([#384](https://github.com/stones2stars/S2S/issues/384))(flabbert)
+- demote categorically mis-typed CITY_DEFENSE units to their XML default role ([#384](https://github.com/stones2stars/S2S/issues/384))(flabbert)
+- two-tier city garrison - no retype on garrisoning, retention hysteresis ([#384](https://github.com/stones2stars/S2S/issues/384))(flabbert)
+- subdued/tamed animal economy -- spread the herd, disband the zoo ([#381](https://github.com/stones2stars/S2S/issues/381))(flabbert)
+    **Fixes [#381](https://github.com/stones2stars/S2S/issues/381)**
+- garrison sortie uses AI_leaveAttack, not the range-inflated anyAttack ([#382](https://github.com/stones2stars/S2S/issues/382))(flabbert)
+    **Fixes [#382](https://github.com/stones2stars/S2S/issues/382)**
+- border patrol walks only its OWN border ([#24](https://github.com/stones2stars/S2S/issues/24))(flabbert)
+- ONE birthmark->direction helper; patrol fans 8 ways; mid-land heads to border ([#24](https://github.com/stones2stars/S2S/issues/24))(flabbert)
+- use birthmark parity for the patrol stream split, not getID(flabbert)
+- border patrol intercepts before it wanders, and patrollers split streams ([#24](https://github.com/stones2stars/S2S/issues/24))(flabbert)
+    **Fixes [#24](https://github.com/stones2stars/S2S/issues/24)**
+### Bug Fixes
+- register AUTOMATE_SPREAD in GlobalTypes.xml ([#381](https://github.com/stones2stars/S2S/issues/381))(flabbert)
+- two always-false guards -- isGameStart never true; rev NPC guard dead ([#105](https://github.com/stones2stars/S2S/issues/105), [#139](https://github.com/stones2stars/S2S/issues/139))(flabbert)
+    **Fixes [#105](https://github.com/stones2stars/S2S/issues/105)**
+    **Fixes [#139](https://github.com/stones2stars/S2S/issues/139)**
+### Chore
+- purge the FLB logger experiment (owner ruling)(flabbert)
+### Docs
+- explain how to get releases (GitHub dist repo or SVN)(flabbert)
+- link the S2S Discord from the Despair Index(flabbert)
+- despair is now measured in centiphants (cp)(flabbert)
+- despair index - the owner identifies the real bug(flabbert)
+- despair index entry 2 - The Library of Alexandria, Burned Nightly (95 cE)(flabbert)
+- despair index HTML page + standing contribution policy(flabbert)
+- The S2S Despair Index (TM)(flabbert)
+- record the deferred interior-coverage limitation of border patrol(flabbert)
+- release is a strict follower of main (owner ruling)(flabbert)
+### Features
+- /units live game-state endpoint on the dev HTTP server ([#387](https://github.com/stones2stars/S2S/issues/387))(flabbert)
+- GET-only hello-world HTTP server PoC behind a logging BUG option ([#387](https://github.com/stones2stars/S2S/issues/387))(flabbert)
+
+### All Changes
+- docs: explain how to get releases (GitHub dist repo or SVN) (flabbert)
+- docs: link the S2S Discord from the Despair Index (flabbert)
+- Merge pull request [#401](https://github.com/stones2stars/S2S/issues/401) from Stones2Stars/feature/400-garrison-wildlife-sorties (flabbert)
+    **Fixes [#400](https://github.com/stones2stars/S2S/issues/400)**
+- ai: wildlife sorties are harvests - odds floor instead of a ban ([#400](https://github.com/stones2stars/S2S/issues/400)) (flabbert)
+- ai: garrisons stop sortieing against wildlife; chokeDefend loses the inflated anyAttack (Fixes [#400](https://github.com/stones2stars/S2S/issues/400)) (flabbert)
+    **Fixes [#400](https://github.com/stones2stars/S2S/issues/400)**
+- Merge pull request [#398](https://github.com/stones2stars/S2S/issues/398) from Stones2Stars/docs/centiphants (flabbert)
+- docs: despair is now measured in centiphants (cp) (flabbert)
+- Merge pull request [#397](https://github.com/stones2stars/S2S/issues/397) from Stones2Stars/feature/396-property-control-stranding (flabbert)
+    **Fixes [#396](https://github.com/stones2stars/S2S/issues/396)**
+- docs: despair index - the owner identifies the real bug (flabbert)
+- ai: property-control units commit their journeys and pool at home (Fixes [#396](https://github.com/stones2stars/S2S/issues/396)) (flabbert)
+    **Fixes [#396](https://github.com/stones2stars/S2S/issues/396)**
+- Merge pull request [#393](https://github.com/stones2stars/S2S/issues/393) from Stones2Stars/feature/392-hunter-stranding (flabbert)
+    **Fixes [#392](https://github.com/stones2stars/S2S/issues/392)**
+- Merge pull request [#394](https://github.com/stones2stars/S2S/issues/394) from Stones2Stars/docs/despair-cabv (flabbert)
+- docs: despair index entry 2 - The Library of Alexandria, Burned Nightly (95 cE) (flabbert)
+- ai: stop hunter fallbacks stranding units in rival territory (Fixes [#392](https://github.com/stones2stars/S2S/issues/392)) (flabbert)
+    **Fixes [#392](https://github.com/stones2stars/S2S/issues/392)**
+- Merge pull request [#391](https://github.com/stones2stars/S2S/issues/391) from Stones2Stars/feature/384-garrison-tiers (flabbert)
+    **Fixes [#384](https://github.com/stones2stars/S2S/issues/384)**
+- docs: despair index HTML page + standing contribution policy (flabbert)
+- docs: The S2S Despair Index (TM) (flabbert)
+- ai: city "vicinity" guarding is radius 2, not 21 tiles; recall garrison members ([#384](https://github.com/stones2stars/S2S/issues/384)) (flabbert)
+- ai: demote categorically mis-typed CITY_DEFENSE units to their XML default role ([#384](https://github.com/stones2stars/S2S/issues/384)) (flabbert)
+- ai: two-tier city garrison - no retype on garrisoning, retention hysteresis ([#384](https://github.com/stones2stars/S2S/issues/384)) (flabbert)
+- Merge pull request [#390](https://github.com/stones2stars/S2S/issues/390) from Stones2Stars/feature/387-units-endpoint (flabbert)
+- feat: /units live game-state endpoint on the dev HTTP server ([#387](https://github.com/stones2stars/S2S/issues/387)) (flabbert)
+- Merge pull request [#389](https://github.com/stones2stars/S2S/issues/389) from Stones2Stars/feature/387-http-server-poc (flabbert)
+- Merge pull request [#388](https://github.com/stones2stars/S2S/issues/388) from Stones2Stars/chore/purge-flb-logger (flabbert)
+- feat: GET-only hello-world HTTP server PoC behind a logging BUG option ([#387](https://github.com/stones2stars/S2S/issues/387)) (flabbert)
+- chore: purge the FLB logger experiment (owner ruling) (flabbert)
+- Merge pull request [#385](https://github.com/stones2stars/S2S/issues/385) from Stones2Stars/fix/381-subdued-animal-economy (flabbert)
+    **Fixes [#381](https://github.com/stones2stars/S2S/issues/381)**
+- fix: register AUTOMATE_SPREAD in GlobalTypes.xml ([#381](https://github.com/stones2stars/S2S/issues/381)) (flabbert)
+- ai: subdued/tamed animal economy -- spread the herd, disband the zoo ([#381](https://github.com/stones2stars/S2S/issues/381)) (flabbert)
+    **Fixes [#381](https://github.com/stones2stars/S2S/issues/381)**
+- Merge pull request [#383](https://github.com/stones2stars/S2S/issues/383) from Stones2Stars/fix/382-garrison-sortie (flabbert)
+    **Fixes [#382](https://github.com/stones2stars/S2S/issues/382)**
+- Merge pull request [#375](https://github.com/stones2stars/S2S/issues/375) from Stones2Stars/fix/24-border-patrol (flabbert)
+    **Fixes [#24](https://github.com/stones2stars/S2S/issues/24)**
+- ai: garrison sortie uses AI_leaveAttack, not the range-inflated anyAttack ([#382](https://github.com/stones2stars/S2S/issues/382)) (flabbert)
+    **Fixes [#382](https://github.com/stones2stars/S2S/issues/382)**
+- ai: border patrol walks only its OWN border ([#24](https://github.com/stones2stars/S2S/issues/24)) (flabbert)
+- docs: record the deferred interior-coverage limitation of border patrol (flabbert)
+- Merge branch 'main' into fix/24-border-patrol (flabbert)
+- Merge pull request [#374](https://github.com/stones2stars/S2S/issues/374) from Stones2Stars/fix/105-139-dead-guards (flabbert)
+    **Fixes [#105](https://github.com/stones2stars/S2S/issues/105)**
+- ai: ONE birthmark->direction helper; patrol fans 8 ways; mid-land heads to border ([#24](https://github.com/stones2stars/S2S/issues/24)) (flabbert)
+- ai: use birthmark parity for the patrol stream split, not getID (flabbert)
+- ai: border patrol intercepts before it wanders, and patrollers split streams ([#24](https://github.com/stones2stars/S2S/issues/24)) (flabbert)
+    **Fixes [#24](https://github.com/stones2stars/S2S/issues/24)**
+- fix: two always-false guards -- isGameStart never true; rev NPC guard dead ([#105](https://github.com/stones2stars/S2S/issues/105), [#139](https://github.com/stones2stars/S2S/issues/139)) (flabbert)
+    **Fixes [#105](https://github.com/stones2stars/S2S/issues/105)**
+    **Fixes [#139](https://github.com/stones2stars/S2S/issues/139)**
+- Merge pull request [#373](https://github.com/stones2stars/S2S/issues/373) from Stones2Stars/docs/release-branch-convention (flabbert)
+- docs: release is a strict follower of main (owner ruling) (flabbert)
+
 ## v1.BETA.275 - 2026-06-11
 ### Ai
 - **cityAI:** fix inverted human commerce-emphasis weighting ([#68](https://github.com/stones2stars/S2S/issues/68))(flabbert)
