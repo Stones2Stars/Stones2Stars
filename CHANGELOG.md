@@ -1,5 +1,105 @@
 # CHANGELOG
 
+## v1.BETA.275 - 2026-06-11
+### Ai
+- **cityAI:** fix inverted human commerce-emphasis weighting ([#68](https://github.com/stones2stars/S2S/issues/68))(flabbert)
+    **Fixes [#68](https://github.com/stones2stars/S2S/issues/68)**
+- **cityAI:** fix three valuation bugs in AI_getBuildingYieldValue ([#66](https://github.com/stones2stars/S2S/issues/66))(flabbert)
+    **Fixes [#66](https://github.com/stones2stars/S2S/issues/66)**
+### Bug Fixes
+- drop the per-plot assert in CvPlot::disableGraphicsPaging(flabbert)
+- art tag must merge before the base copy (Improvement)(flabbert)
+- art tag must merge before the base copy (Bonus/Feature/Terrain)(flabbert)
+- **loader:** unset load-order stamp means NOT loaded -- delayed resolution required(flabbert)
+### Ci
+- temporarily build only the release branch in AppVeyor(flabbert)
+### City
+- specialist yields receive the city yield modifier like worked tiles ([#317](https://github.com/stones2stars/S2S/issues/317))(flabbert)
+### Docs
+- record the parity ruling -- excluding specialists from modifiers was a mistake(flabbert)
+- record the emphasis-as-city-need-signal ruling ([#367](https://github.com/stones2stars/S2S/issues/367))(flabbert)
+- dead-code pass -- 2026-06-11 candidate-generation results(flabbert)
+- frame-span findings + the garrison-churn investigation log(flabbert)
+- record the 2026-06-10 turn-time cycle and re-rank the levers(flabbert)
+- new git rule - verify the current branch immediately before every commit(flabbert)
+- AGENTS.md is the single home for rules; CLAUDE.md stays a bootstrap shim(flabbert)
+- PR-state git rule + CLAUDE.md bootstrap so repo docs load every session(flabbert)
+### Performance Improvements
+- frame-span instrumentation -- the doTurn tree missed ~70s/turn of unit AI(flabbert)
+- gate + loop-invert resource consumption (its only consumer is optional depletion)(flabbert)
+
+### All Changes
+- Merge pull request [#371](https://github.com/stones2stars/S2S/issues/371) from Stones2Stars/docs/emphasis-city-needs-ruling (flabbert)
+- Merge pull request [#372](https://github.com/stones2stars/S2S/issues/372) from Stones2Stars/fix/317-specialist-yield-parity (flabbert)
+- docs: record the parity ruling -- excluding specialists from modifiers was a mistake (flabbert)
+- city: specialist yields receive the city yield modifier like worked tiles ([#317](https://github.com/stones2stars/S2S/issues/317)) (flabbert)
+- docs: record the emphasis-as-city-need-signal ruling ([#367](https://github.com/stones2stars/S2S/issues/367)) (flabbert)
+- Merge pull request [#366](https://github.com/stones2stars/S2S/issues/366) from Stones2Stars/fix/68-commerce-emphasis-weighting (flabbert)
+    **Fixes [#68](https://github.com/stones2stars/S2S/issues/68)**
+- **cityAI:** fix inverted human commerce-emphasis weighting ([#68](https://github.com/stones2stars/S2S/issues/68)) (flabbert)
+    **Fixes [#68](https://github.com/stones2stars/S2S/issues/68)**
+- Merge pull request [#361](https://github.com/stones2stars/S2S/issues/361) from Stones2Stars/fix/66-building-yield-value (flabbert)
+    **Fixes [#66](https://github.com/stones2stars/S2S/issues/66)**
+- Merge branch 'main' into fix/66-building-yield-value (flabbert)
+- Merge pull request [#365](https://github.com/stones2stars/S2S/issues/365) from Stones2Stars/fix/plot-paging-assert-spam (flabbert)
+- Merge pull request [#351](https://github.com/stones2stars/S2S/issues/351) from Stones2Stars/data/196-partial-adopters (flabbert)
+- Merge pull request [#350](https://github.com/stones2stars/S2S/issues/350) from Stones2Stars/data/196-big-standalone (flabbert)
+- Merge pull request [#349](https://github.com/stones2stars/S2S/issues/349) from Stones2Stars/data/196-events (flabbert)
+- Merge pull request [#348](https://github.com/stones2stars/S2S/issues/348) from Stones2Stars/data/196-society-systems (flabbert)
+- Merge pull request [#347](https://github.com/stones2stars/S2S/issues/347) from Stones2Stars/data/196-world-setup (flabbert)
+- Merge pull request [#346](https://github.com/stones2stars/S2S/issues/346) from Stones2Stars/data/196-gameplay-small (flabbert)
+- Merge pull request [#345](https://github.com/stones2stars/S2S/issues/345) from Stones2Stars/data/196-graphics-ui (flabbert)
+- Merge pull request [#344](https://github.com/stones2stars/S2S/issues/344) from Stones2Stars/data/196-art-family (flabbert)
+- fix: drop the per-plot assert in CvPlot::disableGraphicsPaging (flabbert)
+- fix: art tag must merge before the base copy (Improvement) (flabbert)
+- fix: art tag must merge before the base copy (Bonus/Feature/Terrain) (flabbert)
+- **loader:** unset load-order stamp means NOT loaded -- delayed resolution required (flabbert)
+- **cityAI:** fix three valuation bugs in AI_getBuildingYieldValue ([#66](https://github.com/stones2stars/S2S/issues/66)) (flabbert)
+    **Fixes [#66](https://github.com/stones2stars/S2S/issues/66)**
+- Merge pull request [#360](https://github.com/stones2stars/S2S/issues/360) from Stones2Stars/docs/dead-code-pass-findings (flabbert)
+- docs: dead-code pass -- 2026-06-11 candidate-generation results (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): complete the five partial adopters (Building/Unit/Promotion/Trait/Improvement) (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate LeaderHead, Civic, UnitCombat to declarative loading (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate CvEventInfo + CvEventTriggerInfo to declarative loading (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate society/system info classes to declarative loading (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate world/setup info classes to declarative loading (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate small gameplay/options info classes to declarative loading (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate graphics/UI info classes to declarative getDataMembers loading (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate the art-info family to declarative getDataMembers loading (flabbert)
+- Merge pull request [#343](https://github.com/stones2stars/S2S/issues/343) from Stones2Stars/ci/appveyor-release-only (flabbert)
+- ci: temporarily build only the release branch in AppVeyor (flabbert)
+- Merge pull request [#342](https://github.com/stones2stars/S2S/issues/342) from Stones2Stars/perf/frame-span-unit-ai-churn (flabbert)
+- docs: frame-span findings + the garrison-churn investigation log (flabbert)
+- perf+ai: fix the garrison re-decide churn (and two gameplay bugs it concealed) (flabbert)
+- perf: frame-span instrumentation -- the doTurn tree missed ~70s/turn of unit AI (flabbert)
+- perf: gate + loop-invert resource consumption (its only consumer is optional depletion) (flabbert)
+- Merge pull request [#340](https://github.com/stones2stars/S2S/issues/340) from Stones2Stars/perf/turn-time-repository-pilot (flabbert)
+- docs: record the 2026-06-10 turn-time cycle and re-rank the levers (flabbert)
+- perf+arch: repository skeleton v2, spin guard, choose instrumentation, value retention, scoring index fix (flabbert)
+- Merge pull request [#338](https://github.com/stones2stars/S2S/issues/338) from Stones2Stars/chore/196-gamespeed-simplification (flabbert)
+- docs: new git rule - verify the current branch immediately before every commit (flabbert)
+- [#248](https://github.com/stones2stars/S2S/issues/248): derive turn counts & calendar from era data; delete GameTurnInfos tables (flabbert)
+- [#248](https://github.com/stones2stars/S2S/issues/248): GameSpeed/Handicap Percents maps -> named fields; tag-dispatched Adapt grammar (flabbert)
+- Merge pull request [#335](https://github.com/stones2stars/S2S/issues/335) from Stones2Stars/chore/310-worldinfo-citylimits-percent (flabbert)
+- [#310](https://github.com/stones2stars/S2S/issues/310): migrate CvWorldInfo to declarative loading; Percents map -> iCityLimitsScalePercent (flabbert)
+- Merge pull request [#334](https://github.com/stones2stars/S2S/issues/334) from Stones2Stars/feature/infoutil-char-array-and-enum-as-int (flabbert)
+- docs: AGENTS.md is the single home for rules; CLAUDE.md stays a bootstrap shim (flabbert)
+- docs: PR-state git rule + CLAUDE.md bootstrap so repo docs load every session (flabbert)
+- Merge pull request [#332](https://github.com/stones2stars/S2S/issues/332) from Stones2Stars/chore/196-declarative-info-loading-tier2 (flabbert)
+- demote CvPlot::changeVisibilityCount negative-cap assert to gated [ENG/viscap] log (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): document declarative info loading in Sources/docs/reference (flabbert)
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate CvMapInfo and CvGoodyInfo (Tier-2) (flabbert)
+    **Closes [#249](https://github.com/stones2stars/S2S/issues/249)**
+    **Closes [#265](https://github.com/stones2stars/S2S/issues/265)**
+- [#196](https://github.com/stones2stars/S2S/issues/196): migrate 7 Tier-2 info classes using the new wrappers (flabbert)
+    **Closes [#258](https://github.com/stones2stars/S2S/issues/258)**
+    **Closes [#259](https://github.com/stones2stars/S2S/issues/259)**
+    **Closes [#272](https://github.com/stones2stars/S2S/issues/272)**
+    **Closes [#280](https://github.com/stones2stars/S2S/issues/280)**
+    **Closes [#282](https://github.com/stones2stars/S2S/issues/282)**
+    **Closes [#290](https://github.com/stones2stars/S2S/issues/290)**
+    **Closes [#306](https://github.com/stones2stars/S2S/issues/306)**
+
 ## v1.BETA.261 - 2026-06-10
 ### Map
 - mark zone-rework plan paused after A-soft (resume point = A-hard)(flabbert)
