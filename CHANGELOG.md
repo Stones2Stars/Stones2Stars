@@ -1,5 +1,82 @@
 # CHANGELOG
 
+## v1.BETA.277 - 2026-06-12
+### Ai
+- breakdown chance is not bombard - stop the siege-line self-sabotage ([#410](https://github.com/stones2stars/S2S/issues/410))(flabbert)
+- pack courage marches at field enemies, not just adjacent ones ([#409](https://github.com/stones2stars/S2S/issues/409))(flabbert)
+- horde courage marches the wave and packs engage in the field ([#409](https://github.com/stones2stars/S2S/issues/409))(flabbert)
+- barb horde courage - hordes force city attacks at an odds floor ([#409](https://github.com/stones2stars/S2S/issues/409))(flabbert)
+- workers respect escorts and standing defense in danger reactions ([#406](https://github.com/stones2stars/S2S/issues/406))(flabbert)
+- retire EVAL_MERGE_FACTOR; healer demand scales with stack HP-mass ([#395](https://github.com/stones2stars/S2S/issues/395))(flabbert)
+- siege stacks merge to beat the defender ([#395](https://github.com/stones2stars/S2S/issues/395))(flabbert)
+- garrison consolidation pass + overwhelmed-split retune ([#395](https://github.com/stones2stars/S2S/issues/395))(flabbert)
+- demand gates read strength-weighted counts under Size Matters ([#395](https://github.com/stones2stars/S2S/issues/395))(flabbert)
+- strength-weighted force ledgers - SM-aware unit accounting ([#395](https://github.com/stones2stars/S2S/issues/395))(flabbert)
+- NPCs may not field invisible units until every civ can counter them(flabbert)
+### Balance
+- master hunter line +2 strength across the board(flabbert)
+### Bug Fixes
+- event publish stays one bool check while the server is off ([#407](https://github.com/stones2stars/S2S/issues/407))(flabbert)
+- human missions only break when danger overwhelms the plot defense (Fixes [#406](https://github.com/stones2stars/S2S/issues/406))(flabbert)
+    **Fixes [#406](https://github.com/stones2stars/S2S/issues/406)**
+- C2C_World_Remixed Peaks option scaled hills instead of peaks(flabbert)
+### Docs
+- a verdict worthy of the gold medal(flabbert)
+- the Clandestine Battering Ram takes gold at 113 cb - first over the cap(flabbert)
+- owner ruling - docs-only commits go straight to main(flabbert)
+- styled REALISM_INDEX.html twin (+ sibling links between the indexes)(flabbert)
+- the historical ram footnote - capital equipment, not crackers(flabbert)
+- ground the Battering Ram entry in what is certain(flabbert)
+- the Clandestine Battering Ram - the oral-tradition siege mechanic(flabbert)
+- Realism Index entry 3 - the Clandestine Battering Ram(flabbert)
+- Realism Index entries 4+5 - the Grid Before the Generator, the 326 supply chains(flabbert)
+- the Realism Index - sibling of the Despair Index for designed absurdities(flabbert)
+- pseudo-progress terminals audit rule (owner ruling, [#410](https://github.com/stones2stars/S2S/issues/410))(flabbert)
+- barb-pressure-concentrates-on-small-civs balance finding ([#408](https://github.com/stones2stars/S2S/issues/408))(flabbert)
+- Size Matters AI literacy plan - owner rulings + phased scope ([#395](https://github.com/stones2stars/S2S/issues/395))(flabbert)
+### Features
+- human turn-phase events on the /events stream ([#407](https://github.com/stones2stars/S2S/issues/407))(flabbert)
+- /events SSE turn-boundary stream on the dev HTTP server (Fixes [#407](https://github.com/stones2stars/S2S/issues/407))(flabbert)
+    **Fixes [#407](https://github.com/stones2stars/S2S/issues/407)**
+- AI-vs-human benchmarking scheme - collector, Benchmarks/, merge/split logging ([#387](https://github.com/stones2stars/S2S/issues/387))(flabbert)
+- /players + /cities telemetry endpoints; gameId playtest identity ([#387](https://github.com/stones2stars/S2S/issues/387))(flabbert)
+
+### All Changes
+- ai: breakdown chance is not bombard - stop the siege-line self-sabotage ([#410](https://github.com/stones2stars/S2S/issues/410)) (flabbert)
+- docs: a verdict worthy of the gold medal (flabbert)
+- docs: the Clandestine Battering Ram takes gold at 113 cb - first over the cap (flabbert)
+- docs: owner ruling - docs-only commits go straight to main (flabbert)
+- docs: styled REALISM_INDEX.html twin (+ sibling links between the indexes) (flabbert)
+- docs: the historical ram footnote - capital equipment, not crackers (flabbert)
+- docs: ground the Battering Ram entry in what is certain (flabbert)
+- ai: pack courage marches at field enemies, not just adjacent ones ([#409](https://github.com/stones2stars/S2S/issues/409)) (flabbert)
+- docs: the Clandestine Battering Ram - the oral-tradition siege mechanic (flabbert)
+- docs: Realism Index entry 3 - the Clandestine Battering Ram (flabbert)
+- ai: horde courage marches the wave and packs engage in the field ([#409](https://github.com/stones2stars/S2S/issues/409)) (flabbert)
+- docs: Realism Index entries 4+5 - the Grid Before the Generator, the 326 supply chains (flabbert)
+- docs: the Realism Index - sibling of the Despair Index for designed absurdities (flabbert)
+- docs: pseudo-progress terminals audit rule (owner ruling, [#410](https://github.com/stones2stars/S2S/issues/410)) (flabbert)
+- balance: master hunter line +2 strength across the board (flabbert)
+- ai: barb horde courage - hordes force city attacks at an odds floor ([#409](https://github.com/stones2stars/S2S/issues/409)) (flabbert)
+- docs: barb-pressure-concentrates-on-small-civs balance finding ([#408](https://github.com/stones2stars/S2S/issues/408)) (flabbert)
+- fix: event publish stays one bool check while the server is off ([#407](https://github.com/stones2stars/S2S/issues/407)) (flabbert)
+- feat: human turn-phase events on the /events stream ([#407](https://github.com/stones2stars/S2S/issues/407)) (flabbert)
+- feat: /events SSE turn-boundary stream on the dev HTTP server (Fixes [#407](https://github.com/stones2stars/S2S/issues/407)) (flabbert)
+    **Fixes [#407](https://github.com/stones2stars/S2S/issues/407)**
+- ai: workers respect escorts and standing defense in danger reactions ([#406](https://github.com/stones2stars/S2S/issues/406)) (flabbert)
+- fix: human missions only break when danger overwhelms the plot defense (Fixes [#406](https://github.com/stones2stars/S2S/issues/406)) (flabbert)
+    **Fixes [#406](https://github.com/stones2stars/S2S/issues/406)**
+- ai: retire EVAL_MERGE_FACTOR; healer demand scales with stack HP-mass ([#395](https://github.com/stones2stars/S2S/issues/395)) (flabbert)
+- ai: siege stacks merge to beat the defender ([#395](https://github.com/stones2stars/S2S/issues/395)) (flabbert)
+- ai: garrison consolidation pass + overwhelmed-split retune ([#395](https://github.com/stones2stars/S2S/issues/395)) (flabbert)
+- ai: demand gates read strength-weighted counts under Size Matters ([#395](https://github.com/stones2stars/S2S/issues/395)) (flabbert)
+- ai: strength-weighted force ledgers - SM-aware unit accounting ([#395](https://github.com/stones2stars/S2S/issues/395)) (flabbert)
+- docs: Size Matters AI literacy plan - owner rulings + phased scope ([#395](https://github.com/stones2stars/S2S/issues/395)) (flabbert)
+- fix: C2C_World_Remixed Peaks option scaled hills instead of peaks (flabbert)
+- feat: AI-vs-human benchmarking scheme - collector, Benchmarks/, merge/split logging ([#387](https://github.com/stones2stars/S2S/issues/387)) (flabbert)
+- ai: NPCs may not field invisible units until every civ can counter them (flabbert)
+- feat: /players + /cities telemetry endpoints; gameId playtest identity ([#387](https://github.com/stones2stars/S2S/issues/387)) (flabbert)
+
 ## v1.BETA.276 - 2026-06-11
 ### Ai
 - wildlife sorties are harvests - odds floor instead of a ban ([#400](https://github.com/stones2stars/S2S/issues/400))(flabbert)
