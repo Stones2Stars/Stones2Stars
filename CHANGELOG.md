@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v1.BETA.278 - 2026-06-12
+### Ai
+- horde courage is pack-anchored and reach scales with warband size ([#409](https://github.com/stones2stars/S2S/issues/409))(flabbert)
+### Bug Fixes
+- automated workers' danger gates respect standing protection ([#415](https://github.com/stones2stars/S2S/issues/415))(flabbert)
+- goody-hut hostiles respect the NPC invisible-unit gate(flabbert)
+### Docs
+- commentary.md + watcher.ps1 in the Benchmarks folder conventions(flabbert)
+### Features
+- live log stream over /events - the counter-strike way (Fixes [#419](https://github.com/stones2stars/S2S/issues/419))(flabbert)
+    **Fixes [#419](https://github.com/stones2stars/S2S/issues/419)**
+
+### All Changes
+- feat: live log stream over /events - the counter-strike way (Fixes [#419](https://github.com/stones2stars/S2S/issues/419)) (flabbert)
+    **Fixes [#419](https://github.com/stones2stars/S2S/issues/419)**
+- docs: commentary.md + watcher.ps1 in the Benchmarks folder conventions (flabbert)
+- fix: automated workers' danger gates respect standing protection ([#415](https://github.com/stones2stars/S2S/issues/415)) (flabbert)
+- fix: goody-hut hostiles respect the NPC invisible-unit gate (flabbert)
+- ai: horde courage is pack-anchored and reach scales with warband size ([#409](https://github.com/stones2stars/S2S/issues/409)) (flabbert)
+
 ## v1.BETA.277 - 2026-06-12
 ### Ai
 - breakdown chance is not bombard - stop the siege-line self-sabotage ([#410](https://github.com/stones2stars/S2S/issues/410))(flabbert)
