@@ -2,6 +2,29 @@
 
 
 
+## v1.BETA.378 - 2026-08-22
+
+### Docs
+
+- retire the changelog-rides-the-commit convention(flabbert)
+- record what the graphics/FPK investigation actually measured(flabbert)
+### Performance Improvements
+
+- stop rebuilding the trade-route network on every building, mid-turn(flabbert)
+
+
+### All Changes
+
+- docs: retire the changelog-rides-the-commit convention (flabbert)
+- Merge pull request [#466](https://github.com/stones2stars/S2S/issues/466) from Stones2Stars/fix/465-settled-specialist-experience (flabbert)
+- Merge branch 'main' into fix/465-settled-specialist-experience (flabbert)
+- Merge pull request [#463](https://github.com/stones2stars/S2S/issues/463) from Stones2Stars/fix/trade-route-rebuild-cadence (flabbert)
+- fix([#465](https://github.com/stones2stars/S2S/issues/465)): a specialist is a specialist -- free or assigned, it provides (flabbert)
+- Merge branch 'main' into fix/trade-route-rebuild-cadence (flabbert)
+- perf: stop rebuilding the trade-route network on every building, mid-turn (flabbert)
+- docs: record what the graphics/FPK investigation actually measured (flabbert)
+
+
 ## v1.BETA.377 - 2026-08-22
 
 ### Bug Fixes

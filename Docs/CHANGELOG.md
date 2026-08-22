@@ -3,14 +3,33 @@
 > **DRAFT — pending owner curation.** Content is assembled from the repo docs and the
 > cascade-rebuild git history; nothing here is final until reviewed.
 >
-> **Maintenance:** a commit whose change a player or modder would notice appends one bullet to
-> `## Unreleased` in the SAME commit (AGENTS.md Git/delivery). The `/changelog-update` skill
-> digests anything that slipped, from the marker below. The old commit-message-derived
-> changelog script is dead and stays dead.
+> **⛔ DO NOT APPEND TO THIS FILE FROM AN ORDINARY COMMIT.** This is a **release feature list**, GENERATED when a
+> release is being prepared — not a file maintained per commit. The per-commit append was retired because every
+> branch appended at the same `## Unreleased` anchor, so any two concurrent branches conflicted by construction
+> ([AGENTS.md](../AGENTS.md#git--delivery)).
+>
+> **How it gets written:** a player-facing change tells its story in its **commit body**; the `/changelog-update`
+> skill digests those from the `last-digested` marker below when a list is wanted, and the owner curates the
+> result. ⚠ Commit SUBJECTS are engineering statements and are not changelog lines — the old subject-derived
+> script is dead and stays dead.
 
 <!-- last-digested: d77601a35 -->
 
 ## Unreleased
+
+- **Loading a large game is around half a minute faster.** Every time a building was added to a city — including
+  the several dozen the game quietly places in *every* city while a save loads — the whole empire's trade-route
+  network was rebuilt from scratch. Each rebuild threw away the one before it, so on a large save the game did
+  the work fifty-two thousand times to arrive at seventeen answers, and spent about thirty seconds doing it. The
+  network is now rebuilt when something actually changes it, and once per player per turn as it always was.
+  Trade routes and their yields are unchanged; only the amount of repeated work is.
+
+- **A settled Great Hunter trains better hunters again.** Settling a great person makes it a *free* specialist,
+  which the game tracks separately from the citizens you assign to specialist jobs — and the experience a
+  specialist grants to units trained in its city was counting only the assigned ones. A settled Great Hunter
+  therefore sat in the city contributing nothing to the thing it exists for. Every settled specialist that grants
+  experience was affected, not just hunters. ⚑ A specialist is a specialist: free or assigned makes no difference
+  to what it provides.
 
 - **Starting units can no longer be units nobody can build.** A player could begin a Prehistoric game holding a
   Gladiator — an arena-placed unit — and it was not the worst case available: a strength-17 Master Big Game
