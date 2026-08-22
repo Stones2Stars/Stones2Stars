@@ -2,6 +2,23 @@
 
 
 
+## v1.BETA.377 - 2026-08-22
+
+### Bug Fixes
+
+- a calculated starting unit must be one the player could ever be offered(flabbert)
+### Docs
+
+- record what actually breaks the SVN push, and park the build/commit split(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#464](https://github.com/stones2stars/S2S/issues/464) from Stones2Stars/fix/start-units-respect-offerability (flabbert)
+- fix: a calculated starting unit must be one the player could ever be offered (flabbert)
+- docs: record what actually breaks the SVN push, and park the build/commit split (flabbert)
+
+
 ## v1.BETA.376 - 2026-08-22
 
 ### AGENTS
