@@ -2,6 +2,18 @@
 
 
 
+## v1.BETA.381 - 2026-08-22
+
+
+
+### All Changes
+
+- Merge pull request [#474](https://github.com/stones2stars/S2S/issues/474) from Stones2Stars/fix/472-might-promotion-strength (flabbert)
+- fix([#472](https://github.com/stones2stars/S2S/issues/472)): Might deposited its strength into a family nothing reads (flabbert)
+- Merge pull request [#473](https://github.com/stones2stars/S2S/issues/473) from Stones2Stars/fix/471-process-conversion-scale (flabbert)
+- fix([#471](https://github.com/stones2stars/S2S/issues/471)): a process paid FIFTY times the hammers instead of half (flabbert)
+
+
 ## v1.BETA.380 - 2026-08-22
 
 ### Bug Fixes
