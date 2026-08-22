@@ -2,6 +2,23 @@
 
 
 
+## v1.BETA.380 - 2026-08-22
+
+### Bug Fixes
+
+- register the 53 CyCity reads gameplay python actually calls(flabbert)
+- the popup Continue button dies on an unregistered CyCity read(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#470](https://github.com/stones2stars/S2S/issues/470) from Stones2Stars/fix/469-linux-ui-and-founding-crash (flabbert)
+- Merge pull request [#468](https://github.com/stones2stars/S2S/issues/468) from Stones2Stars/fix/cycity-python-bindings (flabbert)
+- fix([#469](https://github.com/stones2stars/S2S/issues/469)): the empty options menu, the dead clicks, and the founding crash (flabbert)
+- fix: register the 53 CyCity reads gameplay python actually calls (flabbert)
+- fix: the popup Continue button dies on an unregistered CyCity read (flabbert)
+
+
 ## v1.BETA.379 - 2026-08-22
 
 ### Bug Fixes
