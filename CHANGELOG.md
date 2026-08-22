@@ -2,6 +2,23 @@
 
 
 
+## v1.BETA.379 - 2026-08-22
+
+### Bug Fixes
+
+- a conditioned free promotion is dropped whole, so it reaches nobody(flabbert)
+### Docs
+
+- the community playtest is a verification channel, not a blocked PR(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#467](https://github.com/stones2stars/S2S/issues/467) from Stones2Stars/fix/conditioned-free-promotions (flabbert)
+- docs: the community playtest is a verification channel, not a blocked PR (flabbert)
+- fix: a conditioned free promotion is dropped whole, so it reaches nobody (flabbert)
+
+
 ## v1.BETA.378 - 2026-08-22
 
 ### Docs
