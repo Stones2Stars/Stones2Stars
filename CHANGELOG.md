@@ -2,6 +2,18 @@
 
 
 
+## v1.BETA.384 - 2026-08-23
+
+### Bug Fixes
+
+- the reader boundary reduces to an INT -- a float breaks the EXE's varargs(flabbert)
+
+
+### All Changes
+
+- fix: the reader boundary reduces to an INT -- a float breaks the EXE's varargs (flabbert)
+
+
 ## v1.BETA.383 - 2026-08-23
 
 ### Data
