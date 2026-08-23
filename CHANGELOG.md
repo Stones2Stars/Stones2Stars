@@ -2,6 +2,44 @@
 
 
 
+## v1.BETA.383 - 2026-08-23
+
+### Data
+
+- **buildings:** the seven prehistoric dances enter the build queue(flabbert)
+### Docs
+
+- the Cy layer is the controller -- thin, but conversion happens there(flabbert)
+- a rule carries no expiring reason(flabbert)
+- the identity set is the FLOOR, not the ceiling -- the tree says so(flabbert)
+- correct six statements the tree contradicts(flabbert)
+- **json:** record why the SM revolt-protection plane is deliberately off(flabbert)
+### Tooling
+
+- the binding check is a BURNDOWN, not a bug list(flabbert)
+- check that every Cy method Python calls is actually registered(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#494](https://github.com/stones2stars/S2S/issues/494) from Stones2Stars/fix/493-clear-cy-collisions (flabbert)
+- fix([#489](https://github.com/stones2stars/S2S/issues/489)): the reader boundary converts, and the wellbeing family clears (flabbert)
+- fix([#493](https://github.com/stones2stars/S2S/issues/493)): clear twelve Cy collisions -- 108 call sites onto the coherent reads (flabbert)
+- Merge pull request [#492](https://github.com/stones2stars/S2S/issues/492) from Stones2Stars/tooling/verify-python-bindings (flabbert)
+- Merge pull request [#487](https://github.com/stones2stars/S2S/issues/487) from Stones2Stars/fix/485-process-conversion-percent-scaling (flabbert)
+- Merge pull request [#484](https://github.com/stones2stars/S2S/issues/484) from Stones2Stars/docs/post-migration-doc-corrections (flabbert)
+- Merge pull request [#483](https://github.com/stones2stars/S2S/issues/483) from Stones2Stars/fix/386-dance-buildings-normally-buildable (flabbert)
+- docs: the Cy layer is the controller -- thin, but conversion happens there (flabbert)
+- docs: a rule carries no expiring reason (flabbert)
+- docs: the identity set is the FLOOR, not the ceiling -- the tree says so (flabbert)
+- tooling: the binding check is a BURNDOWN, not a bug list (flabbert)
+- tooling: check that every Cy method Python calls is actually registered (flabbert)
+- fix([#485](https://github.com/stones2stars/S2S/issues/485),[#471](https://github.com/stones2stars/S2S/issues/471)): the process conversion percent was scaled at load (flabbert)
+- docs: correct six statements the tree contradicts (flabbert)
+- **buildings:** the seven prehistoric dances enter the build queue (flabbert)
+- **json:** record why the SM revolt-protection plane is deliberately off (flabbert)
+
+
 ## v1.BETA.382 - 2026-08-23
 
 ### Bug Fixes
