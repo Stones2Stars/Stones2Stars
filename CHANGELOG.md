@@ -2,6 +2,37 @@
 
 
 
+## v1.BETA.382 - 2026-08-23
+
+### Bug Fixes
+
+- the upgrade gate dropped the allowed cap when it stopped asking STATE_LISTED(flabbert)
+- every great-person conversion was barred by the queue-offer verdict(flabbert)
+- Size Matters now pivots on the unit type's own rank sum, not a flat 15(flabbert)
+- an unclassified unit was divided into the combat floor by Size Matters(flabbert)
+- every unit in the game had ONE hit point(flabbert)
+- **ai:** the upgrade chain picked its winner with a die roll(flabbert)
+### Spine
+
+- combatResult says what the win COST, not just who won(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#479](https://github.com/stones2stars/S2S/issues/479) from Stones2Stars/fix/475-close-widget-ordinal-and-unguarded-info-reads (flabbert)
+- **ai:** the upgrade chain picked its winner with a die roll (flabbert)
+- fix: the upgrade gate dropped the allowed cap when it stopped asking STATE_LISTED (flabbert)
+- fix: every great-person conversion was barred by the queue-offer verdict (flabbert)
+- fix: Size Matters now pivots on the unit type's own rank sum, not a flat 15 (flabbert)
+- fix: an unclassified unit was divided into the combat floor by Size Matters (flabbert)
+- docs([#478](https://github.com/stones2stars/S2S/issues/478)): record that HP scales strength, so maxHP reached combat itself (flabbert)
+- fix: every unit in the game had ONE hit point (flabbert)
+- spine: combatResult says what the win COST, not just who won (flabbert)
+- fix([#475](https://github.com/stones2stars/S2S/issues/475)): one unrouted registry took three option tabs and their exits (flabbert)
+- docs([#475](https://github.com/stones2stars/S2S/issues/475)): a dead member of a core enum is an ABI obligation, not dead code (flabbert)
+- fix([#475](https://github.com/stones2stars/S2S/issues/475)): one deleted enum member turned off every close button (flabbert)
+
+
 ## v1.BETA.381 - 2026-08-22
 
 
