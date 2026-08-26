@@ -2,6 +2,21 @@
 
 
 
+## v1.BETA.385 - 2026-08-26
+
+### Docs
+
+- the unit rendering pipeline reference, and the doc-reading rule it cost(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#500](https://github.com/stones2stars/S2S/issues/500) from Stones2Stars/fix/496-ai-idle-lock (flabbert)
+- docs: the unit rendering pipeline reference, and the doc-reading rule it cost (flabbert)
+- fix([#497](https://github.com/stones2stars/S2S/issues/497)): plot reset announces nothing, so water plots derive HAS_COAST (flabbert)
+- fix([#496](https://github.com/stones2stars/S2S/issues/496)): a process may only ever stand alone, and idle behaves as no order (flabbert)
+
+
 ## v1.BETA.384 - 2026-08-23
 
 ### Bug Fixes
