@@ -2,6 +2,20 @@
 
 
 
+## v1.BETA.388 - 2026-08-27
+
+### Bug Fixes
+
+- wildlife besieged city plots -- canSiege named one animal player of three(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#501](https://github.com/stones2stars/S2S/issues/501) from Stones2Stars/fix/367-emphasis-carries-the-food-hammer-ratio (flabbert)
+- fix: wildlife besieged city plots -- canSiege named one animal player of three (flabbert)
+- fix([#367](https://github.com/stones2stars/S2S/issues/367)): a 3x food head start made every emphasis unreachable (flabbert)
+
+
 ## v1.BETA.387 - 2026-08-27
 
 ### Bug Fixes
