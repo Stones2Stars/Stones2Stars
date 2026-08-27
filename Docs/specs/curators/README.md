@@ -9,6 +9,14 @@
 > data IS); this area is **how the data got there** (transient). It is **dropped when the migration completes** — do
 > NOT fold it into the durable JSON spec.
 >
+> ⛔ **THE CURATOR IS BEING GOT RID OF, BECAUSE THE XML DOES NOT STAY.** The legacy XML is curator INPUT and
+> nothing else; when it goes, the curator has no input and stops existing. ⇒ **`Assets/Data/**` then becomes the
+> AUTHORED SOURCE rather than a derived artifact**, and the `_additions/` overlay dissolves into it — an addition
+> is only an overlay because something downstream regenerates over it. ⛔ So do not build NEW dependence on the
+> curator, and do not treat "the curator does it" as an answer to where data should live. ⚠ Until the XML is
+> actually gone the current rules bind exactly as written: `Assets/Data/**` is DERIVED and never hand-edited, and
+> gameplay data authors in `_additions/`.
+>
 > ⚖ **ONE FILE IN THIS FOLDER IS THE EXCEPTION: `fixed-point-and-scales.md` does NOT drop.** It is the permanent
 > home of the ×100 fixed-point model and the curator-owns-descale rule — the ×100 scale MODEL and its per-field
 > registry are durable rulings, not a migration artifact, even though the file happens to live beside the
@@ -32,26 +40,26 @@ curator's docstring + body. To read the map for an entity, **read its curator.**
 
 ## Post-curation additions (`curate_additions.py`) — the hand-authored layer
 
-> **Entity curation is complete (owner), so new GAMEPLAY data no longer goes in the legacy XML
+> **Entity curation is complete, so new GAMEPLAY data no longer goes in the legacy XML
 > (curator input) — it is a POST-CURATION ADDITION.** Additions author in `Assets/Data/_additions/<type>.json`
 > (an entity id → a partial object) and `curate_additions.py` DEEP-MERGES them into the curated
 > `Assets/Data/<type>/**` JSON as the **final offline step** (dicts recurse; leaves/lists override). It matches the
 > curators' exact `indent=1` serialization, so an addition is a minimal additive diff, never a reformat.
 >
-> **The GAME never knows curation OR additions exist** (owner: *"the c++ should not know or care that the json is
-> now different from xml; the game does not, and should not know that there is such a thing as curation"*) — the
+> **The GAME never knows curation OR additions exist** (the c++ should not know or care that the json is
+> now different from xml; the game does not, and should not know that there is such a thing as curation) — the
 > whole Python pipeline (curators + additions re-apply) is a **separate offline entity** that merely PRODUCES the
 > `Assets/Data` JSON the engine loads. The `_additions` files are the reviewable/revertible source layer.
 >
-> **⚖ THE RE-APPLY IS PART OF THE WRITE — there is no step to remember (owner: *"it probably should be part of
-> core loop"*).** A per-entity `--write` CLEARS its folder before rewriting, so running one curator alone used to
+> **⚖ THE RE-APPLY IS PART OF THE WRITE — there is no step to remember (it probably should be part of
+> core loop).** A per-entity `--write` CLEARS its folder before rewriting, so running one curator alone used to
 > silently drop that entity's overlay and leave the committed data disagreeing with a fresh regen. It was a
 > documented instruction ("re-run `curate_additions.py` after any re-curate") and it was missed **more than once**
 > — which is the point: a rule has to be remembered, a check does not ([AGENTS.md](../../../AGENTS.md)).
 > So `curate_common` hooks the re-apply to the ONE act every writer must perform — clearing its folder
 > (`wipe_entity_json`) — and runs it at process exit over exactly the folders that run rewrote. The merge stays
 > the ONE implementation in `curate_additions`
-> ([the DRY single-implementation law](../../architecture/patterns.md#dry--one-implementation-per-calculation--evaluation-the-single-source-law)); the hook only decides
+> ([the DRY single-implementation law](../../architecture/patterns/03-dry-one-implementation-per.md#dry--one-implementation-per-calculation--evaluation-the-single-source-law)); the hook only decides
 > WHEN it runs, and re-merging the same partial is a no-op, so `curate_all`'s closing pass still lands the same
 > bytes.
 > ⛔ **The hook reaches ONLY a writer that calls `wipe_entity_json` — a bespoke in-place write skips BOTH halves**
@@ -63,7 +71,7 @@ curator's docstring + body. To read the map for an entity, **read its curator.**
 > ⚠ A `--sample`/dry run clears nothing, so it registers nothing and applies no overlay — reading a sample still
 > shows the pre-overlay curator output, which is what you want when checking the CURATOR.
 
-## ⛔ THE CURATOR SKIPS DEAD THINGS — a MECHANISM, never a hand-kept list (owner)
+## ⛔ THE CURATOR SKIPS DEAD THINGS — a MECHANISM, never a hand-kept list
 
 An entity that produces **no effect, unlocks nothing, and is named by nothing** is dead weight: loaded resident,
 listed in the manifest, offered in the build list and scored by the AI, all to do nothing. The legacy XML

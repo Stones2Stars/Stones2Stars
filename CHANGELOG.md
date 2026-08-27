@@ -2,6 +2,56 @@
 
 
 
+## v1.BETA.386 - 2026-08-27
+
+### Ai
+
+- a unit count is a CAP, and a floor may only force a unit that can survive(flabbert)
+### Bug Fixes
+
+- the event payload is a tuple, and a bare NULL never becomes one(flabbert)
+### Data
+
+- the first research process is available from the start, not from Oral Tradition(flabbert)
+### Docs
+
+- the AI unit-count rulings, and the curator's own expiry(flabbert)
+- plans/parked/ is out of the work-start reading sweep(flabbert)
+- the binding burndown over-reports twice, and the receiver is the tell(flabbert)
+- cut the python read census, keep the hazards and the rulings(flabbert)
+- retire the grant apply-site census, keep every ruling it was carrying(flabbert)
+- no spec or reference doc quotes the owner any more(flabbert)
+- the specs state their rules; the quotes are gone from every spec and reference(flabbert)
+- split the four multi-concept parts, and stop a hub lying about itself(flabbert)
+- convert owner quotes into the rules they assert(flabbert)
+- the C++ rules state themselves too(flabbert)
+- paginate the six unreadable specs, and state rules instead of attributing them(flabbert)
+### Tooling
+
+- a ruling census, so an editorial pass cannot quietly drop a ruling(flabbert)
+
+
+### All Changes
+
+- docs: the AI unit-count rulings, and the curator's own expiry (flabbert)
+- ai: a unit count is a CAP, and a floor may only force a unit that can survive (flabbert)
+- python surface: publish the two mutations the random-event handlers needed (flabbert)
+- fix: the event payload is a tuple, and a bare NULL never becomes one (flabbert)
+- data: the first research process is available from the start, not from Oral Tradition (flabbert)
+- docs: plans/parked/ is out of the work-start reading sweep (flabbert)
+- docs: the binding burndown over-reports twice, and the receiver is the tell (flabbert)
+- docs: cut the python read census, keep the hazards and the rulings (flabbert)
+- docs: retire the grant apply-site census, keep every ruling it was carrying (flabbert)
+- docs: no spec or reference doc quotes the owner any more (flabbert)
+- docs: the specs state their rules; the quotes are gone from every spec and reference (flabbert)
+- docs: split the four multi-concept parts, and stop a hub lying about itself (flabbert)
+- docs: convert owner quotes into the rules they assert (flabbert)
+- docs: the C++ rules state themselves too (flabbert)
+- docs: paginate the six unreadable specs, and state rules instead of attributing them (flabbert)
+- docs-gate: stop sending agents to a doc that was merged away (flabbert)
+- tooling: a ruling census, so an editorial pass cannot quietly drop a ruling (flabbert)
+
+
 ## v1.BETA.385 - 2026-08-26
 
 ### Docs

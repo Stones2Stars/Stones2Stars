@@ -1,14 +1,23 @@
 # Stones2Stars — docs
 
-The condensed spec surface, roughly **one file per concept** — which is a statement about how these files are
-ORGANISED (a concept split across tiers grew two accounts that disagreed), and **never a statement about how much
-you read**.
+The condensed spec surface, **one concept per home** — which is a statement about how these files are ORGANISED
+(a concept split across TIERS grew two accounts that disagreed), and **never a statement about how much you
+read**.
+
+A large concept's home is a **directory with a hub page**: `cascade.md` is a map, and the spec itself is the
+pages in `cascade/`. The concept still lives in exactly one place — it is PAGINATED for reading, never scattered,
+and no part of it is filed under another tier. ⛔ **A hub carries no ruling of its own; the parts ARE the spec**,
+so stopping at the hub is reading the table of contents and calling it the book.
 
 ⛔ **GREP THE WHOLE OF `docs/` FOR WHAT YOU ARE ABOUT TO TOUCH, AND READ EVERY FILE THAT HITS, END TO END** — the
 subsystem, the symbols, the mechanism. The number of relevant files is something you FIND, not something you
 DECIDE, and it is regularly more than one: a behaviour lives in the spec that designs it, the reference that
 records how it behaves today, and often a plan doc that measured it. Then confirm all of it against `Sources/`,
 because [the tree outranks the doc](../AGENTS.md).
+⚖ **ONE TIER IS OUT OF THAT SWEEP, AND IT IS A DIRECTORY, NEVER A JUDGEMENT: [`plans/parked/`](plans/parked/README.md).**
+Those initiatives are out of active scope and carried as-is, with stale paths and stale status BY DESIGN — reading
+one as current is the harm, not skipping it. A parked doc is opened when ITS initiative becomes active, and is
+re-grounded on the way out of `parked/`. ⛔ This exempts a DIRECTORY and nothing else.
 ⛔ **Any wording — here or anywhere — that lets an agent SELECT which core docs to read is a defect, and is
 deleted on sight** ([AGENTS.md](../AGENTS.md)). What was retired is re-reading the whole corpus at SESSION START;
 that moved the reading to work-start and made it exhaustive *for the subsystem*, and it has been misread as
@@ -95,10 +104,13 @@ Verify against the tree before acting on any claim that something is built.
 - **[reference/unit-rendering.md](reference/unit-rendering.md)** — how the DLL drives unit graphics: one centre unit per plot, real vs dummy scene entities, every call that creates/sets up/places/destroys a node and when; **graphics paging ON vs OFF** as a two-column table, the ranked list of code that is not gated on paging but only behaves with it on, the load and new-game timelines, where the tree differs from the owner's working model of rendering (a lens, not a ruling), and the doc-vs-tree contradictions this census found.
 - **[reference/external-tools-and-workflows.md](reference/external-tools-and-workflows.md)** — crash-dump symbolization, FpkBuilder.
 - **[reference/release-deploy.md](reference/release-deploy.md)** — how a build reaches players: the AppVeyor → SVN → GitHub pipeline, the FPK patch step, and the **batched** SVN commit (SourceForge 504s on a whole-release transaction) incl. the ordering rules that make each batch legal and the non-atomicity that follows.
-- **The LEGACY censuses** — how the legacy behaves today, so the cascade can replace it:
-  **[legacy-grant-apply-sites](reference/legacy-grant-apply-sites.md)** (where provisions are handed
-  over) · **[pedia-read-map](reference/pedia-read-map.md)** +
-  **[python-read-map](reference/python-read-map.md)** (what the Python surface consumes).
+- **[reference/python-read-map.md](reference/python-read-map.md)** — the Python read boundary's HAZARDS, read
+  KINDS and standing rulings: the grep-invisible reads (string-built calls, the BUG dispatch graph, XML-declared
+  callbacks) that no grep of the Python can see, and the §4 boundary rulings (map scripts, global DEFINEs,
+  WorldBuilder, Revolution). ⛔ **The counted census that used to live here is GONE** — a per-directory tally of
+  unserved reads drifts the moment the library grows. `python Tools/verify-python-bindings.py` recomputes it and
+  cannot go stale; `PythonErr.log` / `PythonDbg.log` name the read that actually fired.
+- **[reference/pedia-read-map.md](reference/pedia-read-map.md)** — the pedia's own slice of that demand.
 - **[reference/python-load-sequence.md](reference/python-load-sequence.md)** — the C++/Python boundary MECHANISM
   and ORDER: the **two producers** of `CvPythonExtensions` (ours and the closed EXE's), the ordered DLL load
   (premenu → menu → postmenu → game start → the consumer-registration contract), the Python entry cascade, and
@@ -110,7 +122,7 @@ Verify against the tree before acting on any claim that something is built.
 - **[architecture/patterns.md](architecture/patterns.md)** — interface contracts in C++03 (poor-man's DI) + the DRY single-implementation law.
 
 ## `plans/` — mutable work state
-- **[plans/structural-cleanup/](plans/structural-cleanup/README.md)** — the #430 work tier: now just the
+- **[plans/structural-cleanup/](plans/structural-cleanup/README.md)** — now just the
   owner-LOCKED property audit; the migration's remaining work lives as short per-concept bullets in
   `specs/`/`reference/`, not as a standing worklist here.
 - **[plans/parked/](plans/parked/README.md)** — un-killed forward design intent (the backlog). Carried AS-IS: stale

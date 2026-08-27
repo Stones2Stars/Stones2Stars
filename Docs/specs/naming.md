@@ -51,7 +51,7 @@ not yet ported (still authored in `Assets/XML`, referenced from JSON by id). Ver
 | `SPECIALUNIT_` | a special-unit group | ✅ `specialunits/` |
 | `TECH_` | a technology | ✅ `techs/` |
 | `TERRAIN_` | a terrain | ✅ `terrains/` |
-| **`TRAIT_`** | a **simple**-set trait. ⛔ The prefix STATES THE SET, and the folder and the prefix agree by construction (owner, [modifier.md §4](../cascade.md)) — every record in `traits/complex/` carries `TRAIT_COMPLEX_`, including a complex-ONLY line with no simple counterpart. Otherwise a held id cannot say which set it came from, and a simple-set leak is indistinguishable from a legitimate plain id | ✅ `traits/simple/` |
+| **`TRAIT_`** | a **simple**-set trait. ⛔ The prefix STATES THE SET, and the folder and the prefix agree by construction ([modifier.md §4](../cascade.md)) — every record in `traits/complex/` carries `TRAIT_COMPLEX_`, including a complex-ONLY line with no simple counterpart. Otherwise a held id cannot say which set it came from, and a simple-set leak is indistinguishable from a legitimate plain id | ✅ `traits/simple/` |
 | **`TRAIT_COMPLEX_`** | the complex (Thunderbrd) VARIANT of a simple trait | ✅ `traits/complex/` |
 | `UNIT_` | a unit | ✅ `units/` |
 | `UNITCOMBAT_` | a unit-combat class | ✅ `unitcombats/` |
@@ -78,7 +78,7 @@ The catch-all engine tokens that are **not** infotype ids (`TURN`, `POPULATION`,
 
 ---
 
-## ⛔ THE VERB SAYS WHICH ENTITY — `build` is an IMPROVEMENT, `construct` is a BUILDING (owner)
+## ⛔ THE VERB SAYS WHICH ENTITY — `build` is an IMPROVEMENT, `construct` is a BUILDING
 
 **In Civ4 vocabulary `build` means a WORKER BUILD** — the `BUILD_` infotype above, a plot improvement action
 (`BuildTypes`, `CvPlot::canBuild`, `MISSION_BUILD`). **A BUILDING is CONSTRUCTED** (`BuildingTypes`,
@@ -87,6 +87,5 @@ at the wrong entity and the wrong machine.
 
 ⚠ **The shortened form reads fine, which is the trap.** `buildList` looks like an unremarkable abbreviation of
 `buildingList` and is a different concept. ⇒ Never shorten `building` to `build` in a name YOU write.
-⛔ **The INHERITED offenders are NOT a rename backlog (owner): *"that the naming is ass is unfortunately not
-something we can do a lot with."*** The C2C-era UI classes (`BuildingFilterCanBuild`, `CvBuildingList`, …) carry
+⛔ **The INHERITED offenders are NOT a rename backlog: the naming is poor and there is little that can be done about it.** The C2C-era UI classes (`BuildingFilterCanBuild`, `CvBuildingList`, …) carry
 this throughout and a sweep buys nothing. The rule binds what you NAME, not what you find.
