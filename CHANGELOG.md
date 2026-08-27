@@ -2,6 +2,22 @@
 
 
 
+## v1.BETA.387 - 2026-08-27
+
+### Bug Fixes
+
+- every MIGHT promotion was inert under Size Matters -- the recalc rider named one family(flabbert)
+### Docs
+
+- correct the broker-bid finding -- the division is a no-op, not the mechanism(flabbert)
+
+
+### All Changes
+
+- fix: every MIGHT promotion was inert under Size Matters -- the recalc rider named one family (flabbert)
+- docs: correct the broker-bid finding -- the division is a no-op, not the mechanism (flabbert)
+
+
 ## v1.BETA.386 - 2026-08-27
 
 ### Ai
