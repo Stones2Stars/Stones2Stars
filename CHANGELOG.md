@@ -2,6 +2,38 @@
 
 
 
+## v1.BETA.390 - 2026-08-28
+
+### Bug Fixes
+
+- **python:** serve the victory, vote and spaceship reads(flabbert)
+- **python:** clear the dead info reads outside WorldBuilder (tail)(flabbert)
+- **python:** clear the Revolution family's dead info reads(flabbert)
+- **python:** re-point consumers off the dead GC.get<X>Info reads(flabbert)
+- **python-surface:** guard the three unguarded CyPlot dereferences(flabbert)
+- **python-surface:** publish CyReplayInfo, which Python constructs(flabbert)
+- **screens:** dispatch input to lazily-registered and WorldBuilder screens(flabbert)
+### Refactor
+
+- **python-surface:** re-home the domain read, and delete the slot it duplicated(flabbert)
+- **python-surface:** dissolve CyState/CyAct onto the per-type Cy wrappers(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#502](https://github.com/stones2stars/S2S/issues/502) from Stones2Stars/fix/worldbuilder-input-dispatch-and-cy-rehome (flabbert)
+- **python:** serve the victory, vote and spaceship reads (flabbert)
+- **python:** clear the dead info reads outside WorldBuilder (tail) (flabbert)
+- **python:** clear the Revolution family's dead info reads (flabbert)
+- **python-surface:** re-home the domain read, and delete the slot it duplicated (flabbert)
+- **python-surface:** guard the three unguarded CyPlot dereferences (flabbert)
+- docs+tools: add the two Python checks these failures needed, record the rulings (flabbert)
+- **python:** re-point consumers off the dead GC.get<X>Info reads (flabbert)
+- **python-surface:** publish CyReplayInfo, which Python constructs (flabbert)
+- **screens:** dispatch input to lazily-registered and WorldBuilder screens (flabbert)
+- **python-surface:** dissolve CyState/CyAct onto the per-type Cy wrappers (flabbert)
+
+
 ## v1.BETA.389 - 2026-08-28
 
 ### Bug Fixes
