@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.389 - 2026-08-28
+
+### Bug Fixes
+
+- CyUnit.getNameNoDesc was declared, registered nowhere, and called 16 times(flabbert)
+
+
+### All Changes
+
+- log hunter ai, and attempt to fix hunters returning home too fast for healing (flabbert)
+- fix: CyUnit.getNameNoDesc was declared, registered nowhere, and called 16 times (flabbert)
+
+
 ## v1.BETA.388 - 2026-08-27
 
 ### Bug Fixes
