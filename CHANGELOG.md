@@ -2,6 +2,147 @@
 
 
 
+## v1.BETA.391 - 2026-08-29
+
+### Bug Fixes
+
+- AI_refreshExploreRange no longer reports a non-advancing move as progress(flabbert)
+    **Closes [#189](https://github.com/stones2stars/S2S/issues/189)**
+- stop AI_formArmies destroying the army list and corrupting its ID counter(flabbert)
+    **Closes [#364](https://github.com/stones2stars/S2S/issues/364)**
+- walk a cargo MANIFEST in scheduleDeath, not the live plot unit list(flabbert)
+    **Closes [#452](https://github.com/stones2stars/S2S/issues/452)**
+- three modular-merge defects in the info loaders(flabbert)
+    **Closes [#356](https://github.com/stones2stars/S2S/issues/356)**
+    **Closes [#357](https://github.com/stones2stars/S2S/issues/357)**
+    **Closes [#355](https://github.com/stones2stars/S2S/issues/355)**
+- **ai:** stop asserting on the contract broker's documented NULL join unit(flabbert)
+    **Closes [#336](https://github.com/stones2stars/S2S/issues/336)**
+- **cargo:** the transport system was dead end-to-end ([#524](https://github.com/stones2stars/S2S/issues/524))(flabbert)
+- **data:** give Tribal Guardian a defaultUnitAI its allowed list permits(flabbert)
+    **Closes [#399](https://github.com/stones2stars/S2S/issues/399)**
+- **data:** give LUMBERJACK the wood-chain deposits it was missing(flabbert)
+    **Closes [#191](https://github.com/stones2stars/S2S/issues/191)**
+- **load:** stop reading half-constructed state during the save read(flabbert)
+- **logging:** one universal log level in the menu, and a ratchet on the legacy surface(flabbert)
+- **pathfinding:** delete the known-route cost assert that cannot hold(flabbert)
+    **Closes [#337](https://github.com/stones2stars/S2S/issues/337)**
+- **python:** re-point the last certain owner-derived team reads(flabbert)
+- **python:** finish the read boundary -- the last 89 dead reads(flabbert)
+- **python:** publish the revolution controller surface -- 173 dead sites ([#503](https://github.com/stones2stars/S2S/issues/503))(flabbert)
+- **python:** re-point the military advisor onto the published group reads(flabbert)
+- **python:** CyUnit/CySelectionGroup::area was dead too, and it would have crashed(flabbert)
+- **python:** sweep the screens for reads registered on no class(flabbert)
+- **python:** CyUnit::plot was declared, registered nowhere, and called 24 times(flabbert)
+    **Closes [#482](https://github.com/stones2stars/S2S/issues/482)**
+- **save:** the military count is derived, so it stops being serialized(flabbert)
+- **ui:** drop the era-keyed health-bar divisor that compensates for nothing(flabbert)
+    **Closes [#477](https://github.com/stones2stars/S2S/issues/477)**
+- **ui:** hide plot yields the viewer cannot work yet, and close the two capability traces(flabbert)
+    **Closes [#458](https://github.com/stones2stars/S2S/issues/458)**
+- **ui:** repaint the yield symbols when water-work lands mid-turn(flabbert)
+### Build
+
+- delete the Profile/ProfileExtra configs so the profiler is unselectable(flabbert)
+    **Closes [#449](https://github.com/stones2stars/S2S/issues/449)**
+### Cleanup
+
+- drop the dead DCM air-bomb tech capability from the curator and the data(flabbert)
+- delete CvCity::m_aiProductionToCommerceModifier, an unreachable accumulator(flabbert)
+    **Closes [#491](https://github.com/stones2stars/S2S/issues/491)**
+- delete the dead CvDiplomacyTextInfo class and two dead info members(flabbert)
+    **Closes [#359](https://github.com/stones2stars/S2S/issues/359)**
+    **Closes [#358](https://github.com/stones2stars/S2S/issues/358)**
+### Docs
+
+- state what ARMYAI_ is FOR -- the army owns the leave decision, not the unit(flabbert)
+- record ARMYAI_ as a deferral with its reason and its prize, not an omission(flabbert)
+- record what the CvArmy layer actually is, and which parts were never built(flabbert)
+- **enabler:** record the grantor->marker collapse ruling on empire-level buildings(flabbert)
+    **Closes [#456](https://github.com/stones2stars/S2S/issues/456)**
+### Features
+
+- **readjson:** census the MISSING required key -- the reader's quietest miss(flabbert)
+### Tools
+
+- attribute Cy registrations PER CLASS -- the name-level test hid the defect(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#525](https://github.com/stones2stars/S2S/issues/525) from Stones2Stars/fix/524-transport-cargo-dead (flabbert)
+- **save:** the military count is derived, so it stops being serialized (flabbert)
+- **load:** stop reading half-constructed state during the save read (flabbert)
+- **cargo:** the transport system was dead end-to-end ([#524](https://github.com/stones2stars/S2S/issues/524)) (flabbert)
+- Merge pull request [#523](https://github.com/stones2stars/S2S/issues/523) from Stones2Stars/fix/482-cyunit-plot-unregistered (flabbert)
+- Merge pull request [#522](https://github.com/stones2stars/S2S/issues/522) from Stones2Stars/fix/476-logging-menu-cleanup (flabbert)
+- Merge pull request [#521](https://github.com/stones2stars/S2S/issues/521) from Stones2Stars/fix/458-gate-plot-yield-symbols-on-water-work (flabbert)
+- **python:** finish the read boundary -- the last 89 dead reads (flabbert)
+- **python:** publish the revolution controller surface -- 173 dead sites ([#503](https://github.com/stones2stars/S2S/issues/503)) (flabbert)
+- **python:** re-point the last certain owner-derived team reads (flabbert)
+- **python:** sweep the screens for reads registered on no class (flabbert)
+- **python:** CyUnit/CySelectionGroup::area was dead too, and it would have crashed (flabbert)
+- tools: attribute Cy registrations PER CLASS -- the name-level test hid the defect (flabbert)
+- **python:** re-point the military advisor onto the published group reads (flabbert)
+- **python:** CyUnit::plot was declared, registered nowhere, and called 24 times (flabbert)
+    **Closes [#482](https://github.com/stones2stars/S2S/issues/482)**
+- **logging:** one universal log level in the menu, and a ratchet on the legacy surface (flabbert)
+- **ui:** repaint the yield symbols when water-work lands mid-turn (flabbert)
+- **ui:** hide plot yields the viewer cannot work yet, and close the two capability traces (flabbert)
+    **Closes [#458](https://github.com/stones2stars/S2S/issues/458)**
+- Merge pull request [#520](https://github.com/stones2stars/S2S/issues/520) from Stones2Stars/docs/456-empire-level-collapse-ruling (flabbert)
+- **enabler:** record the grantor->marker collapse ruling on empire-level buildings (flabbert)
+    **Closes [#456](https://github.com/stones2stars/S2S/issues/456)**
+- Merge pull request [#519](https://github.com/stones2stars/S2S/issues/519) from Stones2Stars/fix/191-lumberjack-wood-chain-uniform (flabbert)
+- Merge pull request [#518](https://github.com/stones2stars/S2S/issues/518) from Stones2Stars/fix/477-health-bar-width-divisor (flabbert)
+- Merge pull request [#517](https://github.com/stones2stars/S2S/issues/517) from Stones2Stars/feat/readjson-missing-key-census (flabbert)
+- Merge pull request [#516](https://github.com/stones2stars/S2S/issues/516) from Stones2Stars/fix/399-tribal-guardian-default-unitai (flabbert)
+- Merge pull request [#515](https://github.com/stones2stars/S2S/issues/515) from Stones2Stars/fix/337-pathgen-known-route-invariant (flabbert)
+- **data:** give LUMBERJACK the wood-chain deposits it was missing (flabbert)
+    **Closes [#191](https://github.com/stones2stars/S2S/issues/191)**
+- **ui:** drop the era-keyed health-bar divisor that compensates for nothing (flabbert)
+    **Closes [#477](https://github.com/stones2stars/S2S/issues/477)**
+- Merge pull request [#514](https://github.com/stones2stars/S2S/issues/514) from Stones2Stars/fix/336-contract-broker-null-joinunit (flabbert)
+- Merge pull request [#513](https://github.com/stones2stars/S2S/issues/513) from Stones2Stars/fix/189-explore-range-no-progress-spin (flabbert)
+- **readjson:** census the MISSING required key -- the reader's quietest miss (flabbert)
+- **data:** give Tribal Guardian a defaultUnitAI its allowed list permits (flabbert)
+    **Closes [#399](https://github.com/stones2stars/S2S/issues/399)**
+- **pathfinding:** delete the known-route cost assert that cannot hold (flabbert)
+    **Closes [#337](https://github.com/stones2stars/S2S/issues/337)**
+- **ai:** stop asserting on the contract broker's documented NULL join unit (flabbert)
+    **Closes [#336](https://github.com/stones2stars/S2S/issues/336)**
+- Merge pull request [#512](https://github.com/stones2stars/S2S/issues/512) from Stones2Stars/docs/armies-reference (flabbert)
+- fix: AI_refreshExploreRange no longer reports a non-advancing move as progress (flabbert)
+    **Closes [#189](https://github.com/stones2stars/S2S/issues/189)**
+- Merge pull request [#510](https://github.com/stones2stars/S2S/issues/510) from Stones2Stars/fix/364-army-flta-id-corruption (flabbert)
+- Merge pull request [#511](https://github.com/stones2stars/S2S/issues/511) from Stones2Stars/fix/446-dcm-airbomb-curator-residue (flabbert)
+- docs: state what ARMYAI_ is FOR -- the army owns the leave decision, not the unit (flabbert)
+- docs: record ARMYAI_ as a deferral with its reason and its prize, not an omission (flabbert)
+- docs: record what the CvArmy layer actually is, and which parts were never built (flabbert)
+- cleanup: drop the dead DCM air-bomb tech capability from the curator and the data (flabbert)
+- fix: stop AI_formArmies destroying the army list and corrupting its ID counter (flabbert)
+    **Closes [#364](https://github.com/stones2stars/S2S/issues/364)**
+- Merge pull request [#509](https://github.com/stones2stars/S2S/issues/509) from Stones2Stars/fix/452-cargo-loop-iterator-invalidation (flabbert)
+- Merge pull request [#508](https://github.com/stones2stars/S2S/issues/508) from Stones2Stars/fix/355-356-357-info-modular-merge-defects (flabbert)
+- Merge pull request [#507](https://github.com/stones2stars/S2S/issues/507) from Stones2Stars/fix/491-delete-production-to-commerce-modifier (flabbert)
+- serve the process conversion on CyCity instead of dropping the advisor row (flabbert)
+- Merge pull request [#506](https://github.com/stones2stars/S2S/issues/506) from Stones2Stars/fix/358-359-delete-dead-info-declarations (flabbert)
+- Merge pull request [#505](https://github.com/stones2stars/S2S/issues/505) from Stones2Stars/fix/449-delete-profile-build-configs (flabbert)
+- fix: walk a cargo MANIFEST in scheduleDeath, not the live plot unit list (flabbert)
+    **Closes [#452](https://github.com/stones2stars/S2S/issues/452)**
+- fix: three modular-merge defects in the info loaders (flabbert)
+    **Closes [#356](https://github.com/stones2stars/S2S/issues/356)**
+    **Closes [#357](https://github.com/stones2stars/S2S/issues/357)**
+    **Closes [#355](https://github.com/stones2stars/S2S/issues/355)**
+- cleanup: delete CvCity::m_aiProductionToCommerceModifier, an unreachable accumulator (flabbert)
+    **Closes [#491](https://github.com/stones2stars/S2S/issues/491)**
+- cleanup: delete the dead CvDiplomacyTextInfo class and two dead info members (flabbert)
+    **Closes [#359](https://github.com/stones2stars/S2S/issues/359)**
+    **Closes [#358](https://github.com/stones2stars/S2S/issues/358)**
+- build: delete the Profile/ProfileExtra configs so the profiler is unselectable (flabbert)
+    **Closes [#449](https://github.com/stones2stars/S2S/issues/449)**
+
+
 ## v1.BETA.390 - 2026-08-28
 
 ### Bug Fixes

@@ -143,6 +143,22 @@ the synchronized stream. Authoring the threshold is data; performing the draw is
   unit finder is compiled out). Fully pluggable via 5 typed callbacks (heuristic / cost / valid / terminus /
   turn-end); `generatePathForHypotheticalUnit` does distance probes with no live `CvUnit`. Shared via
   `CvSelectionGroup::getPathGenerator()`.
+- **⚖ THE NODE TREE SURVIVES BETWEEN CALLS, AND THE RESET CONDITION IS NARROW: `!bSameGroup || pFrom != m_pFrom`.**
+  Re-pathing the SAME group from the SAME origin to a different destination keeps every allocated node, its
+  `m_iCostTo`, and its flags; only a different group or a different origin resets the pool and the plot info.
+  This is the [spatial carve-out](../cascade/06-spatial-and-contextdict.md) working as designed — but it means a
+  node's recorded cost may belong to an EARLIER generation, which is why `m_iPathSeq` is compared against
+  `m_iSeq` wherever freshness actually matters.
+- **⛔ `m_bIsKnownRoute` MARKS A NODE OF A PREVIOUS WINNING PATH, AND IT IS CLEARED ONLY AT ALLOCATION — never at
+  the start of a generation.** It is set on every node of the finalized path when a generation succeeds, so it
+  survives into subsequent generations over the retained tree.
+  ⛔ **So a node being a known route says NOTHING about its cost being current, and a cost-equality invariant
+  keyed on the flag is not merely fragile — it is unsatisfiable.** The visited-previously branch reaches its
+  relink two ways: the IMPROVEMENT test (`newNode->m_iCostTo > node->m_iCostTo + iEdgeCost`) is entered exactly
+  when the two sides are UNEQUAL, and the `isBetterPath` path can only fall through when they are exactly EQUAL.
+  An assert demanding equality after the two merge is therefore definitionally false on the first and a
+  tautology on the second — it can never hold and can never catch anything. ⚑ The sibling loop in
+  `generatePathForHypotheticalUnit` is the same code without it, which is the shape to match.
 - **`FAStar`** still drives the **non-movement** queries: **step** (tile-hop distance), **route**, **border**,
   **area** (flood-fill), **plot-group** (trade net). Finders are **stateful + shared** — call `GetLastNode` on the
   *same* finder that ran `GeneratePath` (bug #73 read a stale global → wrong distance). `stepCost = 1` (a hop count,
@@ -259,11 +275,32 @@ where it is. Read what the option is being ASKED, never match on the option name
     (processes/votes/espionage-missions/spawns) register late, so the postmenu re-run is what completes every
     cross-category FK edge. The postmenu pass ends by FREEING the store — after load, no JSON-shaped object
     survives.
-  - **Fail-loud coverage** — the three failure counts print UNCONDITIONALLY to `Loading.log` on every pass
-    (`[READJSON] coverage unresolvedFk=N unconsumedSections=N unknownKeys=N`), plus one
+  - **Fail-loud coverage** — the four failure counts print UNCONDITIONALLY to `Loading.log` on every pass
+    (`[READJSON] coverage unresolvedFk=N unconsumedSections=N unknownKeys=N missingKeys=N`), plus one
     `[READJSON] ERROR unknown-key` line per non-reserved object key outside the CLOSED family vocabulary
-    (`CvJsonParse.cpp` `CJK_FAMILY_KEYS`, mirrored from `Tools/Migration/family_census.py`); the per-item
+    (`CvJsonParse.cpp` `CJK_FAMILY_KEYS`, mirrored from `Tools/Migration/family_census.py`) and one
+    `[READJSON] ERROR missing-key` line per REQUIRED key no entity authored; the per-item
     detail rides the `SD_READJSON` spine events.
+  - **⛔ `jsonIdFk` ANSWERS `-1` FOR TWO DIFFERENT FAILURES, AND THE CALL SITE CANNOT TELL THEM APART.** A key
+    that is PRESENT with an id that does not resolve routes through `jsonResolveId`, so it lands on the
+    `unresolvedFk` census; a key that is simply ABSENT returns `-1` having touched no census at all. Both reach
+    the reader as the same `< 0`, so for years the reported half and the silent half were indistinguishable at
+    every fallback in the tree.
+    ⚑ **The absent half is the QUIETEST miss the reader has**, and that is structural rather than a matter of
+    degree: an unknown key is data the reader cannot place, an unconsumed section is data that reaches no getter,
+    an unresolved FK is an id that names nothing — all three leave a TRACE IN THE DATA. A missing key leaves
+    none. The file parses, every key present is known, every section is consumed, and the substituted default is
+    indistinguishable from an authored value. *(Worked: `UNIT_TRIBAL_GUARDIAN` ran on a `UNITAI_UNKNOWN` default
+    its own `identity.unitAIs` forbade, and nothing anywhere said so.)*
+    ⇒ **So a fallback substituting a SEMANTIC default records it** — `jsonNoteMissingKey(type, key, fallback)`,
+    naming the value actually in effect. ⚖ Only where the default can be WRONG: a role, a domain, a category. A
+    numeric zero or an empty list is not recorded, and neither is a default the CURATOR deliberately elides
+    (`identity.aggression` omits its 5) — there, absence and the default mean the same thing and a report would
+    be noise that buries the real ones.
+  - **⛔ A DROPPED ROW ANNOUNCES THROUGH THE EXISTING CENSUS, never a new one** ([a dropped trigger
+    announces](../specs/triggers.md)). A malformed or id-less element inside a consumed
+    section is `jsonNoteUnconsumed(type, "<section>/<why>")` — the shape `CvGrants` already uses
+    (`entryHasNoResolvableId`) and `CvBuildInfo`'s `produces.features` / `produces.terraform` rows now match.
 - **`CvInfoUtil`** is the XML loader for the not-yet-replaced info types: one `getDataMembers()` declaration
   derives read/copyNonDefaults/checkSum/init (`CvBuildInfo` is the reference). **The forward direction is
   top-down JSON via `readJson`, which bypasses `CvInfoUtil` entirely** — do NOT chase the old "migrate remaining
