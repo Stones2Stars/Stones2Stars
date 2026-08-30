@@ -2,6 +2,26 @@
 
 
 
+## v1.BETA.393 - 2026-08-30
+
+### Bug Fixes
+
+- **cascade:** specialists deposited onto a plane nothing read ([#532](https://github.com/stones2stars/S2S/issues/532))(flabbert)
+- **great people:** no great person could ever be born ([#539](https://github.com/stones2stars/S2S/issues/539))(flabbert)
+### Docs
+
+- **git:** the hard gate is the PUSH, and the check must gate rather than accompany(flabbert)
+
+
+### All Changes
+
+- Merge branch 'release' of https://github.com/Stones2Stars/S2S into release (flabbert)
+- Merge pull request [#540](https://github.com/stones2stars/S2S/issues/540) from Stones2Stars/fix/539-great-people-never-born (flabbert)
+- **great people:** no great person could ever be born ([#539](https://github.com/stones2stars/S2S/issues/539)) (flabbert)
+- **git:** the hard gate is the PUSH, and the check must gate rather than accompany (flabbert)
+- **cascade:** specialists deposited onto a plane nothing read ([#532](https://github.com/stones2stars/S2S/issues/532)) (flabbert)
+
+
 ## v1.BETA.392 - 2026-08-30
 
 ### Bug Fixes
