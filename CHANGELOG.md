@@ -2,6 +2,48 @@
 
 
 
+## v1.BETA.392 - 2026-08-30
+
+### Bug Fixes
+
+- **cascade:** specialists deposited onto a plane nothing read ([#532](https://github.com/stones2stars/S2S/issues/532))(flabbert)
+- **data:** a dig gate needs BOTH resources, and the mapinguari needs a heritage ([#526](https://github.com/stones2stars/S2S/issues/526))(flabbert)
+- **map:** the land-plot count went negative, killing barbarian spawns ([#526](https://github.com/stones2stars/S2S/issues/526))(flabbert)
+- **ui:** the flat yields are ONE line; the conditionals come separately(flabbert)
+- **ui:** tooltips spell out yields where the icon belongs(flabbert)
+- **ui:** name the other deposit legs in the happiness tooltip(flabbert)
+- **ui:** the happiness tooltip said "buildings" for the whole deposit plane ([#526](https://github.com/stones2stars/S2S/issues/526))(flabbert)
+- **ui:** hovering an enemy city listed its whole garrison through the fog ([#526](https://github.com/stones2stars/S2S/issues/526))(flabbert)
+### Docs
+
+- **tooltips:** the LOOK reference, and a mechanical census of the composers(flabbert)
+### Features
+
+- **city screen:** the building list says what each building actually does(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#536](https://github.com/stones2stars/S2S/issues/536) from Stones2Stars/fix/532-specialist-deposits-dropped (flabbert)
+- **cascade:** specialists deposited onto a plane nothing read ([#532](https://github.com/stones2stars/S2S/issues/532)) (flabbert)
+- Merge pull request [#529](https://github.com/stones2stars/S2S/issues/529) from Stones2Stars/feat/city-building-contributions (flabbert)
+- Merge pull request [#531](https://github.com/stones2stars/S2S/issues/531) from Stones2Stars/fix/526-happiness-attribution (flabbert)
+- Merge pull request [#533](https://github.com/stones2stars/S2S/issues/533) from Stones2Stars/fix/tooltip-yield-icons (flabbert)
+- Merge pull request [#534](https://github.com/stones2stars/S2S/issues/534) from Stones2Stars/fix/tooltip-flat-yield-line (flabbert)
+- Merge pull request [#535](https://github.com/stones2stars/S2S/issues/535) from Stones2Stars/fix/526-city-hover-unit-leak (flabbert)
+- **ui:** hovering an enemy city listed its whole garrison through the fog ([#526](https://github.com/stones2stars/S2S/issues/526)) (flabbert)
+- **tooltips:** the LOOK reference, and a mechanical census of the composers (flabbert)
+- **ui:** the flat yields are ONE line; the conditionals come separately (flabbert)
+- **ui:** tooltips spell out yields where the icon belongs (flabbert)
+- **ui:** name the other deposit legs in the happiness tooltip (flabbert)
+- **ui:** the happiness tooltip said "buildings" for the whole deposit plane ([#526](https://github.com/stones2stars/S2S/issues/526)) (flabbert)
+- Merge pull request [#528](https://github.com/stones2stars/S2S/issues/528) from Stones2Stars/fix/526-content-gates (flabbert)
+- Merge pull request [#527](https://github.com/stones2stars/S2S/issues/527) from Stones2Stars/fix/526-negative-land-plots (flabbert)
+- **data:** a dig gate needs BOTH resources, and the mapinguari needs a heritage ([#526](https://github.com/stones2stars/S2S/issues/526)) (flabbert)
+- **city screen:** the building list says what each building actually does (flabbert)
+- **map:** the land-plot count went negative, killing barbarian spawns ([#526](https://github.com/stones2stars/S2S/issues/526)) (flabbert)
+
+
 ## v1.BETA.391 - 2026-08-29
 
 ### Bug Fixes
