@@ -2,6 +2,16 @@
 
 
 
+## v1.BETA.394 - 2026-08-31
+
+
+
+### All Changes
+
+- Merge branch 'release' of https://github.com/Stones2Stars/S2S into release (flabbert)
+- update discord url in indexes and readme, so people do not have to apply to join (flabbert)
+
+
 ## v1.BETA.393 - 2026-08-30
 
 ### Bug Fixes
