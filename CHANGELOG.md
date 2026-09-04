@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.395 - 2026-09-04
+
+### Bug Fixes
+
+- **capture:** city capture blocked by a blending animal, outlaws never capture NPC cities, city death no longer strips empire holdings ([#541](https://github.com/stones2stars/S2S/issues/541))(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#542](https://github.com/stones2stars/S2S/issues/542) from Stones2Stars/fix/541-capture-blocked-by-blending-animal (flabbert)
+- **capture:** city capture blocked by a blending animal, outlaws never capture NPC cities, city death no longer strips empire holdings ([#541](https://github.com/stones2stars/S2S/issues/541)) (flabbert)
+
+
 ## v1.BETA.394 - 2026-08-31
 
 
