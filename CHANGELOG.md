@@ -2,6 +2,24 @@
 
 
 
+## v1.BETA.396 - 2026-09-14
+
+### Bug Fixes
+
+- **options:** route main-menu labels through CyInfo; wire orphaned BUG options(flabbert)
+- **python:** publish CyHallOfFameInfo so the Hall of Fame screen draws ([#543](https://github.com/stones2stars/S2S/issues/543))(flabbert)
+    **Closes [#543](https://github.com/stones2stars/S2S/issues/543)**
+
+
+### All Changes
+
+- Merge pull request [#545](https://github.com/stones2stars/S2S/issues/545) from Stones2Stars/fix/543-hall-of-fame-blank-screen (flabbert)
+- **python:** publish CyHallOfFameInfo so the Hall of Fame screen draws ([#543](https://github.com/stones2stars/S2S/issues/543)) (flabbert)
+    **Closes [#543](https://github.com/stones2stars/S2S/issues/543)**
+- Merge pull request [#544](https://github.com/stones2stars/S2S/issues/544) from Stones2Stars/fix/options-screen-wiring (flabbert)
+- **options:** route main-menu labels through CyInfo; wire orphaned BUG options (flabbert)
+
+
 ## v1.BETA.395 - 2026-09-04
 
 ### Bug Fixes
