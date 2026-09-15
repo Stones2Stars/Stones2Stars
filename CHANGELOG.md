@@ -2,6 +2,25 @@
 
 
 
+## v1.BETA.397 - 2026-09-15
+
+### Bug Fixes
+
+- **cascade:** book per-scaled deposits; serve work, citizen and wellbeing censuses(flabbert)
+- **cascade:** gate map-bonus yields on reveal, per observer(flabbert)
+- **war-weariness:** one whole-unit weariness value, the original anger ratio(flabbert)
+- **war-weariness:** read stored weariness at its real scale(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#547](https://github.com/stones2stars/S2S/issues/547) from Stones2Stars/fix/bonus-reveal-per-observer (flabbert)
+- **war-weariness:** one whole-unit weariness value, the original anger ratio (flabbert)
+- **war-weariness:** read stored weariness at its real scale (flabbert)
+- **cascade:** book per-scaled deposits; serve work, citizen and wellbeing censuses (flabbert)
+- **cascade:** gate map-bonus yields on reveal, per observer (flabbert)
+
+
 ## v1.BETA.396 - 2026-09-14
 
 ### Bug Fixes
