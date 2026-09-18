@@ -2,6 +2,21 @@
 
 
 
+## v1.BETA.399 - 2026-09-18
+
+### Bug Fixes
+
+- **civics:** state a civic's city limit in its help again(flabbert)
+    **Closes [#538](https://github.com/stones2stars/S2S/issues/538)**
+
+
+### All Changes
+
+- Merge pull request [#551](https://github.com/stones2stars/S2S/issues/551) from Stones2Stars/fix/civic-city-limit-tooltip (flabbert)
+- **civics:** state a civic's city limit in its help again (flabbert)
+    **Closes [#538](https://github.com/stones2stars/S2S/issues/538)**
+
+
 ## v1.BETA.398 - 2026-09-18
 
 ### Bug Fixes
