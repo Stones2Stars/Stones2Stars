@@ -2,6 +2,22 @@
 
 
 
+## v1.BETA.398 - 2026-09-18
+
+### Bug Fixes
+
+- **graphics:** place a unit's scene node at setup, never move it(flabbert)
+- **plot:** answer bonus yields for the asking observer, not the tile's owner(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#550](https://github.com/stones2stars/S2S/issues/550) from Stones2Stars/fix/unit-node-placement-not-movement (flabbert)
+- **graphics:** place a unit's scene node at setup, never move it (flabbert)
+- Merge pull request [#549](https://github.com/stones2stars/S2S/issues/549) from Stones2Stars/fix/observer-keyed-bonus-reads (flabbert)
+- **plot:** answer bonus yields for the asking observer, not the tile's owner (flabbert)
+
+
 ## v1.BETA.397 - 2026-09-15
 
 ### Bug Fixes
