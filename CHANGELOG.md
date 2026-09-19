@@ -2,6 +2,44 @@
 
 
 
+## v1.BETA.400 - 2026-09-19
+
+### Bug Fixes
+
+- **combat:** restore the strength and cargo clauses to canDefend(flabbert)
+- **graphics:** place the node at every raw entity call, and check that it stays placed(flabbert)
+- **graphics:** place a selected unit's node, and place before notifying(flabbert)
+- **graphics:** state a node's position when it becomes the centre unit(flabbert)
+- **movement:** carry the whole move budget on the x100 plane(flabbert)
+- **python:** sweep the identity-tuple class across the outcome and event surface(flabbert)
+- **python:** resolve the city identity tuple in three more event consumers(flabbert)
+- **python:** resolve the city identity tuple in six cityAcquired consumers(flabbert)
+- **python:** give doEventLawyer the standard Civ4 event signature(flabbert)
+### Features
+
+- **spine:** put a unit's move budget on the observability surface(flabbert)
+### Refactor
+
+- **movement:** resolve a unit's moves instead of serializing them(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#557](https://github.com/stones2stars/S2S/issues/557) from Stones2Stars/fix/defender-predicate-and-movement-scale (flabbert)
+- **spine:** put a unit's move budget on the observability surface (flabbert)
+- **movement:** resolve a unit's moves instead of serializing them (flabbert)
+- **movement:** carry the whole move budget on the x100 plane (flabbert)
+- **combat:** restore the strength and cargo clauses to canDefend (flabbert)
+- Merge pull request [#552](https://github.com/stones2stars/S2S/issues/552) from Stones2Stars/fix/selected-unit-node-placement (flabbert)
+- **python:** give doEventLawyer the standard Civ4 event signature (flabbert)
+- **python:** sweep the identity-tuple class across the outcome and event surface (flabbert)
+- **python:** resolve the city identity tuple in three more event consumers (flabbert)
+- **python:** resolve the city identity tuple in six cityAcquired consumers (flabbert)
+- **graphics:** place the node at every raw entity call, and check that it stays placed (flabbert)
+- **graphics:** state a node's position when it becomes the centre unit (flabbert)
+- **graphics:** place a selected unit's node, and place before notifying (flabbert)
+
+
 ## v1.BETA.399 - 2026-09-18
 
 ### Bug Fixes
