@@ -2,6 +2,31 @@
 
 
 
+## v1.BETA.401 - 2026-09-20
+
+### Bug Fixes
+
+- **python:** name the event by its id in the landmark callback(flabbert)
+- **python:** bind GC where the module uses it(flabbert)
+- **size matters:** leave a rank promotion out of the acquisition tests(flabbert)
+- **ui:** name the city a tile is in range of, not only the one working it(flabbert)
+- **yields:** sum the event-granted plot yield the reader was dropping(flabbert)
+### Docs
+
+- **tooltip:** put the widget composers on the design surface(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#558](https://github.com/stones2stars/S2S/issues/558) from Stones2Stars/fix/pedia-links-and-tooltip-design-surface (flabbert)
+- **yields:** sum the event-granted plot yield the reader was dropping (flabbert)
+- **python:** name the event by its id in the landmark callback (flabbert)
+- **size matters:** leave a rank promotion out of the acquisition tests (flabbert)
+- **tooltip:** put the widget composers on the design surface (flabbert)
+- **ui:** name the city a tile is in range of, not only the one working it (flabbert)
+- **python:** bind GC where the module uses it (flabbert)
+
+
 ## v1.BETA.400 - 2026-09-19
 
 ### Bug Fixes
