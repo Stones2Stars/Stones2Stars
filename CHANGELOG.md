@@ -2,6 +2,30 @@
 
 
 
+## v1.BETA.403 - 2026-09-29
+
+### Bug Fixes
+
+- B founds with the Space Settler; repoint the moved index links(flabbert)
+- **outcomes:** space missions are data, not Python in JSON ([#560](https://github.com/stones2stars/S2S/issues/560))(flabbert)
+- **python:** drop the dead free-building guard from the demolish popup(flabbert)
+### Data
+
+- **units:** the nine space settlers are one Space Settler(flabbert)
+
+
+### All Changes
+
+- update secure token (flabbert)
+- Merge pull request [#562](https://github.com/stones2stars/S2S/issues/562) from Stones2Stars/fix/560-space-outcomes-as-data (flabbert)
+- fix: B founds with the Space Settler; repoint the moved index links (flabbert)
+- **units:** the nine space settlers are one Space Settler (flabbert)
+- **outcomes:** space missions are data, not Python in JSON ([#560](https://github.com/stones2stars/S2S/issues/560)) (flabbert)
+- Merge pull request [#561](https://github.com/stones2stars/S2S/issues/561) from Stones2Stars/fix/demolish-popup-empty-list (flabbert)
+- **python:** drop the dead free-building guard from the demolish popup (flabbert)
+- move indexes to inside docs (flabbert)
+
+
 ## v1.BETA.401 - 2026-09-20
 
 ### Bug Fixes
