@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.405 - 2026-09-30
+
+### Bug Fixes
+
+- **ai:** drop a beeline target that yields no research, so the AI researches again ([#563](https://github.com/stones2stars/S2S/issues/563))(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#564](https://github.com/stones2stars/S2S/issues/564) from Stones2Stars/fix/563-ai-research-dead-beeline (flabbert)
+- **ai:** drop a beeline target that yields no research, so the AI researches again ([#563](https://github.com/stones2stars/S2S/issues/563)) (flabbert)
+
+
 ## v1.BETA.404 - 2026-09-30
 
 
