@@ -2,6 +2,15 @@
 
 
 
+## v1.BETA.404 - 2026-09-30
+
+
+
+### All Changes
+
+- update docs (flabbert)
+
+
 ## v1.BETA.403 - 2026-09-29
 
 ### Bug Fixes
