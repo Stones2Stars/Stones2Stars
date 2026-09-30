@@ -2,6 +2,25 @@
 
 
 
+## v1.BETA.407 - 2026-09-30
+
+### Bug Fixes
+
+- **python:** repair the culture reads/writes and the victory screen(flabbert)
+- **python:** city renaming works again -- CyCity.setName takes bFound(flabbert)
+### Tools
+
+- **arity:** judge a shared method name through its receiver(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#566](https://github.com/stones2stars/S2S/issues/566) from Stones2Stars/fix/city-rename-arity (flabbert)
+- **python:** repair the culture reads/writes and the victory screen (flabbert)
+- **arity:** judge a shared method name through its receiver (flabbert)
+- **python:** city renaming works again -- CyCity.setName takes bFound (flabbert)
+
+
 ## v1.BETA.406 - 2026-09-30
 
 ### Bug Fixes
