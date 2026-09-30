@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.408 - 2026-09-30
+
+### Features
+
+- **ui:** name each source in the city wellbeing hover ([#555](https://github.com/stones2stars/S2S/issues/555))(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#567](https://github.com/stones2stars/S2S/issues/567) from Stones2Stars/feat/555-wellbeing-by-source (flabbert)
+- **ui:** name each source in the city wellbeing hover ([#555](https://github.com/stones2stars/S2S/issues/555)) (flabbert)
+
+
 ## v1.BETA.407 - 2026-09-30
 
 ### Bug Fixes
