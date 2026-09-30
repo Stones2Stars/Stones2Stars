@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.406 - 2026-09-30
+
+### Bug Fixes
+
+- **enabler:** a resource is onSite or traded, never "in vicinity" ([#559](https://github.com/stones2stars/S2S/issues/559))(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#565](https://github.com/stones2stars/S2S/issues/565) from Stones2Stars/fix/559-onsite-not-vicinity (flabbert)
+- **enabler:** a resource is onSite or traded, never "in vicinity" ([#559](https://github.com/stones2stars/S2S/issues/559)) (flabbert)
+
+
 ## v1.BETA.405 - 2026-09-30
 
 ### Bug Fixes
