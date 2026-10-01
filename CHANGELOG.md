@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.409 - 2026-10-01
+
+### Bug Fixes
+
+- **load:** snapshot the building-supplied bonuses before re-pushing them(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#569](https://github.com/stones2stars/S2S/issues/569) from Stones2Stars/fix/load-end-supply-repush-snapshot (flabbert)
+- **load:** snapshot the building-supplied bonuses before re-pushing them (flabbert)
+
+
 ## v1.BETA.408 - 2026-09-30
 
 ### Features
