@@ -2,6 +2,23 @@
 
 
 
+## v1.BETA.410 - 2026-10-01
+
+### Bug Fixes
+
+- **python:** the era popup and the top-bar era indicator read the era again(flabbert)
+### Docs
+
+- **naming:** record why the era prefix carries a brand(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#570](https://github.com/stones2stars/S2S/issues/570) from Stones2Stars/fix/era-popup-blank (flabbert)
+- **naming:** record why the era prefix carries a brand (flabbert)
+- **python:** the era popup and the top-bar era indicator read the era again (flabbert)
+
+
 ## v1.BETA.409 - 2026-10-01
 
 ### Bug Fixes
