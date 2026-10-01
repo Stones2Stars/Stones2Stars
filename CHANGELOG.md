@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.411 - 2026-10-01
+
+### Features
+
+- **spine:** a load whose bracket never closes says so(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#572](https://github.com/stones2stars/S2S/issues/572) from Stones2Stars/feat/load-never-finished-diagnostic (flabbert)
+- **spine:** a load whose bracket never closes says so (flabbert)
+
+
 ## v1.BETA.410 - 2026-10-01
 
 ### Bug Fixes
