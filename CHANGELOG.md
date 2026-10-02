@@ -2,6 +2,22 @@
 
 
 
+## v1.BETA.412 - 2026-10-02
+
+### Bug Fixes
+
+- **graphics:** a selected unit no longer runs in from the map centre(flabbert)
+- **units:** animal group sizes obey the era cap, and the game era counts players only(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#574](https://github.com/stones2stars/S2S/issues/574) from Stones2Stars/fix/animal-group-size-era-cap (flabbert)
+- **units:** animal group sizes obey the era cap, and the game era counts players only (flabbert)
+- Merge pull request [#573](https://github.com/stones2stars/S2S/issues/573) from Stones2Stars/fix/select-run-in-from-origin (flabbert)
+- **graphics:** a selected unit no longer runs in from the map centre (flabbert)
+
+
 ## v1.BETA.411 - 2026-10-01
 
 ### Features
