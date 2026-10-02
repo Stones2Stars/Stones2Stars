@@ -2,6 +2,25 @@
 
 
 
+## v1.BETA.413 - 2026-10-02
+
+### Bug Fixes
+
+- multi-figure units stop running in, and captives become kill outcomes(flabbert)
+- **bonuses:** goods a city produces reach its trade network, and a city serves the ore under it(flabbert)
+- **data:** cislunar stations no longer need an Earth-only building in their own city(flabbert)
+- **ui:** building tooltips that came up empty show their title and stats(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#575](https://github.com/stones2stars/S2S/issues/575) from Stones2Stars/fix/run-in-followers-and-captive-outcomes (flabbert)
+- **bonuses:** goods a city produces reach its trade network, and a city serves the ore under it (flabbert)
+- **data:** cislunar stations no longer need an Earth-only building in their own city (flabbert)
+- **ui:** building tooltips that came up empty show their title and stats (flabbert)
+- fix: multi-figure units stop running in, and captives become kill outcomes (flabbert)
+
+
 ## v1.BETA.412 - 2026-10-02
 
 ### Bug Fixes
