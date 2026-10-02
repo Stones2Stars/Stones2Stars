@@ -2,6 +2,27 @@
 
 
 
+## v1.BETA.414 - 2026-10-02
+
+### Bug Fixes
+
+- **barbciv:** a barbarian city can become a civilization again(flabbert)
+- **combat:** kill outcomes read the defeated unit's combat classes(flabbert)
+- **data:** mapinguari units require the anteater heritage itself(flabbert)
+- **enabler:** a tech's enables.traits edge reaches the traits domain(flabbert)
+- **enabler:** a capped unit no longer cancels its own order and vanishes(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#576](https://github.com/stones2stars/S2S/issues/576) from Stones2Stars/fix/captive-from-defeated-classes (flabbert)
+- **enabler:** a tech's enables.traits edge reaches the traits domain (flabbert)
+- **enabler:** a capped unit no longer cancels its own order and vanishes (flabbert)
+- **barbciv:** a barbarian city can become a civilization again (flabbert)
+- **data:** mapinguari units require the anteater heritage itself (flabbert)
+- **combat:** kill outcomes read the defeated unit's combat classes (flabbert)
+
+
 ## v1.BETA.413 - 2026-10-02
 
 ### Bug Fixes
