@@ -2,6 +2,29 @@
 
 
 
+## v1.BETA.417 - 2026-10-04
+
+### Bug Fixes
+
+- **cost:** a founding unit no longer costs a share of the free buildings a new city ships with(flabbert)
+- **enabler:** hide-replaced no longer hides a building whose successor is not visible(flabbert)
+- **traits:** the level-up pick offers only the live trait set, and never the barbarian trait(flabbert)
+- **ui:** the city screen's building list no longer lags the enabler's offer(flabbert)
+- **unit:** a founding unit has no construct mission for its founder buildings(flabbert)
+- **unit-ai:** a wounded unit goes to where it can heal instead of sheltering under other units(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#580](https://github.com/stones2stars/S2S/issues/580) from Stones2Stars/fix/settler-cost-founder-missions-wounded-retreat (flabbert)
+- **traits:** the level-up pick offers only the live trait set, and never the barbarian trait (flabbert)
+- **ui:** the city screen's building list no longer lags the enabler's offer (flabbert)
+- **enabler:** hide-replaced no longer hides a building whose successor is not visible (flabbert)
+- **unit-ai:** a wounded unit goes to where it can heal instead of sheltering under other units (flabbert)
+- **unit:** a founding unit has no construct mission for its founder buildings (flabbert)
+- **cost:** a founding unit no longer costs a share of the free buildings a new city ships with (flabbert)
+
+
 ## v1.BETA.416 - 2026-10-04
 
 ### Bug Fixes
