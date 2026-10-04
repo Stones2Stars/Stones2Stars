@@ -2,6 +2,23 @@
 
 
 
+## v1.BETA.415 - 2026-10-04
+
+### Bug Fixes
+
+- **worker-ai:** automated workers push their build missions and fall back to a build they can do(flabbert)
+### Features
+
+- **unit:** a unit keeps the key of the unique name it was given(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#577](https://github.com/stones2stars/S2S/issues/577) from Stones2Stars/fix/worker-automation-push-and-fallback (flabbert)
+- **unit:** a unit keeps the key of the unique name it was given (flabbert)
+- **worker-ai:** automated workers push their build missions and fall back to a build they can do (flabbert)
+
+
 ## v1.BETA.414 - 2026-10-02
 
 ### Bug Fixes
