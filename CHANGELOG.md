@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.416 - 2026-10-04
+
+### Bug Fixes
+
+- **python:** the great-person screen reads the unit's own unique-name key(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#578](https://github.com/stones2stars/S2S/issues/578) from Stones2Stars/fix/great-person-screen-name-key (flabbert)
+- **python:** the great-person screen reads the unit's own unique-name key (flabbert)
+
+
 ## v1.BETA.415 - 2026-10-04
 
 ### Bug Fixes
