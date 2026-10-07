@@ -2,6 +2,47 @@
 
 
 
+## v1.BETA.418 - 2026-10-07
+
+### Bug Fixes
+
+- **city screen:** the culture bar reads the rate it already holds, so the city screen draws again(flabbert)
+- **cy:** displayed amounts get a text read, so Python never holds a float to pass to getText ([#489](https://github.com/stones2stars/S2S/issues/489))(flabbert)
+- **cy:** yields and commerces convert at the controller, and Python stops scaling them ([#489](https://github.com/stones2stars/S2S/issues/489))(flabbert)
+- **pedia:** the conditioned-entry read applies the game-option filter the tooltips use(flabbert)
+- **tooltips:** the city yield hover lists what the city gets, not the deposits that do not apply(flabbert)
+- **tooltips:** a tooltip that would wrap tall widens instead of running off the screen(flabbert)
+- **tooltips:** a game option is resolved, never printed, so pure traits hides what it switches off(flabbert)
+- **tooltips:** the tech hover shows research progress, and the combat preview hands over finished figures ([#460](https://github.com/stones2stars/S2S/issues/460))(flabbert)
+- **tooltips:** free specialists no longer print x100, and per-100 entries read per 1(flabbert)
+### Data
+
+- **buildings:** the taxperson gives 0.1 gold per population(flabbert)
+### Docs
+
+- **patterns:** data is never dropped from a tooltip because it has no widget(flabbert)
+- **patterns:** the engine part that calculates a thing builds its datablock, and a hand-built line is not a defect(flabbert)
+- **patterns:** a composer does not convert for display, the Cy controller does ([#489](https://github.com/stones2stars/S2S/issues/489))(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#582](https://github.com/stones2stars/S2S/issues/582) from Stones2Stars/fix/tooltip-scale-controller-conversion (flabbert)
+- **tooltips:** the city yield hover lists what the city gets, not the deposits that do not apply (flabbert)
+- **city screen:** the culture bar reads the rate it already holds, so the city screen draws again (flabbert)
+- **tooltips:** a tooltip that would wrap tall widens instead of running off the screen (flabbert)
+- **buildings:** the taxperson gives 0.1 gold per population (flabbert)
+- **pedia:** the conditioned-entry read applies the game-option filter the tooltips use (flabbert)
+- **patterns:** data is never dropped from a tooltip because it has no widget (flabbert)
+- **patterns:** the engine part that calculates a thing builds its datablock, and a hand-built line is not a defect (flabbert)
+- **patterns:** a composer does not convert for display, the Cy controller does ([#489](https://github.com/stones2stars/S2S/issues/489)) (flabbert)
+- **cy:** displayed amounts get a text read, so Python never holds a float to pass to getText ([#489](https://github.com/stones2stars/S2S/issues/489)) (flabbert)
+- **tooltips:** a game option is resolved, never printed, so pure traits hides what it switches off (flabbert)
+- **tooltips:** the tech hover shows research progress, and the combat preview hands over finished figures ([#460](https://github.com/stones2stars/S2S/issues/460)) (flabbert)
+- **cy:** yields and commerces convert at the controller, and Python stops scaling them ([#489](https://github.com/stones2stars/S2S/issues/489)) (flabbert)
+- **tooltips:** free specialists no longer print x100, and per-100 entries read per 1 (flabbert)
+
+
 ## v1.BETA.417 - 2026-10-04
 
 ### Bug Fixes
