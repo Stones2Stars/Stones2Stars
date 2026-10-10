@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.419 - 2026-10-10
+
+### Bug Fixes
+
+- **tooltips:** a tech, resource or civic lists what it improves, and requirements read one per line(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#583](https://github.com/stones2stars/S2S/issues/583) from Stones2Stars/fix/pedia-reverse-lookups-and-requires (flabbert)
+- **tooltips:** a tech, resource or civic lists what it improves, and requirements read one per line (flabbert)
+
+
 ## v1.BETA.418 - 2026-10-07
 
 ### Bug Fixes
