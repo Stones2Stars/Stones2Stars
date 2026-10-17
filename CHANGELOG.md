@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.422 - 2026-10-17
+
+### Bug Fixes
+
+- **enabler:** under Limited Religions, the research offer leaves out religion techs the player cannot research(ingvarr)
+
+
+### All Changes
+
+- Merge pull request [#591](https://github.com/stones2stars/S2S/issues/591) from ingvarr777/fix/limited-religion-techs (flabbert)
+- **enabler:** under Limited Religions, the research offer leaves out religion techs the player cannot research (ingvarr)
+
+
 ## v1.BETA.421 - 2026-10-17
 
 ### Bug Fixes
