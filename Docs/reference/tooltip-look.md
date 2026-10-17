@@ -880,6 +880,26 @@ finished.
 
 ## `parsePromotionHelpInternal`
 
+### Design — the promotion hover
+
+What the promotion does, then what it changes about the unit, then the shared tail — the order the unit hover
+lists the same things in:
+
+- the effect lines over the unit families → `appendEntityEffectLines`, through the entry renderer
+- %s1 control points  <!-- TXT_KEY_PROMOTIONHELP_CONTROL_POINTS_AMOUNT --> · %s1 command range  <!-- TXT_KEY_PROMOTIONHELP_COMMAND_RANGE_AMOUNT -->
+  — `identity.controlPoints` / `identity.commandRange`, signed
+- Skills: <skill>, …  <!-- TXT_KEY_UNITHELP_SKILLS --> · Removes skills: <skill>, …  <!-- TXT_KEY_PROMOTIONHELP_REMOVES_SKILLS -->
+  — the grant and revoke planes of its `skills` block ([skills.md](../specs/skills.md) §4)
+- Adds combat classes: <name of the thing>, …  <!-- TXT_KEY_PROMOTIONHELP_ADDS_COMBAT_CLASSES --> · Removes combat
+  classes: <name of the thing>, …  <!-- TXT_KEY_PROMOTIONHELP_REMOVES_COMBAT_CLASSES --> — `skills.unitCombats` /
+  `skills.removesUnitCombats`
+- the authored help text (`identity.help`) as written — for a promotion whose effect the engine codes by its type,
+  the only description of it
+- the edge and requires blocks of the shared spine → `appendEntityBlocks` with no families
+
+The `hideAndSeek` and `sizeMatters` blocks, and the `identity` eligibility (`unitCombats`, `notOnUnitCombats`,
+`notOnDomains`, `levelPrereq`, `minEra`, `stateReligionPrereq`), are not listed. The keys below are the legacy look.
+
 - *On the %s1_PromotionLine  <!-- TXT_KEY_PROMOTIONHELP_LINE -->
 - *Promotion Line Rank: %d1_PromotionLine  <!-- TXT_KEY_PROMOTIONHELP_LINE_PRIORITY -->
 - *Can Attack Multiple Times per Turn  <!-- TXT_KEY_PROMOTIONHELP_BLITZ -->
@@ -1659,6 +1679,55 @@ a read-time walk of what each live source authored, never a stored per-source pl
 - *May only exist on a %s1_MapCat.  <!-- TXT_KEY_MAP_CATEGORY_PREREQUISITE -->
 - → `setUnitCombatHelp`
 
+### Design — the unit hover (`setUnitHelp` / `setBasicUnitHelp`, and under a live unit)
+
+⚖ **TWO RULES.** (1) A live unit's hover states THAT unit's values as the engine reads them, and nothing the
+hover would have to work out itself ([a composer never re-derives what the engine calculates](../architecture/patterns/04-the-info-data-out-contract-what-an/03-the-coherent-surface-grouped.md#the-coherent-surface--grouped-storage-parameterized-getters-clarity-and-predictability-is-king)).
+(2) An icon wherever the font has one for the quantity (strength, moves, gold, production, the property glyphs),
+words where it has none (vision, combat, heal, detection).
+
+One composition for both hovers (`appendUnitBlocks`), differing only in whose values it reads:
+
+- Cost: %d1<hammer> — → `appendUnitProductionCost`; type hover only
+- %d1<strength>, %d1<moves>, %d1 vision — the type's own BASE values, unsigned on one line; type hover only. Vision
+  is in plots, one plot of open ground is 100 authored ([vision.md §1a](../specs/vision.md)). The same keys on a
+  promotion are bonuses and keep their signed lines.
+- Upkeep: %s1<gold>  <!-- TXT_KEY_UNITHELP_UPKEEP_AMOUNT --> — the type's, or what the unit costs its owner now
+  (shown to its owner only)
+- Combat: +%d1% dynamic defense, +%d1% stealth, …  <!-- TXT_KEY_UNITHELP_COMBAT --> — the plain `combat.unit`
+  amounts on one line; the memberless one reads "strength"
+- the other modifier lines, through the entry renderer: keyed (+%d1% combat for <name of the thing>), conditioned,
+  property (-%d1<crime>, -%d1<crime>, on this plot)
+- Targets first in combat: <name of the thing>, … · Defends first against: <name of the thing>, … — the
+  `targets` / `unitTargets` / `defenders` flags, one line per heading
+- Skills: <skill>, <skill>, …  <!-- TXT_KEY_UNITHELP_SKILLS --> — the type's authored skills; type hover only
+- +%d1 concealment · +%d1 detection vs <hiding method> — the `hideAndSeek` block, in plots like vision
+- → `appendGrantLines` — the promotions the unit is created with; type hover only
+- the edge and requires blocks of the shared spine; type hover only
+
+⚖ **ONE STRENGTH READING AND ONE RENDERING FOR EVERY UNIT LINE.** The live unit's condition line and the
+stack's group line both read `gt_unitStrength` (air strength for an air unit, ground strength otherwise, current
+and full with no plot or opponent in the question) and render through `unitStrengthText`: 4<strength> at full
+health, 3.5/4<strength> when damaged (the group line averages the group), ?/4<strength> mid-combat. Damage shows
+as the reduced strength, not as a separate HP fraction.
+
+⚖ **Under a live unit** (the selected-unit and plot hovers) the condition line already states the unit's
+current strength, moves and vision (its own sight without the ground's elevation) and the icon row its held
+promotions, and what it took to build the type no longer applies — so no cost, stat line, starting promotions,
+edges or requires. The candidate lines are what the type, held promotions and held combat classes author, and
+each is shown only with the value the engine reads off the unit: a resolved slot (`unitResolvedSlotFor`), a unit
+getter (`unitCombatModifier`, `terrain`/`featureAttackModifier`, `domainModifier`, `unitAttackModifier`,
+`flankingStrengthbyUnitCombatTotal`, the per-class heal, `getInvestigationTotal` / `getInsidiousnessTotal`,
+`revoltProtectionTotal`), or for
+the `targets` / `defenders` flags the unit type, which is what the engine asks. An address the engine has no read
+for (the keyed movement and work rates), and a conditioned entry, is left off. A property is one total per target,
+-6<crime> to the city and -3<crime>, on this plot, read by `CvUnit::getPropertySourceTotal` — the read the city's
+unit-sourced sum (`CvCity::getTotalUnitSourcedProperty`) is made of — against the city the unit stands in, else its
+plot. Skills are left to
+the type hover and the held promotions' own hovers: the engine composes them skill by skill, with no single read.
+The skills a combat class gives are not listed on either.
+The hideAndSeek rows are the unit's resolved fold.
+
 ## `setBonusHelp`
 
 - → `setBonusTradeHelp`
@@ -2426,6 +2495,7 @@ a read-time walk of what each live source authored, never a stored per-source pl
 - +%d1_Change<happy>: "In our Religion we trust!"  <!-- TXT_KEY_HAPPY_RELIGIOUS_FREEDOM -->
 - +%d1_Change<happy>: "We appreciate our entertainment!"  <!-- TXT_KEY_HAPPY_ENTERTAINMENT -->
 - +%d1_Change<happy>: "OH YEAH!"  <!-- TXT_KEY_HAPPY_YEAH -->
+- %D1_Change<happy>: Events  <!-- TXT_KEY_HAPPY_FROM_EVENTS -->
 - %D1_Change<happy>: "Past events went well!" (%d2 [NUM2:turn:turns])  <!-- TXT_KEY_HAPPY_TEMP -->
 - +%d1_Change<happy>: "We just enjoy life!"  <!-- TXT_KEY_HAPPY_HANDICAP -->
 - +%d1<happy> "We've a celebrity in our midst!"  <!-- TXT_KEY_HAPPY_CELEBRITY -->
@@ -2510,11 +2580,11 @@ a read-time walk of what each live source authored, never a stored per-source pl
 
 ## `setPlotHelp`
 
-⚑ **The working-city pair is DESIGN, not legacy** — the lines below it are the pre-rework record, and neither of
-these two appears in it. A tile inside a city's workable set names that city, and WHICH of the two it picks is the
-tile's live state: a citizen is on it, or the city could work it and does not. A tile no city can reach gets
-neither line, so open land stays short. The second is the one a player wants before improving a tile — it says an
-improvement there is waiting for a citizen rather than wasted.
+⚑ **The working-city pair is DESIGN, not legacy** — neither of these two appears in the pre-rework record. A tile
+inside a city's workable set names that city, and WHICH of the two it picks is the tile's live state: a citizen is
+on it, or the city could work it and does not. A tile no city can reach gets neither line, so open land stays
+short. The second is the one a player wants before improving a tile — it says an improvement there is waiting for
+a citizen rather than wasted.
 
 - Worked by %s1  <!-- TXT_KEY_PLOTHELP_WORKED_BY -->
 - In range of %s1 [ICON_BULLET] not currently worked  <!-- TXT_KEY_PLOTHELP_IN_RANGE_OF -->
@@ -2527,45 +2597,73 @@ tile that carries one.
 - %s1: %s2 (nature %s3 [ICON_BULLET] improvement %s4 [ICON_BULLET] route/other %s5)  <!-- TXT_KEY_PLOTHELP_YIELD -->
 - [ICON_BULLET] of which %s1 from a past event  <!-- TXT_KEY_PLOTHELP_YIELD_EVENT -->
 
-- <name of the thing>
-- Owner  <!-- TXT_KEY_MISC_OWNER -->
-- *  <!-- TXT_KEY_BULLET -->
-- Not in %s1_CivAdj city influence.  <!-- TXT_KEY_MISC_NO_CITY_INFLUENCE -->
-- %s1:  <!-- TXT_KEY_S1_COLON_SPACE -->
+⚑ **The layout, top to bottom.** The bonus, improvement, route and owner are the ones revealed to the observing
+player (`getBonusRevealedTo`, `getImprovementRevealedTo`, `getRouteRevealedTo`, `getOwnerRevealedTo`); techs,
+passability, movement, spotting and blockades are asked through the player-keyed reads (`CvPlot::…For`,
+`CvPlayer::isHasTech`), which take the team step themselves. What has no revealed form shows only while the
+observer sees the tile: the defence bonus, the irrigation verdict, the working-city pair, the culture contest
+(everything but the owner line), builds in progress and the plot properties. The yields of a fogged tile are its
+nature segment alone (terrain, feature, the revealed bonus); the improvement, route and event parts are what the
+tile holds now. Terrain and feature are not fogged: the map shows them live. Amounts print through `amountText`,
+spot values in plots (`visionPlotsText`).
+
+1. **What the tile is, with its yields:** peak or hill, feature and terrain on one line (water in
+   `COLOR_WATER_TEXT`), then each non-zero yield total as magnitude and glyph (`yieldAmountSummary`). With ALT the
+   yields are the breakdown above instead, one line per yield.
+2. Defence bonus (`defenseModifier` for the owner's team), fresh water, then impassable or the plot's
+   movement cost (`CvPlot::getTerrainMovementCost`), then the revealed route with its movement cost.
+3. The revealed resource: its glyph and name in `COLOR_HIGHLIGHT_TEXT`, the trade tech while the team lacks it,
+   and on the observer's own tile either the improvements that provide it, that the plot can hold and whose build
+   the player has unlocked (`getBuildUnlocked`), or else the tech a providing build waits on; or "Requires Route"
+   when it is improved but not connected. Its health and happiness entries follow through the entry renderer.
+4. The revealed improvement, "(Irrigated)" / "(Not Irrigated)" when it has an irrigation-conditioned entry
+   (`infoHasEntryConditionedOn`; the verdict is the plot's `HAS_IRRIGATION`, the one those entries are evaluated
+   against), and its upgrade status on the observer's own tile, read from the engine's upgrade queries
+   ([yields-growth.md](yields-growth.md#improvements--plot-yields)): frozen, no upgrade available, or the turns
+   left and the valid targets, with what is missing when progress does not advance.
+5. The working-city pair, then the culture block (owner, "not in city influence", the culture rows, the cultural
+   owner).
+6. Spot values (`GAMEOPTION_COMBAT_HIDE_SEEK`), latitude/longitude (map centering + the
+   `MiscHover__LatLongCoords` BUG option), the landmark (`GAMEOPTION_MAP_PERSONALIZED`), builds in progress (the
+   `MiscHover__PartialBuilds` BUG option), blockade, plot properties, map categories.
+
+- Peak/  Hill/  <feature>/<terrain>, 3<food>, 2<hammer>  <!-- TXT_WORD_PEAK, TXT_WORD_HILL -->
 - Defense Bonus: %D1_Mod%%  <!-- TXT_KEY_PLOT_BONUS -->
 - Fresh Water  <!-- TXT_KEY_PLOT_FRESH_WATER -->
 - IMPASSABLE  <!-- TXT_KEY_PLOT_IMPASSABLE -->
 - Movement Cost: %d1<moves>  <!-- TXT_KEY_PLOT_MOVEMENT_COST -->
 - Route Movement: %s1(%s2)  <!-- TXT_KEY_PLOT_ROUTE_MOVEMENT_COST -->
+- <bonus glyph> <bonus name>  <!-- the resource line -->
 - , Research: %s1_Name  <!-- TXT_KEY_PLOT_RESEARCH -->
 - , Requires: %s1_Name  <!-- TXT_KEY_PLOT_REQUIRES -->
 - , or %s1_Name  <!-- TXT_KEY_PLOT_REQUIRES_OR -->
-- → `setListHelp`
-- (with %s1_ImpName)  <!-- TXT_KEY_BONUSHELP_WITH_IMPROVEMENT -->
-- Obsolete with %s2_TechName  <!-- TXT_KEY_BUILDINGHELP_OBSOLETE_WITH -->
 - , Requires Route  <!-- TXT_KEY_PLOT_REQUIRES_ROUTE -->
-- → `buildDisplayString`
 - (Irrigated)  <!-- TXT_KEY_PLOT_IRRIGATED -->
 - (Not Irrigated)  <!-- TXT_KEY_PLOT_NOT_IRRIGATED -->
 - Improvement upgrade frozen.Unfreeze by toggling city work here.  <!-- TXT_KEY_IMPROVEMENTHELP_UPGRADE_FROZEN -->
 - No upgrade available  <!-- TXT_KEY_IMPROVEMENTHELP_UPGRADE_BLOCKED -->
-- (Upgrade: %d1_Num [NUM1:Turn:Turns]  <!-- TXT_KEY_IMPROVEMENTHELP_UPGRADE_TURNS -->
+- (Upgrade: %d1_Num [NUM1:Turn:Turns] (<target>, <target>))  <!-- TXT_KEY_IMPROVEMENTHELP_UPGRADE_TURNS -->
 - (Need Garrison)  <!-- TXT_KEY_IMPROVEMENTHELP_UPGRADE_NEED_GARRISON -->
 - (Need Work)  <!-- TXT_KEY_IMPROVEMENTHELP_UPGRADE_NEED_WORK -->
-- %d1°%d2'  <!-- TXT_KEY_LATLONG -->
-- W  <!-- TXT_KEY_LATLONG_WEST -->
-- E  <!-- TXT_KEY_LATLONG_EAST -->
-- S  <!-- TXT_KEY_LATLONG_SOUTH -->
-- N  <!-- TXT_KEY_LATLONG_NORTH -->
-- %d1_Num [NUM1:Turn:Turns]  <!-- TXT_KEY_ACTION_NUM_TURNS -->
+- [ICON_BULLET]Not in %s1_CivAdj city influence.  <!-- TXT_KEY_BULLET, TXT_KEY_MISC_NO_CITY_INFLUENCE -->
+- Spot: 3<invisible>, 1<invisible>  <!-- TXT_KEY_S1_COLON_SPACE, TXT_WORD_SPOT -->
+- %d1°%d2' E, %d1°%d2' N  <!-- TXT_KEY_LATLONG, TXT_KEY_LATLONG_WEST/EAST/SOUTH/NORTH -->
+- <build>: %d1_Num [NUM1:Turn:Turns]  <!-- TXT_KEY_ACTION_NUM_TURNS -->
 - Trade Blocked by Enemy Ship  <!-- TXT_KEY_PLOT_BLOCKADED -->
-- (key not in current GameText)  <!-- TXT_KEY_PLOT_DAMAGE -->
+- → `buildDisplayString`
 - This is a %s1_MapCat.  <!-- TXT_KEY_MAP_CATEGORY_TERRAIN -->
 
 ## `setPlotListHelp`
 
+⚑ **A stack stays one screen high.** A lone unit, and every unit when the caller asks for one line each (the
+off-screen indicator), renders through `setUnitHelp`. A stack renders the unit the plot draws through
+`setUnitHelp`, then one line per owner and unit type with the count, the average strength (rendered like the unit
+line's, see the unit hover above) and the owner when it is foreign and not hidden; one line per group when five
+or fewer, otherwise one
+shared line.
+
 - → `setUnitHelp`
-- <name of the thing>
+- <unit name> (%d), 3.5/4<strength>, <owner>
 
 ## `setProcessHelp`
 
@@ -2766,7 +2864,9 @@ to, what it improves, what it needs.
 - Requires to operate:  <!-- TXT_KEY_EDGE_REQUIRES_OPERATE -->
 - <one top-level clause of requires.operate per line>
 
-A list is one name per line, never a comma run. The two requires headings stay separate because the timings
+A list is one name per line, never a comma run. It shows twelve names at rest and every name under ALT, and
+every name on a page built once (a pedia page, the tech discovery popup) whose composer passes its pedia flag,
+since such a page cannot react to a held key. The two requires headings stay separate because the timings
 mean different things ([enabler §3](../specs/enabler/03-pass-2-gate-each-candidate.md)). Given a city, each
 clause is coloured by its own verdict; on a pedia page the clauses render plain. A heading shows only when its
 tree renders at least one clause.

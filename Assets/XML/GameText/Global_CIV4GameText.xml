@@ -15011,6 +15011,16 @@
 		<Russian>%D1_Change[ICON_HEALTHY] îò Ñîáûòèé</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HAPPY_FROM_EVENTS</Tag>
+		<English>%D1_Change[ICON_HAPPY]: Events</English>
+		<French>%D1_Change[ICON_HAPPY]: Evén.</French>
+		<German>%D1_Change[ICON_HAPPY]: Events</German>
+		<Italian>%D1_Change[ICON_HAPPY]: Eventi</Italian>
+		<Spanish>%D1_Change[ICON_HAPPY]: Eventos</Spanish>
+		<Polish>%D1_Change[ICON_HAPPY]: Wydarzenia</Polish>
+		<Russian>%D1_Change[ICON_HAPPY]: Ñîáûòèÿ</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_GOOD_HEALTH_FROM_HANDICAP</Tag>
 		<English>%D1_Change[ICON_HEALTHY] from Difficulty Level</English>
 		<French>%D1_Change[ICON_HEALTHY] (niveau de difficulté)</French>
@@ -28083,6 +28093,38 @@ feindliche Einheit scrollen[COLOR_REVERT][\BOLD]Anzeige der Siegchance
 	<TEXT>
 		<Tag>TXT_KEY_GRANTHELP_GREATPEOPLE</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Grants great people:[COLOR_REVERT]</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITHELP_SKILLS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Skills:[COLOR_REVERT] %s1</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONHELP_REMOVES_SKILLS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Removes skills:[COLOR_REVERT] %s1</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONHELP_ADDS_COMBAT_CLASSES</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Adds combat classes:[COLOR_REVERT] %s1</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONHELP_REMOVES_COMBAT_CLASSES</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Removes combat classes:[COLOR_REVERT] %s1</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONHELP_CONTROL_POINTS_AMOUNT</Tag>
+		<English>%s1 control points</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONHELP_COMMAND_RANGE_AMOUNT</Tag>
+		<English>%s1 command range</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITHELP_COMBAT</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Combat:[COLOR_REVERT] %s1</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITHELP_UPKEEP_AMOUNT</Tag>
+		<English>Upkeep: %s1[ICON_GOLD]</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTE_MOD_BUILDING</Tag>

@@ -2,6 +2,41 @@
 
 
 
+## v1.BETA.421 - 2026-10-17
+
+### Bug Fixes
+
+- **ai:** the local-plot worker sums the plot's move cost before truncating, and the plot hover declarations take ///<summary>(ingvarr)
+- **tooltips:** the unit hover shows a live unit's own values, read from the engine(ingvarr)
+- **tooltips:** a fogged tile's yields are its nature segment alone(ingvarr)
+- **tooltips:** the plot hover asks its reads as the observing player, and fogged tiles show no live state(ingvarr)
+- **tooltips:** the tech discovery popup and the pedia list every unlock instead of "hold ALT for all"(ingvarr)
+- **tooltips:** the happiness breakdown shows the event timer's turns, and permanent event happiness its own line(ingvarr)
+- **tooltips:** the plot hover shows the tile again, and a unit stack is grouped by type(ingvarr)
+### Docs
+
+- **scales:** the plot movement leg is summed on the x100 plane and reduced once(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#590](https://github.com/stones2stars/S2S/issues/590) from ingvarr777/fix/unit-hover-rendering (flabbert)
+- Merge pull request [#588](https://github.com/stones2stars/S2S/issues/588) from ingvarr777/fix/happy-events-turns (flabbert)
+- Merge pull request [#589](https://github.com/stones2stars/S2S/issues/589) from ingvarr777/fix/edge-lists-show-all-on-pages (flabbert)
+- **tooltips:** the unit hover shows a live unit's own values, read from the engine (ingvarr)
+- Merge pull request [#586](https://github.com/stones2stars/S2S/issues/586) from ingvarr777/fix/plot-hover-yields-and-upgrade (flabbert)
+- **tooltips:** a fogged tile's yields are its nature segment alone (ingvarr)
+- **tooltips:** the plot hover asks its reads as the observing player, and fogged tiles show no live state (ingvarr)
+- Merge remote-tracking branch 'origin/main' into fix/plot-hover-yields-and-upgrade (ingvarr)
+- **scales:** the plot movement leg is summed on the x100 plane and reduced once (flabbert)
+- **ai:** the local-plot worker sums the plot's move cost before truncating, and the plot hover declarations take ///<summary> (ingvarr)
+- update discord url in indexes (flabbert)
+- update discord link in readme (flabbert)
+- **tooltips:** the tech discovery popup and the pedia list every unlock instead of "hold ALT for all" (ingvarr)
+- **tooltips:** the happiness breakdown shows the event timer's turns, and permanent event happiness its own line (ingvarr)
+- **tooltips:** the plot hover shows the tile again, and a unit stack is grouped by type (ingvarr)
+
+
 ## v1.BETA.419 - 2026-10-10
 
 ### Bug Fixes
