@@ -323,6 +323,12 @@ where it is. Read what the option is being ASKED, never match on the option name
   each line's tiers adjacently because the XML did). A type absent from the manifest (synthetic `TECH_GAME_START`,
   future additions, a manifest-less category) sorts AFTER every listed one, alphabetically — the legacy
   new-stuff-appends-last behaviour. Manifests are derived artifacts: regenerate + commit freely, never hand-edit.
+- **⛔ `TECH_GAME_START` IS AN ORDINARY TECH RECORD — one object, registered and mapped like every other tech,
+  never a second object beside the registry's ([superseded-ideas #43](../architecture/superseded-ideas.md)).** It is
+  never researchable (`identity.disable`, the tech domain's static exclusion), every civilization grants it, and
+  an old save that lacks it gets it from the `CvTeam::read` backfill
+  ([enabler.md §2](../specs/enabler/02-pass-1-generate-the-frontier-the.md)). The cascade, the enabler and the
+  capability context read it through the tech registry and its own tech fact, like any held tech.
 - **The per-category registration is TWO-PASS by requirement, never one.** Each JSON category loads by (1) registering
   **every** type→id (`setInfoTypeFromString`), then (2) running `mapFrom` on each entity. `mapFrom` resolves its FKs
   at parse time (`jsonResolveId` → `getInfoTypeForString(id, /*bHideAssert*/true)`), so a single register-then-map
@@ -336,6 +342,21 @@ where it is. Read what the option is being ASKED, never match on the option name
   CIVILIZATION, …) are resolved by the SAME principle one level up: `loadJson`'s full pass re-runs
   the complete `mapFrom` on every entity once ALL categories are registered — `mapFrom` is idempotent by
   contract (`CvInfo.h`), and `/state/info?type=X` is the standing loaded≡authored verification.
+
+## Player and team slots — civs 0..39, NPCs 40..50
+
+- **The layout is fixed by `CvDefines.h`:** civ players and teams are slots 0..`MAX_PC_PLAYERS`-1 (0..39); the NPCs
+  are slots 40..50, each on the team with its own id (`BEAST_PLAYER` 40 … `BARBARIAN_PLAYER` 50, which the EXE
+  expects last). Of the NPC slots, 40-43, 49 and 50 are in use (`CvGame::init` adds 40-43 and 49); 44-48
+  (`NPC4`..`NPC0`) stay unused but still exist, each on its own team.
+- **⛔ THE EXE COUNTS SLOTS 0..49 AS CIVS** (`CvGlobals::getMaxCivPlayers` answers `MAX_PLAYERS-1`) **and
+  renumbers teams over all of them.** When a Custom Game puts two players on one team, the EXE closes the gap by
+  moving every later slot down one team through `CvInitCore::setTeam`, NPC slots included. Such a move would put
+  the unused NPC slots on their neighbours' teams (slot 44 on the insect team) and leave `NPC0_TEAM` (48) with no
+  player, which `CvGame::initDiplomacy` cannot handle (a team with no leader). ⇒ **`CvInitCore::setTeam` holds the
+  layout:** an NPC slot always stays on its own team, and a civ slot never joins an NPC team. The EXE's renumbering
+  of the civ slots stands. `CvTeam::addTeam` and `CvPlayer::setTeam` refuse a merge or move across the boundary
+  before any team counter moves.
 
 ## UnitCombat — the fat info class + the cascade-migration note
 

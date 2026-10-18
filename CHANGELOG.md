@@ -2,6 +2,30 @@
 
 
 
+## v1.BETA.423 - 2026-10-18
+
+### Bug Fixes
+
+- **capabilities:** fold the tech fact into the named player only(ingvarr)
+- **cascade:** make TECH_GAME_START one tech record(ingvarr)
+- **cascade:** the per-CITY scaler re-books on the city count instead of moving by a delta(ingvarr)
+- **load:** reset every player before the save streams(ingvarr)
+- **players:** teams created during play get their starting techs; team setup keeps NPC slots on their teams(ingvarr)
+
+
+### All Changes
+
+- Merge pull request [#595](https://github.com/stones2stars/S2S/issues/595) from ingvarr777/fix/midgame-player-setup (flabbert)
+- **load:** reset every player before the save streams (ingvarr)
+- **players:** teams created during play get their starting techs; team setup keeps NPC slots on their teams (ingvarr)
+- Merge pull request [#594](https://github.com/stones2stars/S2S/issues/594) from ingvarr777/fix/capability-team-fold (flabbert)
+- Merge pull request [#592](https://github.com/stones2stars/S2S/issues/592) from ingvarr777/fix/city-count-rebook (flabbert)
+- Merge pull request [#593](https://github.com/stones2stars/S2S/issues/593) from ingvarr777/fix/root-tech-one-record (flabbert)
+- **capabilities:** fold the tech fact into the named player only (ingvarr)
+- **cascade:** make TECH_GAME_START one tech record (ingvarr)
+- **cascade:** the per-CITY scaler re-books on the city count instead of moving by a delta (ingvarr)
+
+
 ## v1.BETA.422 - 2026-10-17
 
 ### Bug Fixes
