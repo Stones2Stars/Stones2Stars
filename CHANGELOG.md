@@ -2,6 +2,37 @@
 
 
 
+## v1.BETA.425 - 2026-10-19
+
+### Bug Fixes
+
+- **data:** captives join any of your cities; immigrants join size 7 or less(flabbert)
+- **hovers:** hover state comes only from the mouse(flabbert)
+- **hovers:** a bottom-bar tooltip goes when the cursor leaves the bar(flabbert)
+- **hovers:** denser box background and larger text, so the text holds(flabbert)
+- **outcomes:** outcome actions are judged at the go-to destination(flabbert)
+- **production:** no duplicate queued buildings; one city actively builds a wonder(flabbert)
+- **production:** an empire-level building is one per empire while it is built(flabbert)
+- **python:** razing a city the razer does not own; hovers after a screen closes(flabbert)
+### Features
+
+- **city screen:** an Empire Buildings list tab; empire-level buildings build from the Wonders tab(flabbert)
+
+
+### All Changes
+
+- Merge pull request [#598](https://github.com/stones2stars/S2S/issues/598) from Stones2Stars/fix/raze-captives-and-hover-close (flabbert)
+- **city screen:** an Empire Buildings list tab; empire-level buildings build from the Wonders tab (flabbert)
+- **production:** an empire-level building is one per empire while it is built (flabbert)
+- **production:** no duplicate queued buildings; one city actively builds a wonder (flabbert)
+- **hovers:** hover state comes only from the mouse (flabbert)
+- **hovers:** a bottom-bar tooltip goes when the cursor leaves the bar (flabbert)
+- **outcomes:** outcome actions are judged at the go-to destination (flabbert)
+- **hovers:** denser box background and larger text, so the text holds (flabbert)
+- **data:** captives join any of your cities; immigrants join size 7 or less (flabbert)
+- **python:** razing a city the razer does not own; hovers after a screen closes (flabbert)
+
+
 ## v1.BETA.424 - 2026-10-19
 
 ### Bug Fixes
