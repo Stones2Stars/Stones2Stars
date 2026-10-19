@@ -2,6 +2,22 @@
 
 
 
+## v1.BETA.426 - 2026-10-19
+
+### Bug Fixes
+
+- **hover:** the box on centred screens; button hovers after a list rebuild; one box code for the main interface(ingvarr)
+- **units:** draw every figure of a unit; the upgrade cargo check; Size Matters cargo promotions(ingvarr)
+
+
+### All Changes
+
+- Merge pull request [#600](https://github.com/stones2stars/S2S/issues/600) from ingvarr777/fix/hover-screens (flabbert)
+- **hover:** the box on centred screens; button hovers after a list rebuild; one box code for the main interface (ingvarr)
+- Merge pull request [#599](https://github.com/stones2stars/S2S/issues/599) from ingvarr777/fix/unit-figure-count (flabbert)
+- **units:** draw every figure of a unit; the upgrade cargo check; Size Matters cargo promotions (ingvarr)
+
+
 ## v1.BETA.425 - 2026-10-19
 
 ### Bug Fixes
