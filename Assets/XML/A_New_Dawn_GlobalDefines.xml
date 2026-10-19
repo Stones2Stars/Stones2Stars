@@ -257,8 +257,8 @@ We default to all of them (1+2+128 = 131)
     <iDefineIntVal>50</iDefineIntVal>
   </Define>
   <Define>
-    <DefineName>WASTAGE_GROWTH_FACTOR</DefineName>
-    <fDefineFloatVal>0.05</fDefineFloatVal>
+    <DefineName>WASTAGE_GROWTH_PERCENT</DefineName>
+    <iDefineIntVal>5</iDefineIntVal>
   </Define>
   <Define>
     <!-- Set to non-0 value to enable dynamic activation of unit graphics entities (reduced memory usage and growth) -->
@@ -303,6 +303,6 @@ The Great Wall is always dynamic if viewports are enabled regardless of this set
   </Define>
   <Define>
     <DefineName>C2C_VERSION</DefineName>
-    <DefineTextVal>v1.BETA.423</DefineTextVal>
+    <DefineTextVal>v1.BETA.424</DefineTextVal>
   </Define>
 </Civ4Defines>

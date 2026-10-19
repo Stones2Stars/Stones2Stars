@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.424 - 2026-10-19
+
+### Bug Fixes
+
+- **hovers:** one hover box for every tooltip, its numbers read from the engine(ingvarr)
+
+
+### All Changes
+
+- Merge pull request [#596](https://github.com/stones2stars/S2S/issues/596) from ingvarr777/fix/live-hovers (flabbert)
+- **hovers:** one hover box for every tooltip, its numbers read from the engine (ingvarr)
+
+
 ## v1.BETA.423 - 2026-10-18
 
 ### Bug Fixes
