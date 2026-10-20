@@ -2,6 +2,16 @@
 
 
 
+## v1.BETA.428 - 2026-10-20
+
+
+
+### All Changes
+
+- Merge pull request [#602](https://github.com/stones2stars/S2S/issues/602) from ingvarr777/fix/gettext-string-args (flabbert)
+- Event messages: string objects passed to varargs formatters (ingvarr)
+
+
 ## v1.BETA.427 - 2026-10-20
 
 ### Bug Fixes
