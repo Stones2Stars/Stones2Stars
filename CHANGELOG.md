@@ -2,6 +2,19 @@
 
 
 
+## v1.BETA.427 - 2026-10-20
+
+### Bug Fixes
+
+- **hover:** the one box for widgets that report no mouse: numbered names, silent areas, boxes inside their screen(ingvarr)
+
+
+### All Changes
+
+- Merge pull request [#601](https://github.com/stones2stars/S2S/issues/601) from ingvarr777/fix/hover-silent-areas (flabbert)
+- **hover:** the one box for widgets that report no mouse: numbered names, silent areas, boxes inside their screen (ingvarr)
+
+
 ## v1.BETA.426 - 2026-10-19
 
 ### Bug Fixes
