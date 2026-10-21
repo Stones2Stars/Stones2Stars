@@ -2,6 +2,18 @@
 
 
 
+## v1.BETA.429 - 2026-10-21
+
+
+
+### All Changes
+
+- Merge pull request [#604](https://github.com/stones2stars/S2S/issues/604) from ingvarr777/fix/scoreboard-engine-reads (flabbert)
+- Score list and Demographics read the engine; one rule for what a rival shows (ingvarr)
+- Merge pull request [#603](https://github.com/stones2stars/S2S/issues/603) from ingvarr777/fix/military-power (flabbert)
+- Military power and assets: worth counted at its scale, ledgers built from facts (ingvarr)
+
+
 ## v1.BETA.428 - 2026-10-20
 
 
