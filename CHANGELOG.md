@@ -2,6 +2,16 @@
 
 
 
+## v1.BETA.431 - 2026-10-21
+
+
+
+### All Changes
+
+- Merge pull request [#607](https://github.com/stones2stars/S2S/issues/607) from ingvarr777/fix/victory-screen (flabbert)
+- Victory score as named parts; national culture kept in full (ingvarr)
+
+
 ## v1.BETA.430 - 2026-10-21
 
 
