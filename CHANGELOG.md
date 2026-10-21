@@ -2,6 +2,18 @@
 
 
 
+## v1.BETA.430 - 2026-10-21
+
+
+
+### All Changes
+
+- Merge pull request [#606](https://github.com/stones2stars/S2S/issues/606) from ingvarr777/fix/info-screen-tabs (flabbert)
+- Info screen: rankings, wonder lists, statistics and history from the engine (ingvarr)
+- Merge pull request [#605](https://github.com/stones2stars/S2S/issues/605) from ingvarr777/fix/espionage-advisor (flabbert)
+- Espionage advisor: rival intel and mission availability from the engine (ingvarr)
+
+
 ## v1.BETA.429 - 2026-10-21
 
 
