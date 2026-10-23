@@ -2,6 +2,21 @@
 
 
 
+## v1.BETA.432 - 2026-10-23
+
+
+
+### All Changes
+
+- Merge pull request [#610](https://github.com/stones2stars/S2S/issues/610) from ingvarr777/fix/distance-maintenance (flabbert)
+- Distance maintenance charged; handicap maintenance percents rebased to 0; AI sees government-centre distance (flabbert)
+- Per-city counts re-book when measured; placed cities announce their owner (ingvarr)
+- Merge pull request [#609](https://github.com/stones2stars/S2S/issues/609) from ingvarr777/fix/victory-voting (flabbert)
+- Voting and Members tabs read the elections from the engine (ingvarr)
+- Merge pull request [#608](https://github.com/stones2stars/S2S/issues/608) from ingvarr777/fix/victory-conditions (flabbert)
+- Victory conditions read from the engine, one rival rule for every row (ingvarr)
+
+
 ## v1.BETA.431 - 2026-10-21
 
 
