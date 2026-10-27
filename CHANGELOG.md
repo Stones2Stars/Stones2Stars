@@ -2,6 +2,24 @@
 
 
 
+## v1.BETA.433 - 2026-10-27
+
+
+
+### All Changes
+
+- Merge pull request [#619](https://github.com/stones2stars/S2S/issues/619) from Stones2Stars/fix/611-city-screen-oos (flabbert)
+- Sync.log records which machine took the host's role (flabbert)
+- Game-wide A New Dawn rules are the host's to decide (flabbert)
+- BUG settings that change the game are networked per player (flabbert)
+- Ambush choice travels in its message; AI plot sets iterate in position order (flabbert)
+- First OOS fixes: attitude cache, rebuked-demand roll, trade-tech cache, turn slices (flabbert)
+- Synced-scope tripwire: report synchronized RNG draws made outside synced execution (flabbert)
+- City screen recommendation no longer draws from the synchronized RNG (flabbert)
+- Pages deploy publishes docs/indexes, where the index pages now live (flabbert)
+- Index pages are generated from their markdown; the Despair Index gains the ambush OOS (flabbert)
+
+
 ## v1.BETA.432 - 2026-10-23
 
 
